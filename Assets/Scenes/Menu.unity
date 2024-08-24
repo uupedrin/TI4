@@ -1454,6 +1454,7 @@ GameObject:
   - component: {fileID: 991137048}
   - component: {fileID: 991137047}
   - component: {fileID: 991137050}
+  - component: {fileID: 991137051}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1560,7 +1561,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1581,6 +1582,23 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &991137051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991137046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: be0d18635c64efd48855c295380de5dc, type: 2}
 --- !u!1 &1008940163
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,8 +2358,8 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1000
-  m_Range: 21.67617
-  m_SpotAngle: 122.45831
+  m_Range: 37.424015
+  m_SpotAngle: 107.5949
   m_InnerSpotAngle: 0
   m_CookieSize: 10
   m_Shadows:
