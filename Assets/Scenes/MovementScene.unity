@@ -396,7 +396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &1326083264
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -609,16 +609,22 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   groundMoveForce: 17
-  airMoveForce: 15
   groundDrag: 2
-  airDrag: 2
   groundMaxSpeed: 100
+  airMoveForce: 15
+  airDrag: 2
   airMaxSpeed: 100
   maxFallSpeed: 100
+  downForce: 30
   jumpForce: 300
   holdJumpForce: 40
   holdJumpTime: 0.1
-  downForce: 30
+  powerUpDoubleJump: 0
+  powerUpDash: 0
+  dashForce: 1000
+  holdDashForce: 2
+  dashDuration: 0.2
+  dashCooldown: 0.1
 --- !u!54 &1353624887
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -664,7 +670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1712498862
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -788,16 +794,22 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   groundMoveForce: 0
-  airMoveForce: 0
   groundDrag: 0
-  airDrag: 0
   groundMaxSpeed: 0
+  airMoveForce: 0
+  airDrag: 0
   airMaxSpeed: 0
   maxFallSpeed: 0
+  downForce: 0
   jumpForce: 0
   holdJumpForce: 0
   holdJumpTime: 0
-  downForce: 0
+  powerUpDoubleJump: 0
+  powerUpDash: 0
+  dashForce: 0
+  holdDashForce: 0
+  dashDuration: 0
+  dashCooldown: 0
 --- !u!54 &2121946957
 Rigidbody:
   m_ObjectHideFlags: 0
