@@ -38,6 +38,8 @@ public class InputReader : ScriptableObject, InputGeneratedClass.IGameplayAction
 	public event Action<Vector2> MovementEvent;
 	public event Action JumpPressedEvent;
 	public event Action JumpReleasedEvent;
+	public event Action DashPressedEvent;
+	public event Action DashReleasedEvent;
 	
 	//Interface Implementation
 	public void OnMovement(InputAction.CallbackContext context)
@@ -57,5 +59,17 @@ public class InputReader : ScriptableObject, InputGeneratedClass.IGameplayAction
 			JumpReleasedEvent?.Invoke();
 		}
 	}
-	#endregion
+
+    public void OnDash(InputAction.CallbackContext context)
+    {
+        if(context.phase == InputActionPhase.Started)
+		{
+			DashPressedEvent?.Invoke();
+		}
+		else if(context.phase == InputActionPhase.Canceled)
+		{
+			DashReleasedEvent?.Invoke();
+		}
+    }
+    #endregion
 }
