@@ -15,25 +15,33 @@ public class PlayerMovement : MonoBehaviour
     float moveForce;
 
     [Header("Ground Movement Settings")]
-    [SerializeField] float groundMoveForce;
-    [SerializeField] float groundDrag, groundMaxSpeed;
+    [SerializeField] [Tooltip ("Move speed while grounded")] float groundMoveForce;
+    [SerializeField] [Tooltip ("Drag while grounded")] float groundDrag;
+    [SerializeField] [Tooltip ("Maximum possible move speed while grounded")] float groundMaxSpeed;
     
     [Header("Air Movement Settings")]
-    [SerializeField] float airMoveForce;
-    [SerializeField] float airDrag, airMaxSpeed, maxFallSpeed, downForce;
+    [SerializeField] [Tooltip ("Move speed while not grounded")] float airMoveForce;
+    [SerializeField] [Tooltip ("Drag while not grounded")] float airDrag;
+    [SerializeField] [Tooltip ("Maximum possible move speed while not grounded")] float airMaxSpeed;
+    [SerializeField] [Tooltip ("Maximum possible move speed while falling")] float maxFallSpeed;
+    [SerializeField] [Tooltip ("Force applied downward while not moving up")] float downForce;
     
     [Header("Jump Settings")]
-    [SerializeField] float jumpForce;
-    [SerializeField] float holdJumpForce, holdJumpTime;
+    [SerializeField] [Tooltip ("How strong the Jump's impulse is")] float jumpForce;
+    [SerializeField] [Tooltip ("How long you can hold down the Jump button for")] float holdJumpTime;
+    [SerializeField] [Tooltip ("How much stronger the Jump gets when holding the button down")] float holdJumpForce;
+
 
     [Header("Booleans")]
-    [SerializeField] bool powerUpDoubleJump;
-    [SerializeField] bool powerUpDash; 
+    [SerializeField] [Tooltip ("Whether or not the Double Jump power up is active")] bool powerUpDoubleJump;
+    [SerializeField] [Tooltip ("Whether or not the Dash power up is active")] bool powerUpDash; 
 
     [Header("Dash Settings")]
     
-    [SerializeField] float dashForce;
-    [SerializeField] float holdDashForce, dashDuration, dashCooldown;
+    [SerializeField] [Tooltip ("How strong the Dash's impulse is")] float dashForce;
+    [SerializeField] [Tooltip ("How long you can hold down the Dash button for")] float dashDuration;
+    [SerializeField] [Tooltip ("How much stronger the Dash gets when holding the button down")] float holdDashForce;
+    [SerializeField] [Tooltip ("How long you have to wait to Dash again, after the Dash is over")] float dashCooldown;
     float lastDash;
     
     
@@ -123,6 +131,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(canJump || canDoubleJump)
         {
+            //Freezes position in Y, then immediately unfreezes. This causes the velocity to reset.
             _body.constraints = RigidbodyConstraints.FreezePositionY;
             _body.constraints = RigidbodyConstraints.FreezeRotation;
             _body.AddForce(Vector3.up * jumpForce);
@@ -146,8 +155,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if(powerUpDash && Time.time >= lastDash + dashCooldown)
         {
+            //Freeze ALL. This causes all velocity to reset, so the previous momentum does not affect the dashes' directions.
             _body.constraints = RigidbodyConstraints.FreezeAll;
-            _body.constraints = RigidbodyConstraints.FreezePositionY;
+            _body.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
             _body.AddForce(new Vector3(inputDirection.x, 0, inputDirection.y) * dashForce);
             isDashing = true;
             Invoke("InterruptDash", dashDuration);
