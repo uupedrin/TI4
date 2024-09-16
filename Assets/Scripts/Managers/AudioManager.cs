@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
 	private void Awake()
 	{
 		_mixer = Resources.Load("MainMixer") as AudioMixer;
+		LoadAudioPrefs();
 	}
 	
 	public void SetMaster(float value)
