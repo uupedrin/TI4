@@ -7,14 +7,12 @@ public class Menu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public Slider sensitivitySlider;
-    public Sensibilidade mouseLook;
 
     private bool isPaused = false;
 
     void Start()
     {
         pauseMenuUI.SetActive(false);
-        sensitivitySlider.value = mouseLook.mouseSensitivity;
     }
 
     void Update()
@@ -31,7 +29,6 @@ public class Menu : MonoBehaviour
             }
         }
 
-        mouseLook.mouseSensitivity = sensitivitySlider.value;
     }
 
     public void Resume()
