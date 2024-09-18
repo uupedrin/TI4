@@ -16,14 +16,14 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Ground Movement Settings")]
     [SerializeField] [Tooltip ("Move speed while grounded")] float groundMoveForce;
-    [SerializeField] [Tooltip ("Drag while grounded")] float groundDrag;
-    [SerializeField] [Tooltip ("Maximum possible move speed while grounded")] float groundMaxSpeed;
+    //[SerializeField] [Tooltip ("Drag while grounded")] float groundDrag;
+    //[SerializeField] [Tooltip ("Maximum possible move speed while grounded")] float groundMaxSpeed;
     
     [Header("Air Movement Settings")]
     [SerializeField] [Tooltip ("Move speed while not grounded")] float airMoveForce;
-    [SerializeField] [Tooltip ("Drag while not grounded")] float airDrag;
-    [SerializeField] [Tooltip ("Maximum possible move speed while not grounded")] float airMaxSpeed;
-    [SerializeField] [Tooltip ("Maximum possible move speed while falling")] float maxFallSpeed;
+    //[SerializeField] [Tooltip ("Drag while not grounded")] float airDrag;
+    //[SerializeField] [Tooltip ("Maximum possible move speed while not grounded")] float airMaxSpeed;
+    //[SerializeField] [Tooltip ("Maximum possible move speed while falling")] float maxFallSpeed;
     [SerializeField] [Tooltip ("Force applied downward while not moving up")] float downForce;
     
     [Header("Jump Settings")]
@@ -43,9 +43,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] [Tooltip ("How much stronger the Dash gets when holding the button down")] float holdDashForce;
     [SerializeField] [Tooltip ("How long you have to wait to Dash again, after the Dash is over")] float dashCooldown;
     float lastDash;
+
+    [Header("References")]
+
+    [SerializeField] [Tooltip ("What the player is looking at")] GameObject guide;
     
-    
-    bool isGrounded = false, canJump = false, isJumping = false, canDoubleJump = false, isDashing = false;
+    Vector3 orientation;
+    bool isGrounded = false, isJumping = false, canDoubleJump = false, isDashing = false;
     InputReader _reader;
     Rigidbody _body;
     Vector2 inputDirection;
@@ -94,42 +98,41 @@ public class PlayerMovement : MonoBehaviour
     public void IsGroundedCheck()
     {
         isGrounded = Physics.BoxCast(transform.position, new Vector3(1, .1f, 1), Vector3.down, transform.rotation, 1, mask);
-        //WHILE ON THE GROUND: use groundMoveForce, use groundDrag, canJump is true
+        //WHILE ON THE GROUND: use groundMoveForce, use groundDrag
         if(!isDashing)
         {
             if(isGrounded) 
             {
-                canJump = true;
                 moveForce = groundMoveForce;
-                _body.drag = groundDrag;
-                currentMaxSpeed = groundMaxSpeed;
+                //_body.drag = groundDrag;
+                //currentMaxSpeed = groundMaxSpeed;
                 if(powerUpDoubleJump) canDoubleJump = true;
             }
-            //WHILE IN THE AIR: use airMoveForce, use airDrag, canJump can become false, PushDown can be applied
+            //WHILE IN THE AIR: use airMoveForce, use airDrag, PushDown can be applied
             else 
             {
-                canJump = false;
                 moveForce = airMoveForce;
-                _body.drag = airDrag;
-                currentMaxSpeed = airMaxSpeed;
+                //_body.drag = airDrag;
+                //currentMaxSpeed = airMaxSpeed;
                 PushDown();
                 if(!powerUpDoubleJump) canDoubleJump = false;
             }
         }
-        _body.velocity = new Vector3(Math.Clamp(_body.velocity.x, -currentMaxSpeed, currentMaxSpeed), Math.Clamp(_body.velocity.y, -maxFallSpeed, maxFallSpeed), Math.Clamp(_body.velocity.z, -currentMaxSpeed, currentMaxSpeed));
+        //_body.velocity = new Vector3(Math.Clamp(_body.velocity.x, -currentMaxSpeed, currentMaxSpeed), Math.Clamp(_body.velocity.y, -maxFallSpeed, maxFallSpeed), Math.Clamp(_body.velocity.z, -currentMaxSpeed, currentMaxSpeed));
         Debug.Log(isGrounded);
     }
 
     void Move()
     {
-        if(!isDashing) _body.AddForce(new Vector3(inputDirection.x, 0, inputDirection.y) * moveForce);
+        orientation = guide.transform.forward * inputDirection.y + guide.transform.right * inputDirection.x;
+        if(!isDashing) _body.AddForce(orientation * moveForce);
         else _body.AddForce(_body.velocity * holdDashForce);
         if(isJumping) _body.AddForce(Vector3.up * holdJumpForce);
     }
 
     void Jump()
     {
-        if(canJump || canDoubleJump)
+        if(isGrounded || canDoubleJump)
         {
             //Freezes position in Y, then immediately unfreezes. This causes the velocity to reset.
             _body.constraints = RigidbodyConstraints.FreezePositionY;
@@ -137,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
             _body.AddForce(Vector3.up * jumpForce);
             isJumping = true;
             Invoke("InterruptJump", holdJumpTime);
-            if(!canJump) canDoubleJump = false;
+            if(!isGrounded) canDoubleJump = false;
         }
     }
 
