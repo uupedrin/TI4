@@ -127,6 +127,10 @@ public class PlayerMove : MonoBehaviour
         {
             SceneManager.LoadScene("Roque");
         }
+
+        PlatformTremble platform;
+        if(other.transform.TryGetComponent<PlatformTremble>(out platform))
+            platform.ActiveRoutine();
     }
 
     void OnTriggerEnter(Collider other)

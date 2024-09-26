@@ -91,6 +91,11 @@ public class PlayerMovement : MonoBehaviour
         Move();
     }
 
+    public InputReader GetReader()
+    {
+        return _reader;
+    }
+
     public void IsGroundedCheck()
     {
         isGrounded = Physics.BoxCast(transform.position, new Vector3(1, .1f, 1), Vector3.down, transform.rotation, 1, mask);
