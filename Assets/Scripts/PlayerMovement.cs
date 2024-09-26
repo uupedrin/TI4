@@ -65,6 +65,12 @@ public class PlayerMovement : MonoBehaviour
         _reader.DashReleasedEvent += InterruptDash;
         lastDash = Time.time;
     }
+
+    public InputReader GetInputReader()
+    {
+        return _reader;
+    }
+
     void OnDisable()
     {
         _reader.MovementEvent -= SetInputDirection;
