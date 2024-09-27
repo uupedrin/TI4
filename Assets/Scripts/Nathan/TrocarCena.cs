@@ -5,11 +5,14 @@ using UnityEngine.SceneManagement;
 public class TrocarCena : MonoBehaviour
 {
     public string sceneName;
-    public Animator doorAnimator; 
-    public Animator cameraAnimator; 
-    public string doorAnimationTrigger = "Porta"; 
-    public string cameraAnimationTrigger = "CameraApproach"; 
+    public Animator doorAnimator;
+    public Animator cameraAnimator;
+    public string doorAnimationTrigger = "Porta";
+    public string cameraAnimationTrigger = "CameraApproach";
     public float animationDuration = 1.5f;
+    
+    public GameObject sprite1;
+    public GameObject sprite2; 
 
     private bool isSceneChanging = false;
 
@@ -18,6 +21,17 @@ public class TrocarCena : MonoBehaviour
         if (!isSceneChanging)
         {
             isSceneChanging = true;
+
+            
+            if (sprite1 != null)
+            {
+                sprite1.SetActive(false);
+            }
+            if (sprite2 != null)
+            {
+                sprite2.SetActive(false);
+            }
+
             StartCoroutine(PlayAnimationsAndChangeScene());
         }
     }
@@ -39,7 +53,7 @@ public class TrocarCena : MonoBehaviour
         
         yield return new WaitForSeconds(animationDuration);
 
-       
+        
         SceneManager.LoadScene(sceneName);
     }
 }
