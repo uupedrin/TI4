@@ -150,14 +150,14 @@ RectTransform:
   m_GameObject: {fileID: 69753324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 2.5963786, y: 2.5963786, z: 2.1827497}
+  m_LocalScale: {x: 1.7266197, y: 1.7266197, z: 1.4515522}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 675623241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -662, y: -28}
+  m_AnchoredPosition: {x: -760, y: 245}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &69753326
@@ -180,7 +180,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Programador mecanica:'
+  m_text: 'Programador mecanica: Lucas Henrique, Pedro Veigar, Paulo Campos. Vinicius
+    Neves.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90b4c72c64ef4a14c9070ae22d9b299a, type: 2}
   m_sharedMaterial: {fileID: -4427325949524675616, guid: 90b4c72c64ef4a14c9070ae22d9b299a,
@@ -244,7 +245,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -239.20157, w: 0}
+  m_margin: {x: 0, y: 0, z: -886.0908, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -466,7 +467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -662, y: -345}
+  m_AnchoredPosition: {x: -662, y: -420}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &367614701
@@ -489,7 +490,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Artista Assets Gerais:'
+  m_text: 'Artista Assets Gerais: Arthur Reis'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90b4c72c64ef4a14c9070ae22d9b299a, type: 2}
   m_sharedMaterial: {fileID: -4427325949524675616, guid: 90b4c72c64ef4a14c9070ae22d9b299a,
@@ -553,7 +554,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -239.20157, w: 0}
+  m_margin: {x: 0, y: 0, z: -295.98767, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -870,7 +871,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -662, y: 92}
+  m_AnchoredPosition: {x: -662, y: -101}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &769966731
@@ -893,7 +894,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Programador Level:'
+  m_text: 'Programador Level: Pedro Silva,Vinicius Souza'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90b4c72c64ef4a14c9070ae22d9b299a, type: 2}
   m_sharedMaterial: {fileID: -4427325949524675616, guid: 90b4c72c64ef4a14c9070ae22d9b299a,
@@ -957,7 +958,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -110.35873, w: 0}
+  m_margin: {x: 0, y: 0, z: -452.0699, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1005,7 +1006,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -662, y: -155}
+  m_AnchoredPosition: {x: -662, y: -259}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &811924773
@@ -1028,7 +1029,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Programador mecanica:'
+  m_text: 'Programador UI: Nathan Oliveira'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90b4c72c64ef4a14c9070ae22d9b299a, type: 2}
   m_sharedMaterial: {fileID: -4427325949524675616, guid: 90b4c72c64ef4a14c9070ae22d9b299a,
@@ -2416,7 +2417,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -662, y: 224}
+  m_AnchoredPosition: {x: -662, y: 27}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1912990686
@@ -2439,7 +2440,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Artista Hud: '
+  m_text: 'Artista Hud: Luana Isabella'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90b4c72c64ef4a14c9070ae22d9b299a, type: 2}
   m_sharedMaterial: {fileID: -4427325949524675616, guid: 90b4c72c64ef4a14c9070ae22d9b299a,
@@ -2503,7 +2504,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -313.21094, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
