@@ -10,6 +10,5 @@ public interface IObserver
 public interface ISubject
 {
     void RegistrarObserver(IObserver observer);
-    void DesregistrarObserver(IObserver observer);
     void NotificarObserver();
 }
