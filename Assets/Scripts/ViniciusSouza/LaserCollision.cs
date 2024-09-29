@@ -7,14 +7,9 @@ public class LaserCollision : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Button"))
+        if (other.CompareTag("Botao"))
         {
-            DesligarLasers desligarLasers = other.GetComponent<DesligarLasers>();
-
-            if (desligarLasers != null)
-            {
-                desligarLasers.NotificarObserver();
-            }
+            SceneManager.LoadScene("TESTE");
         }
     }
 }
