@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 11602851}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 74650781}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1625,7 +1625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227187900}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17733236, y: 0.00010004963, z: -0.000018027757, w: 0.98415107}
+  m_LocalRotation: {x: 0.17733236, y: 0.00010001176, z: -0.000018020934, w: 0.98415107}
   m_LocalPosition: {x: 1.0984937, y: 5.83, z: -52.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3806,7 +3806,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539967940}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17733236, y: 0.00010004963, z: -0.000018027757, w: 0.98415107}
+  m_LocalRotation: {x: 0.17733236, y: 0.00010001176, z: -0.000018020934, w: 0.98415107}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3830,7 +3830,7 @@ GameObject:
   - component: {fileID: 551214397}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4105,7 +4105,7 @@ GameObject:
   - component: {fileID: 609012109}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6105,7 +6105,7 @@ GameObject:
   - component: {fileID: 902832686}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6269,7 +6269,7 @@ GameObject:
   - component: {fileID: 1001798977}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6485,7 +6485,7 @@ GameObject:
   - component: {fileID: 1081513369}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6898,7 +6898,7 @@ GameObject:
   - component: {fileID: 1112338665}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7031,7 +7031,7 @@ GameObject:
   - component: {fileID: 1115912140}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8147,6 +8147,7 @@ GameObject:
   - component: {fileID: 1353624886}
   - component: {fileID: 1353624888}
   - component: {fileID: 1353624889}
+  - component: {fileID: 1353624890}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -8321,6 +8322,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41eceb5582cde3844ba3a68e6e48ba26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1353624890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353624881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4541772cf8f84934cb12e2eeb347987f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1390133709
@@ -9041,7 +9054,7 @@ GameObject:
   - component: {fileID: 1528520241}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9322,7 +9335,7 @@ GameObject:
   - component: {fileID: 1548043427}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9896,7 +9909,7 @@ GameObject:
   - component: {fileID: 1640437828}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10172,7 +10185,7 @@ GameObject:
   - component: {fileID: 1683254191}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10502,7 +10515,7 @@ GameObject:
   - component: {fileID: 1766952334}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10697,7 +10710,7 @@ GameObject:
   - component: {fileID: 1800768108}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11753,7 +11766,7 @@ GameObject:
   - component: {fileID: 1965895409}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11886,7 +11899,7 @@ GameObject:
   - component: {fileID: 1966609762}
   m_Layer: 0
   m_Name: Raio
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12018,7 +12031,7 @@ GameObject:
   - component: {fileID: 1985020838}
   m_Layer: 0
   m_Name: Fim
-  m_TagString: Untagged
+  m_TagString: Botao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
