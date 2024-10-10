@@ -22,8 +22,9 @@ public class Laser : MonoBehaviour
 
     private void Update()
     {
-        distance = Vector3.Distance(laserInicio.localPosition,laserFinal.localPosition );
-        ray = new Ray(laserInicio.position, laserFinal.localPosition);
+        Vector3 direction =  laserFinal.localPosition - laserInicio.localPosition;
+        distance = Vector3.Distance(laserInicio.position,laserFinal.position );
+        ray = new Ray(laserInicio.position, direction.normalized);
         
         if (Physics.Raycast(ray, out rayHit,distance,~ignoreMask))
         {
@@ -54,7 +55,7 @@ public class Laser : MonoBehaviour
             c = currentChildVec3.x + currentChildVec3.z;
             y = ((b * c)/a);
 
-            lineRenderer.SetPosition(1, new Vector3(currentChildVec3.x, y,currentChildVec3.z));
+            lineRenderer.SetPosition(1, rayHit.point);
 
             //USAR UM METODO DO PLAYER
            // if (rayHit.collider.TryGetComponent(out Target target))
