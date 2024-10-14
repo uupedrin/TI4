@@ -50,9 +50,6 @@ public class Laser : MonoBehaviour
             lineRenderer.SetPosition(0, laserInicio.position);
             //lineRenderer.SetPosition(1, transform.position + transform.forward * laserDistance);
             //ELE PARAR NO PLAYER   
-            a = laserFinal.position.x + laserFinal.position.z;
-            b = laserFinal.position.y;
-            c = currentChildVec3.x + currentChildVec3.z;
             y = ((b * c)/a);
 
             lineRenderer.SetPosition(1, rayHit.point);

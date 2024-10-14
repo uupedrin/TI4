@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Drone : MonoBehaviour
 {
-    [SerializeField] Transform[] pontos;
     [SerializeField] GameObject _mesa ,prefab;
     [SerializeField] float _speed;
     [SerializeField] Transform MeioSala, mesaSpawn;
@@ -19,7 +18,6 @@ public class Drone : MonoBehaviour
     void Start()
     {
         startT = transform.position;
-        StartCoroutine(MoveObject());
     }
 
     void Update()
@@ -27,11 +25,12 @@ public class Drone : MonoBehaviour
 
 
     }
-    void Colocar(int p_index)
+    public void Colocar(Transform Pos)
     {
-        transformAtual = pontos[p_index];
+        transformAtual = Pos;
         startPos = transform.position;
         meio = true;
+        StartCoroutine(MoveObject());
 
     }
 
