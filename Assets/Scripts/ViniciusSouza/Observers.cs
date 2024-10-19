@@ -18,6 +18,7 @@ public class Observers : MonoBehaviour, IObserver
 
     public void Notificar()
     {
-        gameObject.SetActive(false);
+        Destroy(GetComponent<LineRenderer>());
+        Destroy(GetComponent<Laser>());
     }
 }
