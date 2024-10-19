@@ -81,11 +81,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float timerRolamento;
     [SerializeField] float velY;
     [SerializeField] bool puloMaximo;
+
+    GameObject alternatingPlatforms;
+    AlternatingPlatforms alt;
     #endregion
     private void Awake()
     {
        // Cursor.lockState = CursorLockMode.Locked;
         //Cursor.visible = false;
+        alternatingPlatforms = GameObject.Find("AlternatingPlatforms");
+        alt = alternatingPlatforms.GetComponent<AlternatingPlatforms>();
         velocidadeAntiga = velocidade;
         characterController = GetComponent<CharacterController>();
         Keyframe rolamento_ultimoFrame = rolamentoCurva[rolamentoCurva.length - 1];
@@ -203,12 +208,14 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("Pulo");
             pulo = true;
             velocidadeMovimento.y = Mathf.Sqrt((puloAltura * 2) * 2 * gravidade);
+            alt.Alternate();
         }
         else if (value.started && escada)
         {
             SairEscada();
             Dash = true;
             velocidadeMovimento.y = Mathf.Sqrt((puloAltura * 2) * 2 * gravidade);
+            alt.Alternate();
         }
         else if (value.started && !NoChao() && parede)
         {
@@ -224,6 +231,7 @@ public class PlayerController : MonoBehaviour
             transform.forward = transform.forward * -1;
             gravidade = gravidadeAntiga;
             velocidadeMovimento.y = Mathf.Sqrt(puloAltura * 2 * gravidade);
+            alt.Alternate();
 
         }
         else if (value.started && NoChao())
@@ -232,6 +240,7 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("Pulo");
             pulo = true;
             velocidadeMovimento.y = Mathf.Sqrt(puloAltura * 2 * gravidade);
+            alt.Alternate();
         }
         else if (value.started && !NoChao() && podePuloDoplo && PuloDoploAbl)
         {
@@ -240,6 +249,7 @@ public class PlayerController : MonoBehaviour
             pulo = true;
             velocidadeMovimento = Vector3.zero;
             velocidadeMovimento.y = Mathf.Sqrt(puloAltura * 2 * gravidade);
+            alt.Alternate();
             podePuloDoplo = false;
         }
 
@@ -401,6 +411,7 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("Pulo");
         pulo = true;
         velocidadeMovimento.y = Mathf.Sqrt(puloAltura * 2 * gravidade);
+        alt.Alternate();
     }
 }
 
