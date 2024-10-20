@@ -77,6 +77,8 @@ public class PlayerMovement : MonoBehaviour
     void SetInputDirection(Vector2 value)
     {
         inputDirection = value;
+        orientation = guide.transform.forward * inputDirection.y + guide.transform.right * inputDirection.x;
+        transform.forward = new Vector3(orientation.x, 0, orientation.z);
     }
 
     void Awake()
@@ -124,7 +126,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        orientation = guide.transform.forward * inputDirection.y + guide.transform.right * inputDirection.x;
         if(!isDashing) _body.AddForce(orientation * moveForce);
         else _body.AddForce(_body.velocity * holdDashForce);
         if(isJumping) _body.AddForce(Vector3.up * holdJumpForce);
