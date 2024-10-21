@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Cinemachine;
+using TMPro;
 
 public class Menu : MonoBehaviour
 {
-    public GameObject pauseMenuUI;
-    public Slider sensitivitySlider;
-
+    [SerializeField] private GameObject pauseMenuUI;
+    [SerializeField] private Slider sensitivitySlider;
+    [SerializeField] private CinemachineFreeLook freelookCamera;
+    [SerializeField] private TextMeshProUGUI sensibilidadeTexto;
     private bool isPaused = false;
 
     void Start()
     {
         pauseMenuUI.SetActive(false);
+        sensitivitySlider.value = 10;
+        sensitivitySlider.onValueChanged.AddListener(Sensibilidade);
+        AtualizarTextoSensibilidade(sensitivitySlider.value);
     }
 
     void Update()
@@ -28,7 +34,6 @@ public class Menu : MonoBehaviour
                 Pause();
             }
         }
-
     }
 
     public void Resume()
@@ -52,4 +57,20 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 
+    void Sensibilidade(float value)
+    {
+        float speedA = MultiplicadorSlider(value);
+        freelookCamera.m_XAxis.m_MaxSpeed = speedA;
+        AtualizarTextoSensibilidade(value);
+    }
+
+    float MultiplicadorSlider(float slidervalue)
+    {
+        return slidervalue * 50;
+    }
+
+    void AtualizarTextoSensibilidade(float value)
+    {
+        sensibilidadeTexto.text = "Sensibilidade: " + value.ToString("0");
+    }
 }
