@@ -9,11 +9,11 @@ public class ComportamentoInimigo : MonoBehaviour
     [SerializeField] List<Transform> rota;
     [SerializeField] NavMeshAgent navMesh;
     int _rotaPosicao;
-    bool _detectandoPlayer;
+    [SerializeField] bool _detectandoPlayer;
 
     public void Awake()
     {
-        navMesh = GetComponent<NavMeshAgent>();
+        //navMesh = GetComponent<NavMeshAgent>();
     }
 
     public void Start()
@@ -23,27 +23,32 @@ public class ComportamentoInimigo : MonoBehaviour
 
     public IEnumerator Ronda()
     {
+        navMesh.Move(rota[_rotaPosicao].position);
         while(true)
         {
-            navMesh.Move(rota[_rotaPosicao].position);
             if(transform.position == rota[_rotaPosicao].position) 
             {
                 _rotaPosicao++;
-                if(_rotaPosicao > rota.Count)
+                if(_rotaPosicao >= rota.Count)
                 {
                     _rotaPosicao = 0;
                 }
 
                 //executa a animação de checar os arredores
-                //ChecandoArredor();
+                ChecandoArredor();
                 yield return new WaitForSeconds(1.5f);
             }
+            yield return new WaitForSeconds(1.5f);
         }
     }
 
-    public void ChecandoArredor(float time)
+    public void ChecandoArredor()
     {
-        
+        if(_detectandoPlayer)
+        {
+            StopCoroutine(Ronda());
+            StartCoroutine(Perseguir(player));
+        }
     }
 
     public IEnumerator Perseguir(Transform player)
@@ -51,7 +56,7 @@ public class ComportamentoInimigo : MonoBehaviour
         while(_detectandoPlayer)
         {
             navMesh.Move(player.position);
+            yield return new WaitForSeconds(0.5f);
         }
-        yield return new WaitForSeconds(1.5f);
     }
 }
