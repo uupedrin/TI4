@@ -87,10 +87,13 @@ public class PlayerController : MonoBehaviour
     #endregion
     private void Awake()
     {
-       // Cursor.lockState = CursorLockMode.Locked;
+        // Cursor.lockState = CursorLockMode.Locked;
         //Cursor.visible = false;
-        alternatingPlatforms = GameObject.Find("AlternatingPlatforms");
-        alt = alternatingPlatforms.GetComponent<AlternatingPlatforms>();
+        if (GameObject.Find("AlternatingPlatforms") != null)
+        {
+            alternatingPlatforms = GameObject.Find("AlternatingPlatforms");
+            alt = alternatingPlatforms.GetComponent<AlternatingPlatforms>();
+        }
         velocidadeAntiga = velocidade;
         characterController = GetComponent<CharacterController>();
         Keyframe rolamento_ultimoFrame = rolamentoCurva[rolamentoCurva.length - 1];
@@ -114,7 +117,7 @@ public class PlayerController : MonoBehaviour
         velY = (int)velocidadeMovimento.y;
         if (velY >= 1f)
         {
-            
+
             puloMaximo = true;
         }
         if (wallJump)
@@ -134,7 +137,7 @@ public class PlayerController : MonoBehaviour
 
         if (NoChao())
         {
-            
+
             nomeParedeAnterior = null;
             puloMaximo = false;
             Dash = true;
