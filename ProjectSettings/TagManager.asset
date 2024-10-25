@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Botao
+  - InimigoInteracao
   layers:
   - Default
   - TransparentFX

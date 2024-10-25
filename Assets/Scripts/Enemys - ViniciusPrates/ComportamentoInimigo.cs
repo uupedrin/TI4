@@ -18,36 +18,38 @@ public class ComportamentoInimigo : MonoBehaviour
 
     public void Start()
     {
-        StartCoroutine(Ronda());
+        Ronda();
     }
 
-    public IEnumerator Ronda()
+    public void FixedUpdate()
     {
-        navMesh.Move(rota[_rotaPosicao].position);
-        while(true)
+        if(rota[_rotaPosicao].position.x - player.position.x < (Vector3.one * 0.2f).x && 
+            rota[_rotaPosicao].position.z - player.position.z < (Vector3.one * 0.2f).z)
         {
-            if(transform.position == rota[_rotaPosicao].position) 
-            {
-                _rotaPosicao++;
-                if(_rotaPosicao >= rota.Count)
-                {
-                    _rotaPosicao = 0;
-                }
+            ChecandoArredor();
+        }
+    }
 
-                //executa a animação de checar os arredores
-                ChecandoArredor();
-                yield return new WaitForSeconds(1.5f);
-            }
-            yield return new WaitForSeconds(1.5f);
+    public void Ronda()
+    {
+        navMesh.SetDestination(rota[_rotaPosicao].position);
+        _rotaPosicao++;
+        if(_rotaPosicao >= rota.Count)
+        {
+            _rotaPosicao = 0;
         }
     }
 
     public void ChecandoArredor()
     {
+        //comportamento de checar
+        Debug.Log("Checando");
         if(_detectandoPlayer)
         {
-            StopCoroutine(Ronda());
             StartCoroutine(Perseguir(player));
+        }
+        else {
+            Ronda();
         }
     }
 
@@ -55,8 +57,10 @@ public class ComportamentoInimigo : MonoBehaviour
     {
         while(_detectandoPlayer)
         {
-            navMesh.Move(player.position);
+            navMesh.SetDestination(player.position);
             yield return new WaitForSeconds(0.5f);
         }
+
+        ChecandoArredor();
     }
 }
