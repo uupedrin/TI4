@@ -11,11 +11,6 @@ public class ComportamentoInimigo : MonoBehaviour
     int _rotaPosicao;
     [SerializeField] bool _detectandoPlayer;
 
-    public void Awake()
-    {
-        //navMesh = GetComponent<NavMeshAgent>();
-    }
-
     public void Start()
     {
         Ronda();
@@ -23,8 +18,8 @@ public class ComportamentoInimigo : MonoBehaviour
 
     public void FixedUpdate()
     {
-        if(rota[_rotaPosicao].position.x - player.position.x < (Vector3.one * 0.2f).x && 
-            rota[_rotaPosicao].position.z - player.position.z < (Vector3.one * 0.2f).z)
+        if(rota[_rotaPosicao-1].position.x - player.position.x <= (Vector3.one * 0.2f).x && 
+            rota[_rotaPosicao-1].position.z - player.position.z <= (Vector3.one * 0.2f).z)
         {
             ChecandoArredor();
         }
