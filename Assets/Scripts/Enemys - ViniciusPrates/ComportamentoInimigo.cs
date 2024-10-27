@@ -5,34 +5,51 @@ using UnityEngine.AI;
 
 public class ComportamentoInimigo : MonoBehaviour
 {
+    #region Corpo Inimigo
+    [Header("Corpo Inimigo")]
+    [SerializeField] Transform corpo;
+    [SerializeField] NavMeshAgent navMesh;
+    [SerializeField] float velocidadePerseguicao;
+    [SerializeField] float velocidadePadrao = 3;
+    #endregion
+
+    #region Rota e alvo
+    [Header("Rota e Alvo")]
+    [SerializeField] Transform alvo;
     [SerializeField] Transform player;
     [SerializeField] List<Transform> rota;
-    [SerializeField] NavMeshAgent navMesh;
-    int _rotaPosicao;
+    int _rotaPosicao = 0;
     [SerializeField] bool _detectandoPlayer;
+    #endregion
 
     public void Start()
     {
+        alvo = rota[_rotaPosicao];
         Ronda();
+    }
+
+    public void SetDetectar(bool valor)
+    {
+        _detectandoPlayer = valor;
     }
 
     public void FixedUpdate()
     {
-        if(rota[_rotaPosicao-1].position.x - player.position.x <= (Vector3.one * 0.2f).x && 
-            rota[_rotaPosicao-1].position.z - player.position.z <= (Vector3.one * 0.2f).z)
+        if((alvo.position - corpo.position).magnitude < 1f)
         {
+            Debug.Log("trocando alvo");
+            _rotaPosicao++;
+            if(_rotaPosicao >= rota.Count)
+            {
+                _rotaPosicao = 0;
+            }
             ChecandoArredor();
         }
     }
 
     public void Ronda()
     {
-        navMesh.SetDestination(rota[_rotaPosicao].position);
-        _rotaPosicao++;
-        if(_rotaPosicao >= rota.Count)
-        {
-            _rotaPosicao = 0;
-        }
+        navMesh.SetDestination(alvo.position);
     }
 
     public void ChecandoArredor()
@@ -41,19 +58,32 @@ public class ComportamentoInimigo : MonoBehaviour
         Debug.Log("Checando");
         if(_detectandoPlayer)
         {
-            StartCoroutine(Perseguir(player));
+            alvo = player;
+            navMesh.speed = velocidadePerseguicao;
+            StartCoroutine(Perseguir());
         }
         else {
-            Ronda();
+            alvo = rota[_rotaPosicao];
+            navMesh.speed = velocidadePadrao;
         }
+        Ronda();
     }
 
-    public IEnumerator Perseguir(Transform player)
+    public void SetAlvo(Transform alvo)
+    {
+        this.alvo = alvo;
+    }
+
+    public IEnumerator Perseguir()
     {
         while(_detectandoPlayer)
         {
-            navMesh.SetDestination(player.position);
-            yield return new WaitForSeconds(0.5f);
+            Ronda();
+            yield return new WaitForSeconds(1f);
+            if((player.position - corpo.position).magnitude < 5f)
+            {
+                _detectandoPlayer = false;
+            }
         }
 
         ChecandoArredor();
