@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4553385929722909714}
   - component: {fileID: 377427098634978967}
   - component: {fileID: 8517816250180060112}
+  - component: {fileID: 4052483589962197593}
   m_Layer: 0
   m_Name: Ancora
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,6 +101,27 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!65 &4052483589962197593
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050063127340043518}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.1193748, z: 1}
+  m_Center: {x: 0, y: -1.0478894, z: 0.00000004416524}
 --- !u!1 &7752955815008374628
 GameObject:
   m_ObjectHideFlags: 0
