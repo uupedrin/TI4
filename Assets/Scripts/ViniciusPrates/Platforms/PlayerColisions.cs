@@ -15,10 +15,10 @@ public class PlayerColisions : MonoBehaviour
         // {
             
         // }
-        // if(col.transform.CompareTag(""))
-        // {
-            
-        // }
+        if(col.transform.CompareTag("Obstaculo"))
+        {
+            //GetDamage do player
+        }
 
         PlatformTremble platform;
         if(col.transform.TryGetComponent<PlatformTremble>(out platform))

@@ -7,6 +7,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerColisions))]
 public class PlayerMovement : MonoBehaviour
 {
     #region References/Variables
