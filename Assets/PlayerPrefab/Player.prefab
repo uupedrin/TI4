@@ -157,7 +157,7 @@ MonoBehaviour:
   myCamera: {fileID: 0}
   animator: {fileID: 7832289787378693551}
   run: 0
-  gravidade: 15
+  gravidade: 30
   puloAltura: 1.5
   chao: 0
   pulo: 0
