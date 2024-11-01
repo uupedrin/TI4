@@ -152,11 +152,15 @@ MonoBehaviour:
   PuloDoploAbl: 0
   correAbl: 0
   rolamentoAbl: 0
+  podeMover: 1
+  gravidadeBool: 1
   velocidade: 3
   velocidadeCorrida: 6
+  rotVel: 10
   myCamera: {fileID: 0}
   animator: {fileID: 7832289787378693551}
   run: 0
+  sideScroller: 0
   gravidade: 30
   puloAltura: 1.5
   chao: 0
@@ -164,81 +168,6 @@ MonoBehaviour:
   caindo: 0
   podePuloDoplo: 0
   queda: 0
-  rolamento: 0
-  colliderRolamento: 0.4351411
-  alturaRolamento: 0.3
-  rolamentoCurva:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 11.435393
-      outSlope: 11.435393
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.2008458
-      value: 3.2967505
-      inSlope: 12.774826
-      outSlope: 12.774826
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.27734047
-    - serializedVersion: 3
-      time: 0.4713497
-      value: 5.377589
-      inSlope: 1.1997728
-      outSlope: 1.1997728
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.67665744
-      value: 4.290914
-      inSlope: -7.8554435
-      outSlope: -7.8554435
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.20691942
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: -10.177794
-      outSlope: -10.177794
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  velocidadeRolamento: 9
-  tempoCollider: 0.3
-  agarrando: 0
-  podeMover: 1
-  gravidadeBool: 1
-  A: 2.05
-  B: 2
-  velocidadeEscada: 1
-  escada: 0
-  DashTempo: 0.15
-  DashSpeed: 30
-  Dash: 0
-  gravidadeParede: 0
-  raycastLayerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  tamanhoRaycast: 0
-  parede: 0
-  timerRolamento: 0
-  velY: 0
-  puloMaximo: 0
 --- !u!143 &5696166695483287149
 CharacterController:
   m_ObjectHideFlags: 0

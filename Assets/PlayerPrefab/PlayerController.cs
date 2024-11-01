@@ -20,12 +20,14 @@ public class PlayerController : MonoBehaviour
     [Header("Confi Andar")]
     [SerializeField] private float velocidade = 3;
     [SerializeField] private float velocidadeCorrida = 6;
+    [SerializeField] private float rotVel;
     private float velocidadeAntiga;
     private Vector2 myInput;
     private CharacterController characterController;
     [SerializeField] private Transform myCamera;
     [SerializeField] private Animator animator;
-    [SerializeField] private bool run;
+    [SerializeField] private bool run;    
+    [SerializeField] private bool sideScroller;
     #endregion
     #region Pulo var
     [Header("Config Pular")]
@@ -59,7 +61,8 @@ public class PlayerController : MonoBehaviour
 
     public void MoverPersonagem(InputAction.CallbackContext value)
     {
-        myInput = value.ReadValue<Vector2>();
+        if(!sideScroller) myInput = value.ReadValue<Vector2>();
+        else myInput = new Vector2(value.ReadValue<Vector2>().x, 0);
     }
 
     private void Update()
@@ -114,8 +117,10 @@ public class PlayerController : MonoBehaviour
 
         if (myInput != Vector2.zero && targetDirection.magnitude > 0.1f && podeMover)
         {
+            float rotVelTemp = rotVel;
+            if(sideScroller) rotVelTemp *= 10;
             Quaternion freeRotation = Quaternion.LookRotation(targetDirection.normalized);
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), 10 * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), rotVelTemp * Time.deltaTime);
         }
     }
 
@@ -136,7 +141,7 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("Pulo");
             pulo = true;
             velocidadeMovimento.y = Mathf.Sqrt(puloAltura * 2 * gravidade);
-            alt.Alternate();
+            if(alternatingPlatforms != null) alt.Alternate();
         }
         else if (value.started && !NoChao() && podePuloDoplo && PuloDoploAbl)
         {
@@ -145,7 +150,7 @@ public class PlayerController : MonoBehaviour
             pulo = true;
             velocidadeMovimento = Vector3.zero;
             velocidadeMovimento.y = Mathf.Sqrt(puloAltura * 2 * gravidade);
-            alt.Alternate();
+            if(alternatingPlatforms != null) alt.Alternate();
             podePuloDoplo = false;
         }
         else if(value.canceled)
