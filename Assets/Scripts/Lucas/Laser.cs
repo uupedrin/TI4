@@ -55,11 +55,11 @@ public class Laser : MonoBehaviour
             lineRenderer.SetPosition(1, rayHit.point);
 
             //USAR UM METODO DO PLAYER
-           // if (rayHit.collider.TryGetComponent(out Target target))
-           // {
-           //     target.Hit();
-            //    OnHitTarget?.Invoke();
-            //}
+           if (rayHit.collider.TryGetComponent(out LaserSen target))
+           {
+                target.Morrer();
+                //OnHitTarget?.Invoke();
+            }
         }
         else
         {  
