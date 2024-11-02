@@ -7,7 +7,7 @@ using TMPro;
 
 public class Menu : MonoBehaviour
 {
-    [SerializeField] private GameObject pauseMenuUI;
+    [SerializeField] private GameObject pauseMenuUI, celularMenuUI;
     [SerializeField] private Slider sensitivitySlider;
     [SerializeField] private CinemachineFreeLook freelookCamera;
     [SerializeField] private TextMeshProUGUI sensibilidadeTexto;
@@ -34,6 +34,17 @@ public class Menu : MonoBehaviour
                 Pause();
             }
         }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            if (isPaused)
+            {
+                CellResume();
+            }
+            else
+            {
+                CellPause();
+            }
+        }
     }
 
     public void Resume()
@@ -47,6 +58,21 @@ public class Menu : MonoBehaviour
     void Pause()
     {
         pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
+        isPaused = true;
+    }
+    public void CellResume()
+    {
+        celularMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+        isPaused = false;
+    }
+
+    void CellPause()
+    {
+        celularMenuUI.SetActive(true);
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         isPaused = true;
