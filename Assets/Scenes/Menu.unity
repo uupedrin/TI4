@@ -435,6 +435,7 @@ MonoBehaviour:
   panel: {fileID: 1867170101}
   objectToToggle: {fileID: 397815711}
   closeButton: {fileID: 151269905}
+  colliderToToggle: {fileID: 1367295399}
 --- !u!1 &151269903
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,6 +708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 675623240}
+  colliderToToggle: {fileID: 1367295399}
 --- !u!65 &218986255
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1335,6 +1337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 675623240}
+  colliderToToggle: {fileID: 0}
 --- !u!65 &591286065
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2053,7 +2056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 517, y: 481}
+  m_AnchoredPosition: {x: 517, y: -446}
   m_SizeDelta: {x: 1869.0859, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &921664430
@@ -2076,8 +2079,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: tem um bug de conseguir clicar na porta com os paineis ativados, n usa
-    o menu ainda n
+  m_text: Clique na porta para comecar, quadro para creditos, computador para configuracoes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90b4c72c64ef4a14c9070ae22d9b299a, type: 2}
   m_sharedMaterial: {fileID: -4427325949524675616, guid: 90b4c72c64ef4a14c9070ae22d9b299a,
@@ -3064,7 +3066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e164963ceb59764eb7d34fc4d564d93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: TESTE
+  sceneName: Fase1P
   doorAnimator: {fileID: 1367295402}
   cameraAnimator: {fileID: 2130802754}
   doorAnimationTrigger: Porta

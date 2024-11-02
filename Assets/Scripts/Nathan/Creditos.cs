@@ -5,8 +5,9 @@ using UnityEngine;
 public class Creditos : MonoBehaviour
 {
     public GameObject panel;
+    public Collider colliderToToggle;  
 
-    private bool isPanelActive = false; 
+    private bool isPanelActive = false;
 
     void OnMouseDown()
     {
@@ -15,5 +16,11 @@ public class Creditos : MonoBehaviour
 
         
         panel.SetActive(isPanelActive);
+
+        
+        if (colliderToToggle != null)
+        {
+            colliderToToggle.enabled = !isPanelActive;
+        }
     }
 }
