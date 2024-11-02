@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7292696444216005589}
   - component: {fileID: 551177030766246594}
   - component: {fileID: 2226426185484106476}
-  m_Layer: 0
+  - component: {fileID: 2503655649074662618}
+  m_Layer: 10
   m_Name: Mesa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,8 +54,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.6263714, y: 2.135573, z: 4.82283}
-  m_Center: {x: 0.22615147, y: -0.3753159, z: -0.0036621094}
+  m_Size: {x: 2.723362, y: 2.1234488, z: 4.82283}
+  m_Center: {x: 0.27464676, y: -0.36925387, z: 0.008460999}
 --- !u!54 &2226426185484106476
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -82,6 +83,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &2503655649074662618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2725902474423490740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42984bfc20ae4854ca4256060fafb8cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3539993250396362401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90,6 +103,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7292696444216005589}
     m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e61de6685bb2c2440978ced47770c9eb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e61de6685bb2c2440978ced47770c9eb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e61de6685bb2c2440978ced47770c9eb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e61de6685bb2c2440978ced47770c9eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -140,6 +168,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e61de6685bb2c2440978ced47770c9eb,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: e61de6685bb2c2440978ced47770c9eb,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -149,6 +182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MesaFBX
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e61de6685bb2c2440978ced47770c9eb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

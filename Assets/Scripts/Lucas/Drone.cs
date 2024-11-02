@@ -33,7 +33,7 @@ public class Drone : MonoBehaviour
         StartCoroutine(MoveObject());
 
     }
-
+    
     IEnumerator MoveObject()
     {
         while (meio || indo || voltando)

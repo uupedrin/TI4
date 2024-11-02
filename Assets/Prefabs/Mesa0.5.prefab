@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7292696444216005589}
   - component: {fileID: 551177030766246594}
   - component: {fileID: 2226426185484106476}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mesa0.5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,8 +53,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.6263714, y: 0.82185817, z: 4.82283}
-  m_Center: {x: 0.22615147, y: 0.28154147, z: -0.0036621094}
+  m_Size: {x: 2.6263714, y: 2.1274984, z: 4.82283}
+  m_Center: {x: 0.22615147, y: -0.37127864, z: -0.0036621094}
 --- !u!54 &2226426185484106476
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -149,6 +149,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MesaFBX
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e61de6685bb2c2440978ced47770c9eb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
