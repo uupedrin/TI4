@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TESTE.unity
     guid: c621a105fa141ff42a4eb0e1a3d540b3
   - enabled: 1
-    path: Assets/Scenes/Fase1P.unity
+    path: Assets/Scenes/Fase1P1.unity
     guid: e88daf6c0c8fc5c42b94a69a14d08142
   - enabled: 1
     path: Assets/Scenes/Vitoria.unity
