@@ -16,17 +16,17 @@ public class MoveLaser : MonoBehaviour
         pontoInicial = transform.position;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         // Calcula a distância entre o ponto inicial e a posição atual
         float distanciaPercorrida = Vector3.Distance(pontoInicial, transform.position);
 
         // Se a distância percorrida for menor que a distância máxima, move o objeto para frente
-        if (distanciaPercorrida < distanciaMaxima && frente)
+        if (distanciaPercorrida <= distanciaMaxima && frente)
         {
             transform.Translate(Vector3.forward * velocidade * Time.deltaTime);
         }
-        else if (distanciaPercorrida < distanciaMaxima && subir)
+        else if (distanciaPercorrida <= distanciaMaxima && subir)
         {
             transform.Translate(Vector3.up * velocidade * Time.deltaTime);
         }
