@@ -10,8 +10,8 @@ public class ResponsivePlatform : MonoBehaviour
     public HingeJoint hingeJoint;
     public Transform player;
     public float baseSpeed = 10f;
-    public float maxSpeed = 50f;
-    public float speedIncreaseRate = 5f;
+    public float maxSpeed = 25f;
+    public float speedIncreaseRate = 3.5f;
 
     private JointMotor motor;
 
