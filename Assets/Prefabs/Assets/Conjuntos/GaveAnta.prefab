@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6428697606734676150}
   m_Layer: 0
-  m_Name: GavetaPlanta
+  m_Name: GaveAnta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,7 @@ PrefabInstance:
     - target: {fileID: 3308328182706846944, guid: fd5118b74f0f01c48871ddc199b51746,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.9813786
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3308328182706846944, guid: fd5118b74f0f01c48871ddc199b51746,
         type: 3}
@@ -59,7 +59,7 @@ PrefabInstance:
     - target: {fileID: 3308328182706846944, guid: fd5118b74f0f01c48871ddc199b51746,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.033
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3308328182706846944, guid: fd5118b74f0f01c48871ddc199b51746,
         type: 3}
@@ -118,17 +118,17 @@ PrefabInstance:
     - target: {fileID: 8204510677586227187, guid: 6a8681c9a18691b43bc88f0552fc9c4f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8204510677586227187, guid: 6a8681c9a18691b43bc88f0552fc9c4f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.225
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 8204510677586227187, guid: 6a8681c9a18691b43bc88f0552fc9c4f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.014
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8204510677586227187, guid: 6a8681c9a18691b43bc88f0552fc9c4f,
         type: 3}
