@@ -3066,7 +3066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e164963ceb59764eb7d34fc4d564d93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Fase1P
+  sceneName: Fase1P1
   doorAnimator: {fileID: 1367295402}
   cameraAnimator: {fileID: 2130802754}
   doorAnimationTrigger: Porta
