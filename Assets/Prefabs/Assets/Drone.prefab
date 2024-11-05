@@ -239,26 +239,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MesaAtual
       objectReference: {fileID: 0}
-    - target: {fileID: 3939009642760941898, guid: 639d29dd262b5394c8f9792efddaf7f7,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7292696444216005589, guid: 639d29dd262b5394c8f9792efddaf7f7,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7292696444216005589, guid: 639d29dd262b5394c8f9792efddaf7f7,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7292696444216005589, guid: 639d29dd262b5394c8f9792efddaf7f7,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7292696444216005589, guid: 639d29dd262b5394c8f9792efddaf7f7,
         type: 3}
       propertyPath: m_LocalPosition.x
