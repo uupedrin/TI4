@@ -1146,11 +1146,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 91692562319738056, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.947213
-      objectReference: {fileID: 0}
-    - target: {fileID: 91692562319738056, guid: 6b55a93cf202ee847816253457841e2a,
-        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.320605
       objectReference: {fileID: 0}
@@ -1164,31 +1159,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.000000005516451
       objectReference: {fileID: 0}
-    - target: {fileID: 3316496209852070229, guid: 6b55a93cf202ee847816253457841e2a,
-        type: 3}
-      propertyPath: PuloDoploAbl
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.105
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.8681
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.6101875
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.947213
-      objectReference: {fileID: 0}
     - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -1202,12 +1172,7 @@ PrefabInstance:
     - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000055164504
-      objectReference: {fileID: 0}
-    - target: {fileID: 4134554061978500765, guid: 6b55a93cf202ee847816253457841e2a,
-        type: 3}
-      propertyPath: near clip plane
-      value: 0.1
+      value: -0.000000005516451
       objectReference: {fileID: 0}
     - target: {fileID: 4988293756198672943, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
@@ -1261,11 +1226,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5690171957393297261, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.950016
-      objectReference: {fileID: 0}
-    - target: {fileID: 5690171957393297261, guid: 6b55a93cf202ee847816253457841e2a,
-        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.3122012
       objectReference: {fileID: 0}
@@ -1281,33 +1241,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6216095445974344380, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.950016
-      objectReference: {fileID: 0}
-    - target: {fileID: 6216095445974344380, guid: 6b55a93cf202ee847816253457841e2a,
-        type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.31220123
+      value: 0.3122012
       objectReference: {fileID: 0}
     - target: {fileID: 6216095445974344380, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016346338
+      value: 0.00000001634634
       objectReference: {fileID: 0}
     - target: {fileID: 6216095445974344380, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000005371853
-      objectReference: {fileID: 0}
-    - target: {fileID: 7118156670264585674, guid: 6b55a93cf202ee847816253457841e2a,
-        type: 3}
-      propertyPath: m_CollideAgainst.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7118156670264585674, guid: 6b55a93cf202ee847816253457841e2a,
-        type: 3}
-      propertyPath: m_MinimumDistanceFromTarget
-      value: 0.5
+      value: -0.000000005371853
       objectReference: {fileID: 0}
     - target: {fileID: 8306649777573717108, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
