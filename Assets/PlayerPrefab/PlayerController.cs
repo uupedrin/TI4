@@ -196,10 +196,11 @@ public class PlayerController : MonoBehaviour
             rolamento = true;
             timerRolamento = 0;
             Dash = false;
-
+            animator.SetTrigger("Dash");
 
             while (timerRolamento < DashTempo)
             {
+                
                 float speed = rolamentoCurva.Evaluate(timerRolamento);
                 gravidadeBool = false;
                 Vector3 dir = (transform.forward * DashSpeed);
