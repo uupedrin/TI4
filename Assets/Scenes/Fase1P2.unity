@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17338768, g: 0.21673858, b: 0.29880893, a: 1}
+  m_IndirectSpecularColor: {r: 0.17338745, g: 0.21673837, b: 0.29880828, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1163,6 +1163,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.000000005516451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3316496209852070229, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: PuloDoploAbl
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
