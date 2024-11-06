@@ -512,7 +512,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327446310}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17147206, y: -0.000000018952393, z: 0.0000000032986625, w: 0.985189}
+  m_LocalRotation: {x: 0.17147206, y: 0.000000018952393, z: -0.0000000032986625, w: 0.985189}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1608,73 +1608,33 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 373756854400215511, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
         type: 3}
-      propertyPath: m_Anchor.y
-      value: 1.04
+      propertyPath: m_Axis.x
+      value: 68.75
       objectReference: {fileID: 0}
     - target: {fileID: 373756854400215511, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
         type: 3}
-      propertyPath: m_UseLimits
-      value: 1
+      propertyPath: m_Anchor.y
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 373756854400215511, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
         type: 3}
       propertyPath: m_Limits.max
-      value: 30
+      value: 53.2
       objectReference: {fileID: 0}
     - target: {fileID: 373756854400215511, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
         type: 3}
       propertyPath: m_Limits.min
-      value: -30
+      value: -53.2
       objectReference: {fileID: 0}
     - target: {fileID: 373756854400215511, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
         type: 3}
-      propertyPath: m_ExtendedLimits
+      propertyPath: m_Motor.force
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 373756854400215511, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 2.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 3029205097142867909, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 3029205097142867909, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.49140003
-      objectReference: {fileID: 0}
-    - target: {fileID: 3029205097142867909, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 3029205097142867909, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3064881775243938795, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.8483148
-      objectReference: {fileID: 0}
-    - target: {fileID: 3064881775243938795, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 2.8678765
-      objectReference: {fileID: 0}
-    - target: {fileID: 3064881775243938795, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.045536757
-      objectReference: {fileID: 0}
-    - target: {fileID: 3064881775243938795, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -0.11907458
       objectReference: {fileID: 0}
     - target: {fileID: 4152832420146852886, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
         type: 3}
@@ -1733,13 +1693,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8062174906870367911, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
         type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1353624885}
+    - target: {fileID: 8062174906870367911, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
+        type: 3}
       propertyPath: maxSpeed
-      value: 25
+      value: 4.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062174906870367911, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
+        type: 3}
+      propertyPath: baseSpeed
+      value: 1.04
       objectReference: {fileID: 0}
     - target: {fileID: 8062174906870367911, guid: 454eac8c59cfcdd4b8078f08aacb5aa9,
         type: 3}
       propertyPath: speedIncreaseRate
-      value: 3.5
+      value: 0.33
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2027,7 +1997,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839803326}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17147206, y: -1.6268612e-15, z: -1.0458317e-16, w: 0.985189}
+  m_LocalRotation: {x: 0.17147204, y: -0.000000032826502, z: 0.0000000057134493, w: 0.985189}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

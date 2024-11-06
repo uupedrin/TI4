@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerColisions : MonoBehaviour
 {
-    void OnCollisionEnter(Collision col)
+    void OnControllerColliderHit(ControllerColliderHit hit)
     {
         // if(col.transform.CompareTag(""))
         // {
@@ -15,13 +15,13 @@ public class PlayerColisions : MonoBehaviour
         // {
             
         // }
-        if(col.transform.CompareTag("Obstaculo"))
+        if(hit.transform.CompareTag("Obstaculo"))
         {
             //GetDamage do player
         }
 
         PlatformTremble platform;
-        if(col.transform.TryGetComponent<PlatformTremble>(out platform))
+        if(hit.transform.TryGetComponent<PlatformTremble>(out platform))
             platform.ActiveRoutine();
     }
 }

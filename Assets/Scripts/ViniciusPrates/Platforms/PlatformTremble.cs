@@ -11,6 +11,7 @@ public class PlatformTremble : MonoBehaviour
     [SerializeField] float _smoothTremble = 1.0f;
     float _crashingTimingStart, _timing;
     bool _isCrashing, isCrashed;
+    [SerializeField] bool ajustarCollider = true;
     [SerializeField] Transform _platformBody;
 
     Action Crashed, Regenerated;
@@ -19,6 +20,10 @@ public class PlatformTremble : MonoBehaviour
     {
         Crashed += OnCrash;
         Regenerated += OnRegen;
+        GetComponent<Rigidbody>().useGravity = false;
+        if(ajustarCollider)
+             GetComponent<BoxCollider>().size = _platformBody.localScale;
+
     }
 
     public void ActiveRoutine()
