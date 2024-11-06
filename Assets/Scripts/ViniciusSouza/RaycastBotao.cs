@@ -39,10 +39,20 @@ public class RaycastBotao : MonoBehaviour
     {
         if (other.CompareTag("Botao"))
         { 
-            DesligarLasers desligarlaser = other.GetComponent<DesligarLasers>();
-
-            if (desligarlaser != null)
-                desligarlaser.NotificarObserver();
+            DesligarLasers desligarLaser = other.GetComponent<DesligarLasers>();
+            if (desligarLaser != null)
+            {
+                desligarLaser.NotificarObserver();
+            }
+            GameObject outroObjeto = GameObject.Find("PortaPassarFase");
+            if (outroObjeto != null)
+            {
+                PortaAtivar scriptOutro = outroObjeto.GetComponent<PortaAtivar>();
+                if (scriptOutro != null)
+                {
+                    scriptOutro.Ativar();
+                }
+            }
         }
     }
 }

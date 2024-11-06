@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1147183214837457634}
+  - component: {fileID: 5398267284181587186}
+  - component: {fileID: 6617529044691370082}
   m_Layer: 0
   m_Name: MesaButao
   m_TagString: Untagged
@@ -26,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8114875656383808768}
@@ -36,6 +38,39 @@ Transform:
   - {fileID: 8809326580145318129}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5398267284181587186
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032711873577546752}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.2281297, z: 1.9130089}
+  m_Center: {x: 1.324426e-17, y: 0.36478764, z: 0.016556978}
+--- !u!114 &6617529044691370082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032711873577546752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5312a66900e66ab4583fb6e256798653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2075093641828884776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52,7 +87,7 @@ PrefabInstance:
     - target: {fileID: 2748707426711901573, guid: 19388e8d51d82264c9a253190fec5bae,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.958
+      value: 0.708
       objectReference: {fileID: 0}
     - target: {fileID: 2748707426711901573, guid: 19388e8d51d82264c9a253190fec5bae,
         type: 3}
@@ -131,7 +166,7 @@ PrefabInstance:
     - target: {fileID: 4597578725961822049, guid: cdaef8dba137c3442b56ff46f8e4193e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.56
+      value: 0.31
       objectReference: {fileID: 0}
     - target: {fileID: 4597578725961822049, guid: cdaef8dba137c3442b56ff46f8e4193e,
         type: 3}
@@ -215,7 +250,7 @@ PrefabInstance:
     - target: {fileID: 8204510677586227187, guid: 6a8681c9a18691b43bc88f0552fc9c4f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.143
+      value: 0.893
       objectReference: {fileID: 0}
     - target: {fileID: 8204510677586227187, guid: 6a8681c9a18691b43bc88f0552fc9c4f,
         type: 3}
@@ -294,7 +329,7 @@ PrefabInstance:
     - target: {fileID: 729010858663365417, guid: c5f37233564156b44b4c3a4fb865e493,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.903
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 729010858663365417, guid: c5f37233564156b44b4c3a4fb865e493,
         type: 3}
