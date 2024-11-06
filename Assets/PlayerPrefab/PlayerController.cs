@@ -149,12 +149,17 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("Pulo");
             pulo = true;
             velocidadeMovimento = Vector3.zero;
-            velocidadeMovimento.y = Mathf.Sqrt(puloAltura * 2 * gravidade);
+            velocidadeMovimento.y = Mathf.Sqrt(puloAltura * gravidade);
             if(alternatingPlatforms != null) alt.Alternate();
             podePuloDoplo = false;
         }
         else if(value.canceled)
-        velocidadeMovimento = Vector3.zero;
+        {
+            //velocidadeMovimento = Vector3.zero;
+            if(velocidadeMovimento.y > 0)
+            velocidadeMovimento.y = Mathf.Sqrt((puloAltura/10) * 2 * gravidade);
+        }
+        
 
     }
     public bool NoChao() => characterController.isGrounded;
