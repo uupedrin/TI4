@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     [Header("Config Pular")]
     [SerializeField] private float gravidade = 9.81f;
     [SerializeField] private float puloAltura = 2.0f;
+    [SerializeField] private float molaAltura = 8.0f;
     private Vector3 velocidadeMovimento;
     [SerializeField] private bool chao;
     [SerializeField] private bool pulo;
@@ -210,6 +211,13 @@ public class PlayerController : MonoBehaviour
             gravidadeBool = true;
             rolamento = false;
         }
+    }
+
+    public void Mola()
+    {
+        animator.SetTrigger("Pulo");
+            pulo = true;
+            velocidadeMovimento.y = Mathf.Sqrt(molaAltura * gravidade);
     }
 
 }

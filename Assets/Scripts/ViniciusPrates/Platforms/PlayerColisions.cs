@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerColisions : MonoBehaviour
 {
+    [SerializeField] private PlayerController player;
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         // if(col.transform.CompareTag(""))
@@ -18,6 +19,15 @@ public class PlayerColisions : MonoBehaviour
         if(hit.transform.CompareTag("Obstaculo"))
         {
             //GetDamage do player
+        }
+        if(hit.transform.CompareTag("Espinhos"))
+        {
+            Debug.Log("Morte");
+        }
+        if(hit.transform.CompareTag("Mola"))
+        {
+            if(hit.transform.position.y < transform.position.y)
+            player.Mola();
         }
 
         PlatformTremble platform;

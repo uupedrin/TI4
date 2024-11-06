@@ -8,6 +8,8 @@ TagManager:
   - InimigoInteracao
   - Obstaculo
   - PontoEntrega
+  - Espinhos
+  - Mola
   layers:
   - Default
   - TransparentFX
