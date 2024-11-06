@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
+using UnityEngine.UI;
 
 public class Drone : MonoBehaviour
 {
-    [SerializeField] GameObject _mesa ,prefab;
+    [SerializeField] GameObject _mesa, prefab;
     [SerializeField] float _speed;
     [SerializeField] Transform MeioSala, mesaSpawn;
     [SerializeField] private bool indo, voltando, meio;
@@ -15,25 +16,35 @@ public class Drone : MonoBehaviour
     private Vector3 startPos;
     private int p;
     [SerializeField] private Vector3 startT;
-    void Start()
+    [SerializeField] private int maxMesas = 5;
+    private int mesasInstanciadas = 0;
+    [SerializeField] private TextMeshProUGUI mesasText;
+    private List<GameObject> mesasCriadas = new List<GameObject>(); 
+
+    void Awake()
     {
         startT = transform.position;
+        _mesa = Instantiate(prefab, mesaSpawn.position, mesaSpawn.rotation, transform);
+        mesasCriadas.Add(_mesa);
+        mesasInstanciadas++;
     }
 
+    void Start(){
+        AtualizarTextoMesas();
+    }
     void Update()
     {
 
-
     }
+
     public void Colocar(Transform Pos)
     {
         transformAtual = Pos;
         startPos = transform.position;
         meio = true;
         StartCoroutine(MoveObject());
-
     }
-    
+
     IEnumerator MoveObject()
     {
         while (meio || indo || voltando)
@@ -60,7 +71,6 @@ public class Drone : MonoBehaviour
                     _mesa.transform.SetParent(null);
                     _mesa.GetComponent<Rigidbody>().useGravity = true;
                     yield return new WaitForSeconds(timeEspera);
-
                 }
             }
             else if (voltando)
@@ -70,11 +80,41 @@ public class Drone : MonoBehaviour
                 {
                     voltando = false;
                     startPos = transform.position;
-                    _mesa = Instantiate(prefab, mesaSpawn.position, mesaSpawn.rotation, transform);
 
+                    if (mesasInstanciadas < maxMesas)
+                    {
+                        _mesa = Instantiate(prefab, mesaSpawn.position, mesaSpawn.rotation, transform);
+                        mesasCriadas.Add(_mesa);
+                        mesasInstanciadas++;
+                        AtualizarTextoMesas();
+                    }
+                    else
+                    {
+                        Debug.Log("Número máximo de mesas instanciadas atingido.");
+                    }
                 }
             }
             yield return null;
         }
+    }
+    public void DestruirUltimaMesa()
+    {
+        if (mesasCriadas.Count > 1)
+        {
+            GameObject ultimaMesa = mesasCriadas[0];
+            mesasCriadas.RemoveAt(0);
+            Destroy(ultimaMesa);
+            mesasInstanciadas--;
+            AtualizarTextoMesas();
+        }
+        else
+        {
+            Debug.Log("Não há mesas para destruir.");
+        }
+    }
+
+    private void AtualizarTextoMesas()
+    {
+        mesasText.text = "Mesas: " + mesasInstanciadas + "/" + maxMesas;
     }
 }
