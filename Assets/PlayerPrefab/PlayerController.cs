@@ -40,8 +40,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool podePuloDoplo;
     public bool queda = false;
     #endregion
+    #region Dash var
+    [Header("Config Dash")]
+    public bool rolamento = false;
+    [SerializeField] AnimationCurve rolamentoCurva;
+    private float tempoRolamento;
+    [SerializeField] float velocidadeRolamento;
+    [SerializeField] float DashTempo;
+    [SerializeField] float DashSpeed;
+    [SerializeField] bool Dash = true;
+    #endregion
     #region Verificacao
     [Header("Verificacão")]
+    [SerializeField] float timerRolamento;
     GameObject alternatingPlatforms;
     AlternatingPlatforms alt;
     #endregion
@@ -68,6 +79,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
 
+        animator.SetBool("Run", run);
         chao = NoChao();
         animator.SetBool("Chao", chao);
 
@@ -78,6 +90,7 @@ public class PlayerController : MonoBehaviour
 
         if (NoChao())
         {
+            Dash = true;
             caindo = false;
             podePuloDoplo = true;
             animator.SetBool("Caindo", false);
@@ -128,8 +141,8 @@ public class PlayerController : MonoBehaviour
     {
         if (correAbl)
         {
-            run = value.started || value.performed;
-            animator.SetBool("Run", value.started || value.performed);
+            //run = value.started || value.performed;
+            
         }
     }
 
@@ -168,5 +181,37 @@ public class PlayerController : MonoBehaviour
     {
         podeMover = true;
     }
+
+     public void RolamentoInput(InputAction.CallbackContext value)
+    {
+            if(!NoChao())
+            StartCoroutine(Rolamento());
+    }
+    IEnumerator Rolamento()
+    {
+
+        if (Dash)
+        {
+            rolamento = true;
+            timerRolamento = 0;
+            Dash = false;
+
+
+            while (timerRolamento < DashTempo)
+            {
+                float speed = rolamentoCurva.Evaluate(timerRolamento);
+                gravidadeBool = false;
+                Vector3 dir = (transform.forward * DashSpeed);
+                velocidadeMovimento = Vector3.zero;
+                characterController.Move(dir * Time.deltaTime);
+                timerRolamento += Time.deltaTime;
+                yield return null;
+            }
+            gravidadeBool = true;
+            rolamento = false;
+        }
+    }
+
 }
+
 

@@ -156,12 +156,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CollideAgainst:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 4294967295
   m_IgnoreTag: 
   m_TransparentLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_MinimumDistanceFromTarget: 0.1
+  m_MinimumDistanceFromTarget: 0.5
   m_AvoidObstacles: 1
   m_DistanceLimit: 0
   m_MinimumOcclusionTime: 0
@@ -358,7 +358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2277947396895786962}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1773324, y: 0.000000016933674, z: -0.000000003051248, w: 0.98415107}
+  m_LocalRotation: {x: 0.320605, y: 0.000000016298106, z: -0.000000005516451, w: 0.947213}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -730,8 +730,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5919200017831822201}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1773324, y: 0.000000016933674, z: -0.000000003051248, w: 0.98415107}
-  m_LocalPosition: {x: -0.105, y: 4.868, z: -7.41}
+  m_LocalRotation: {x: 0.320605, y: 0.000000016298106, z: -0.0000000055164504, w: 0.947213}
+  m_LocalPosition: {x: -0.105, y: 4.8681, z: -3.6101875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -900,7 +900,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7285730378915978839}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17147203, y: -0.000000041522608, z: 0.000000007227005, w: 0.985189}
+  m_LocalRotation: {x: 0.31220123, y: -0.000000016346338, z: 0.000000005371853, w: 0.950016}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1010,7 +1010,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8059542042740033684}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17147206, y: 4.0694893e-15, z: 3.5498843e-17, w: 0.985189}
+  m_LocalRotation: {x: 0.3122012, y: 0.00000001634634, z: -0.000000005371853, w: 0.950016}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1193,6 +1193,16 @@ PrefabInstance:
       objectReference: {fileID: 4134554061978500765}
     - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
         type: 3}
+      propertyPath: run
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
+      propertyPath: Dash
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
       propertyPath: PuloAbl
       value: 1
       objectReference: {fileID: 0}
@@ -1208,13 +1218,68 @@ PrefabInstance:
       objectReference: {fileID: 3646863224000110362}
     - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
         type: 3}
+      propertyPath: DashSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
+      propertyPath: DashTempo
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
       propertyPath: puloAltura
       value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
         type: 3}
+      propertyPath: PuloDoploAbl
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
       propertyPath: rolamentoAbl
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
+      propertyPath: velocidadeCorrida
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
+      propertyPath: velocidadeRolamento
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
+      propertyPath: rolamentoCurva.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
+      propertyPath: rolamentoCurva.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
+      propertyPath: rolamentoCurva.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
+      propertyPath: rolamentoCurva.m_Curve.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
+      propertyPath: rolamentoCurva.m_Curve.Array.data[0].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
+      propertyPath: rolamentoCurva.m_Curve.Array.data[1].tangentMode
+      value: 34
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
