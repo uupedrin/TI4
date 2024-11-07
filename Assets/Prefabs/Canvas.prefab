@@ -6563,6 +6563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 80453128858480454}
+  celularMenuUI: {fileID: 0}
   sensitivitySlider: {fileID: 8718749445204762916}
   freelookCamera: {fileID: 0}
   sensibilidadeTexto: {fileID: 4712811696092621912}
