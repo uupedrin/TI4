@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool podePuloDoplo;
     public bool queda = false;
     #endregion
+
     #region Dash var
     [Header("Config Dash")]
     public bool rolamento = false;
@@ -51,12 +52,31 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float DashSpeed;
     [SerializeField] bool Dash = true;
     #endregion
+
     #region Verificacao
     [Header("Verificacão")]
     [SerializeField] float timerRolamento;
     GameObject alternatingPlatforms;
     AlternatingPlatforms alt;
     #endregion
+
+    #region Dano
+    [Header("Dano")]
+    [SerializeField] int life = 3;
+    public int Life
+    {
+        get { return life; }
+        set => life = value;
+    }
+    float invuneravelCD = 1;
+    [SerializeField] bool podeTomarDano = true;
+    public bool PodeTomarDano
+    {
+        get { return podeTomarDano; }
+        set => podeTomarDano = false;
+    }
+    #endregion
+
     private void Awake()
     {
         // Cursor.lockState = CursorLockMode.Locked;
@@ -70,6 +90,12 @@ public class PlayerController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
     }
 
+    public IEnumerator Invuneravel()
+    {
+        podeTomarDano = false;
+        yield return new WaitForSeconds(invuneravelCD);
+        podeTomarDano = true;
+    }
 
     public void MoverPersonagem(InputAction.CallbackContext value)
     {
