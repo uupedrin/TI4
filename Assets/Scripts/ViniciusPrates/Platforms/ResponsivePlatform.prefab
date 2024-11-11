@@ -197,11 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846d3b543dc5eb346bfa20092e1f2dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hingeJoint: {fileID: 373756854400215511}
-  player: {fileID: 0}
-  baseSpeed: 10
-  maxSpeed: 25
-  speedIncreaseRate: 3.5
+  responsiveForce: 4.68
 --- !u!65 &3064881775243938795
 BoxCollider:
   m_ObjectHideFlags: 0
