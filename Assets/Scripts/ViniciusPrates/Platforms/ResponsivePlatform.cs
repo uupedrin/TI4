@@ -3,7 +3,6 @@ using UnityEngine;
 public class ResponsivePlatform : MonoBehaviour
 {
     private HingeJoint hinge;
-    private JointMotor motor;
     [SerializeField] private float responsiveForce;
     private Rigidbody rb;
 
@@ -11,18 +10,13 @@ public class ResponsivePlatform : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         hinge = GetComponent<HingeJoint>();
-
-        motor.targetVelocity = -30f;
     }
 
-    public void OnCollisionStay(Collision hit)
+    public void Move(CharacterController cc)
     {
-        Debug.Log("acertou");
-        if (hit.transform.CompareTag("Player"))
-        {
-            CharacterController cc = hit.transform.GetComponent<CharacterController>();
-            rb.AddForce(cc.velocity * responsiveForce);
-            Debug.Log(cc.velocity);
-        }
+        Vector3 dir = cc.velocity;
+        dir.y = 0;
+        rb.AddForce(cc.velocity * responsiveForce);
+        Debug.Log(cc.velocity);
     }
 }

@@ -50,13 +50,13 @@ public class ComportamentoInimigo : MonoBehaviour
         {
             corpo.position += (alvo.position - corpo.position).normalized * velocidade * Time.deltaTime;   
             _detectandoPlayer = ChecandoArredor();
-            yield return new WaitForSeconds(velocidade / 100);
+            yield return new WaitForSeconds(velocidade / 10);
         }
     }
 
     public void FixedUpdate()
     {
-        if((alvo.position - corpo.position).magnitude < 2f)
+        if((alvo.position - corpo.position).magnitude < 1f)
         {
             Debug.Log("trocando alvo");
             _rotaPosicao++;

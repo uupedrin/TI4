@@ -20,8 +20,10 @@ public class PlayerColisions : MonoBehaviour
             //GetDamage do player
         }
 
-        PlatformTremble platform;
-        if(hit.transform.TryGetComponent<PlatformTremble>(out platform))
+        if(hit.transform.TryGetComponent<PlatformTremble>(out PlatformTremble platform))
             platform.ActiveRoutine();
+        
+        if(hit.transform.TryGetComponent<ResponsivePlatform>(out ResponsivePlatform responsivePlatform))
+            responsivePlatform.Move(GetComponent<CharacterController>());
     }
 }
