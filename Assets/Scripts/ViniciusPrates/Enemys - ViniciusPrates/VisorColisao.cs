@@ -10,8 +10,8 @@ public class VisorColisao : MonoBehaviour
     {
         if(col.name == "Player")
         {
-            comportamento.SetDetectar(true);
-            comportamento.ChecandoArredor();
+            // comportamento.SetDetectar(true);
+            // comportamento.ChecandoArredor();
         }
     }
 }

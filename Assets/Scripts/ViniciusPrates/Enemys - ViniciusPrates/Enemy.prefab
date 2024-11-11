@@ -354,21 +354,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f1a1d54f74c54b46a261b0da2ba538d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pontoA: {fileID: 982544541717023111}
+  pontoB: {fileID: 624583968111149484}
   corpo: {fileID: 7517873132014339908}
-  navMesh: {fileID: 0}
-  velocidadePerseguicao: 5
-  velocidadePadrao: 3
-  velocidade: 0
-  alvo: {fileID: 982544541717023111}
-  player: {fileID: 0}
-  rota:
-  - {fileID: 982544541717023111}
-  - {fileID: 624583968111149484}
-  - {fileID: 1982079340215686741}
-  - {fileID: 605924763028996858}
-  - {fileID: 8614521133449679437}
-  - {fileID: 8893904787784848658}
-  _detectandoPlayer: 0
+  speed: 1
 --- !u!1 &7497390320350493441
 GameObject:
   m_ObjectHideFlags: 0
