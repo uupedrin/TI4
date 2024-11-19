@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 115285414}
-  vfxSource: {fileID: 0}
+  vfxSource: {fileID: 115285414}
   musicSlider: {fileID: 1859924910}
   vfxSlider: {fileID: 1381093956}
 --- !u!1 &118701419 stripped
