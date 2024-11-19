@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 167273371}
   - component: {fileID: 167273370}
   - component: {fileID: 167273375}
-  - component: {fileID: 167273374}
   m_Layer: 0
   m_Name: Plane (3)
   m_TagString: Untagged
@@ -231,33 +230,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -0.59, y: -356.661, z: 90.977}
---- !u!54 &167273374
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167273369}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &167273375
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -292,7 +264,6 @@ GameObject:
   - component: {fileID: 201652185}
   - component: {fileID: 201652184}
   - component: {fileID: 201652189}
-  - component: {fileID: 201652188}
   m_Layer: 0
   m_Name: Plane (5)
   m_TagString: Untagged
@@ -387,33 +358,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -179.223, y: -89.929016, z: 179.244}
---- !u!54 &201652188
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201652183}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &201652189
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -835,7 +779,6 @@ GameObject:
   - component: {fileID: 507111944}
   - component: {fileID: 507111943}
   - component: {fileID: 507111942}
-  - component: {fileID: 507111947}
   - component: {fileID: 507111946}
   m_Layer: 0
   m_Name: Plane
@@ -952,33 +895,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.000003, y: 0.000005220063, z: 10.000005}
   m_Center: {x: 0, y: 0.00000011920929, z: 0}
---- !u!54 &507111947
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507111941}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &636821528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,7 +1036,6 @@ GameObject:
   - component: {fileID: 688793767}
   - component: {fileID: 688793766}
   - component: {fileID: 688793771}
-  - component: {fileID: 688793770}
   m_Layer: 0
   m_Name: Plane (2)
   m_TagString: Untagged
@@ -1215,33 +1130,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0.613, y: -175.305, z: 89.037}
---- !u!54 &688793770
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688793765}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &688793771
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1410,7 +1298,6 @@ GameObject:
   - component: {fileID: 871022016}
   - component: {fileID: 871022015}
   - component: {fileID: 871022014}
-  - component: {fileID: 871022019}
   - component: {fileID: 871022018}
   m_Layer: 0
   m_Name: Plane (6)
@@ -1527,33 +1414,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.000001, y: 0.0000019339495, z: 10.000014}
   m_Center: {x: 0, y: 0, z: -0.0000038146973}
---- !u!54 &871022019
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871022013}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &1032100369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,7 +1532,6 @@ GameObject:
   - component: {fileID: 1077009466}
   - component: {fileID: 1077009465}
   - component: {fileID: 1077009464}
-  - component: {fileID: 1077009469}
   - component: {fileID: 1077009468}
   m_Layer: 0
   m_Name: Plane (9)
@@ -1789,33 +1648,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.000001, y: 0.0000019339495, z: 10.000014}
   m_Center: {x: 0.000000059604645, y: 0, z: 0}
---- !u!54 &1077009469
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077009463}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &1096977527 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f3603e2262111644cb806e283e028021,
@@ -2002,7 +1834,6 @@ GameObject:
   - component: {fileID: 1125557970}
   - component: {fileID: 1125557969}
   - component: {fileID: 1125557968}
-  - component: {fileID: 1125557973}
   - component: {fileID: 1125557972}
   m_Layer: 0
   m_Name: Plane (8)
@@ -2119,33 +1950,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.000001, y: 0.0000019339495, z: 10.000014}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &1125557973
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1125557967}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &1177200997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,7 +2188,6 @@ GameObject:
   - component: {fileID: 1286947527}
   - component: {fileID: 1286947526}
   - component: {fileID: 1286947531}
-  - component: {fileID: 1286947530}
   m_Layer: 0
   m_Name: Plane (7)
   m_TagString: Untagged
@@ -2479,33 +2282,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 1.009, y: -89.926, z: 90.534}
---- !u!54 &1286947530
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1286947525}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &1286947531
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2620,6 +2396,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Macarena Dance
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f3603e2262111644cb806e283e028021,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8668367131213500574, guid: f3603e2262111644cb806e283e028021,
         type: 3}
       propertyPath: m_CastShadows
@@ -2728,6 +2509,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Macarena Dance (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f3603e2262111644cb806e283e028021,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8668367131213500574, guid: f3603e2262111644cb806e283e028021,
         type: 3}
       propertyPath: m_CastShadows
@@ -2755,7 +2541,6 @@ GameObject:
   - component: {fileID: 1595792817}
   - component: {fileID: 1595792816}
   - component: {fileID: 1595792815}
-  - component: {fileID: 1595792820}
   - component: {fileID: 1595792819}
   m_Layer: 0
   m_Name: Plane (10)
@@ -2872,33 +2657,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.000001, y: 0.0000019339495, z: 10.000014}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &1595792820
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595792814}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &1598434456
 GameObject:
   m_ObjectHideFlags: 0
@@ -3550,10 +3308,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -3656,7 +3414,6 @@ GameObject:
   - component: {fileID: 2113148498}
   - component: {fileID: 2113148497}
   - component: {fileID: 2113148502}
-  - component: {fileID: 2113148501}
   m_Layer: 0
   m_Name: Plane (11)
   m_TagString: Untagged
@@ -3751,33 +3508,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 1.009, y: -89.926, z: 90.534}
---- !u!54 &2113148501
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2113148496}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &2113148502
 BoxCollider:
   m_ObjectHideFlags: 0
