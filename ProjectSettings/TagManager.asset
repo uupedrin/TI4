@@ -41,7 +41,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Player>Trigger
   - 
   m_SortingLayers:
   - name: Canvas
