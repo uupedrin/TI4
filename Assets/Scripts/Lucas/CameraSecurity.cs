@@ -7,7 +7,6 @@ public class CameraSecurity : MonoBehaviour
     [SerializeField] private float rotacaoMax;
     [SerializeField] private float Velocidade;
     [SerializeField] private float tempoEspera;
-    [SerializeField] private bool rotacao;
     private Quaternion vetorMax;
     private Quaternion vetorMin;
     private float rotacaoMin;

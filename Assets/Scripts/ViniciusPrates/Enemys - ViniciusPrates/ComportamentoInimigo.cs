@@ -8,14 +8,13 @@ public class ComportamentoInimigo : MonoBehaviour
     [SerializeField] Transform pontoA, pontoB, corpo;
     Vector3 dir;
     [SerializeField] float speed;
-    float x, length;
+    float pos;
+    [SerializeField] [Range(0, 1)] float posInicial;
 
     public void FixedUpdate()
     {
-        length = (pontoA.position - pontoB.position).magnitude;
-        x = Mathf.PingPong(Time.time * speed, 1);
-        float y = Mathf.PingPong(Time.time * speed, 1);
-        Ronda(pontoA, pontoB, x);
+        pos = Mathf.PingPong(posInicial + Time.time * speed, 1);
+        Ronda(pontoA, pontoB, pos);
     }
 
     public void Ronda(Transform pontoA, Transform pontoB, float x)
