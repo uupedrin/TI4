@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17276813, g: 0.21589187, b: 0.29782563, a: 1}
+  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -455,6 +455,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31534606}
   m_CullTransparentMesh: 1
+--- !u!224 &33386648 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1826419853794380383, guid: 182b31042dba36d40b5f1d79b8d71edc,
+    type: 3}
+  m_PrefabInstance: {fileID: 2116705933496826299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &37095830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1540,6 +1546,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139804607}
   m_CullTransparentMesh: 1
+--- !u!1 &151740146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 151740147}
+  - component: {fileID: 151740149}
+  - component: {fileID: 151740148}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &151740147
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151740146}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.4454, y: 1.4454, z: 1.4454}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 33386648}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 781.3, y: -428}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &151740148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151740146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 215e17f7c228fbc439f5a355e1d55f7b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &151740149
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151740146}
+  m_CullTransparentMesh: 1
 --- !u!1 &163783135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1968,6 +2049,7 @@ GameObject:
   - component: {fileID: 227445551}
   - component: {fileID: 227445550}
   - component: {fileID: 227445549}
+  - component: {fileID: 227445552}
   m_Layer: 5
   m_Name: Botao (36)
   m_TagString: Untagged
@@ -2089,6 +2171,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227445547}
   m_CullTransparentMesh: 1
+--- !u!114 &227445552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227445547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!4 &233823442 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -2107,6 +2202,7 @@ GameObject:
   - component: {fileID: 235594526}
   - component: {fileID: 235594525}
   - component: {fileID: 235594524}
+  - component: {fileID: 235594527}
   m_Layer: 5
   m_Name: Botao (42)
   m_TagString: Untagged
@@ -2228,6 +2324,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235594522}
   m_CullTransparentMesh: 1
+--- !u!114 &235594527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235594522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &242119138
 GameObject:
   m_ObjectHideFlags: 0
@@ -2240,6 +2349,7 @@ GameObject:
   - component: {fileID: 242119142}
   - component: {fileID: 242119141}
   - component: {fileID: 242119140}
+  - component: {fileID: 242119143}
   m_Layer: 5
   m_Name: Botao (25)
   m_TagString: Untagged
@@ -2361,6 +2471,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242119138}
   m_CullTransparentMesh: 1
+--- !u!114 &242119143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242119138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &255278979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,6 +2496,7 @@ GameObject:
   - component: {fileID: 255278983}
   - component: {fileID: 255278982}
   - component: {fileID: 255278981}
+  - component: {fileID: 255278984}
   m_Layer: 5
   m_Name: Botao (9)
   m_TagString: Untagged
@@ -2494,6 +2618,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255278979}
   m_CullTransparentMesh: 1
+--- !u!114 &255278984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255278979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!4 &268765666 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -2755,6 +2892,7 @@ GameObject:
   - component: {fileID: 330931489}
   - component: {fileID: 330931488}
   - component: {fileID: 330931487}
+  - component: {fileID: 330931490}
   m_Layer: 5
   m_Name: Botao (29)
   m_TagString: Untagged
@@ -2876,6 +3014,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330931485}
   m_CullTransparentMesh: 1
+--- !u!114 &330931490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330931485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &333927110
 GameObject:
   m_ObjectHideFlags: 0
@@ -4077,7 +4228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &436137968
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4144,6 +4295,7 @@ GameObject:
   - component: {fileID: 438617315}
   - component: {fileID: 438617314}
   - component: {fileID: 438617313}
+  - component: {fileID: 438617316}
   m_Layer: 5
   m_Name: Botao (19)
   m_TagString: Untagged
@@ -4265,6 +4417,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438617311}
   m_CullTransparentMesh: 1
+--- !u!114 &438617316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438617311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &462842223
 GameObject:
   m_ObjectHideFlags: 0
@@ -4653,6 +4818,7 @@ GameObject:
   - component: {fileID: 538003379}
   - component: {fileID: 538003378}
   - component: {fileID: 538003377}
+  - component: {fileID: 538003380}
   m_Layer: 5
   m_Name: Botao (26)
   m_TagString: Untagged
@@ -4774,6 +4940,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538003375}
   m_CullTransparentMesh: 1
+--- !u!114 &538003380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538003375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &547279248
 GameObject:
   m_ObjectHideFlags: 0
@@ -5103,6 +5282,7 @@ GameObject:
   - component: {fileID: 588605839}
   - component: {fileID: 588605838}
   - component: {fileID: 588605837}
+  - component: {fileID: 588605840}
   m_Layer: 5
   m_Name: Botao (27)
   m_TagString: Untagged
@@ -5224,6 +5404,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588605835}
   m_CullTransparentMesh: 1
+--- !u!114 &588605840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588605835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!4 &592147256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -5509,6 +5702,7 @@ GameObject:
   - component: {fileID: 643604902}
   - component: {fileID: 643604901}
   - component: {fileID: 643604900}
+  - component: {fileID: 643604903}
   m_Layer: 5
   m_Name: Botao (8)
   m_TagString: Untagged
@@ -5630,6 +5824,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643604898}
   m_CullTransparentMesh: 1
+--- !u!114 &643604903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643604898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1001 &648453957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6209,6 +6416,7 @@ GameObject:
   - component: {fileID: 703840085}
   - component: {fileID: 703840084}
   - component: {fileID: 703840083}
+  - component: {fileID: 703840086}
   m_Layer: 5
   m_Name: Botao (28)
   m_TagString: Untagged
@@ -6330,6 +6538,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 703840081}
   m_CullTransparentMesh: 1
+--- !u!114 &703840086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703840081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &706708657
 GameObject:
   m_ObjectHideFlags: 0
@@ -6939,6 +7160,7 @@ GameObject:
   - component: {fileID: 822832619}
   - component: {fileID: 822832618}
   - component: {fileID: 822832617}
+  - component: {fileID: 822832620}
   m_Layer: 5
   m_Name: Botao (15)
   m_TagString: Untagged
@@ -7060,6 +7282,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822832615}
   m_CullTransparentMesh: 1
+--- !u!114 &822832620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822832615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!4 &824353780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -7802,6 +8037,7 @@ GameObject:
   - component: {fileID: 920425580}
   - component: {fileID: 920425579}
   - component: {fileID: 920425578}
+  - component: {fileID: 920425581}
   m_Layer: 5
   m_Name: Botao (10)
   m_TagString: Untagged
@@ -7923,6 +8159,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920425576}
   m_CullTransparentMesh: 1
+--- !u!114 &920425581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920425576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &929013604
 GameObject:
   m_ObjectHideFlags: 0
@@ -8152,6 +8401,7 @@ GameObject:
   - component: {fileID: 960346294}
   - component: {fileID: 960346293}
   - component: {fileID: 960346292}
+  - component: {fileID: 960346295}
   m_Layer: 5
   m_Name: Botao (20)
   m_TagString: Untagged
@@ -8273,6 +8523,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960346290}
   m_CullTransparentMesh: 1
+--- !u!114 &960346295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960346290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &965712418
 GameObject:
   m_ObjectHideFlags: 0
@@ -8316,6 +8579,7 @@ GameObject:
   - component: {fileID: 970705651}
   - component: {fileID: 970705650}
   - component: {fileID: 970705649}
+  - component: {fileID: 970705652}
   m_Layer: 5
   m_Name: Botao (18)
   m_TagString: Untagged
@@ -8437,6 +8701,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970705647}
   m_CullTransparentMesh: 1
+--- !u!114 &970705652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970705647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!4 &977002759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -8714,6 +8991,7 @@ GameObject:
   - component: {fileID: 1020467351}
   - component: {fileID: 1020467350}
   - component: {fileID: 1020467349}
+  - component: {fileID: 1020467352}
   m_Layer: 5
   m_Name: Botao (1)
   m_TagString: Untagged
@@ -8835,6 +9113,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020467347}
   m_CullTransparentMesh: 1
+--- !u!114 &1020467352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020467347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!4 &1021222891 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -9079,6 +9370,7 @@ GameObject:
   - component: {fileID: 1045542162}
   - component: {fileID: 1045542161}
   - component: {fileID: 1045542160}
+  - component: {fileID: 1045542163}
   m_Layer: 5
   m_Name: Botao (13)
   m_TagString: Untagged
@@ -9200,6 +9492,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045542158}
   m_CullTransparentMesh: 1
+--- !u!114 &1045542163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045542158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &1049618631
 GameObject:
   m_ObjectHideFlags: 0
@@ -9549,6 +9854,7 @@ GameObject:
   - component: {fileID: 1111806753}
   - component: {fileID: 1111806752}
   - component: {fileID: 1111806751}
+  - component: {fileID: 1111806754}
   m_Layer: 5
   m_Name: Botao (22)
   m_TagString: Untagged
@@ -9670,6 +9976,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111806749}
   m_CullTransparentMesh: 1
+--- !u!114 &1111806754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111806749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!4 &1120774855 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -10557,6 +10876,7 @@ GameObject:
   - component: {fileID: 1249975172}
   - component: {fileID: 1249975171}
   - component: {fileID: 1249975170}
+  - component: {fileID: 1249975173}
   m_Layer: 5
   m_Name: Botao (44)
   m_TagString: Untagged
@@ -10678,6 +10998,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249975168}
   m_CullTransparentMesh: 1
+--- !u!114 &1249975173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249975168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1001 &1261098733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10779,6 +11112,7 @@ GameObject:
   - component: {fileID: 1271714655}
   - component: {fileID: 1271714654}
   - component: {fileID: 1271714653}
+  - component: {fileID: 1271714656}
   m_Layer: 5
   m_Name: Botao (21)
   m_TagString: Untagged
@@ -10900,6 +11234,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271714651}
   m_CullTransparentMesh: 1
+--- !u!114 &1271714656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271714651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!4 &1280601845 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -11346,6 +11693,7 @@ GameObject:
   - component: {fileID: 1317729982}
   - component: {fileID: 1317729981}
   - component: {fileID: 1317729980}
+  - component: {fileID: 1317729983}
   m_Layer: 5
   m_Name: Botao (17)
   m_TagString: Untagged
@@ -11467,6 +11815,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317729978}
   m_CullTransparentMesh: 1
+--- !u!114 &1317729983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317729978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1001 &1326256465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11604,6 +11965,7 @@ GameObject:
   - component: {fileID: 1354534462}
   - component: {fileID: 1354534461}
   - component: {fileID: 1354534460}
+  - component: {fileID: 1354534463}
   m_Layer: 5
   m_Name: Botao (4)
   m_TagString: Untagged
@@ -11725,6 +12087,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354534458}
   m_CullTransparentMesh: 1
+--- !u!114 &1354534463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354534458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &1358433513
 GameObject:
   m_ObjectHideFlags: 0
@@ -11737,6 +12112,7 @@ GameObject:
   - component: {fileID: 1358433517}
   - component: {fileID: 1358433516}
   - component: {fileID: 1358433515}
+  - component: {fileID: 1358433518}
   m_Layer: 5
   m_Name: Botao (23)
   m_TagString: Untagged
@@ -11858,6 +12234,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358433513}
   m_CullTransparentMesh: 1
+--- !u!114 &1358433518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358433513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!4 &1361187308 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -12390,6 +12779,7 @@ GameObject:
   - component: {fileID: 1403867770}
   - component: {fileID: 1403867769}
   - component: {fileID: 1403867768}
+  - component: {fileID: 1403867771}
   m_Layer: 5
   m_Name: Botao (43)
   m_TagString: Untagged
@@ -12511,6 +12901,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403867766}
   m_CullTransparentMesh: 1
+--- !u!114 &1403867771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403867766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1001 &1406467112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12606,6 +13009,7 @@ GameObject:
   - component: {fileID: 1407779145}
   - component: {fileID: 1407779144}
   - component: {fileID: 1407779143}
+  - component: {fileID: 1407779146}
   m_Layer: 5
   m_Name: Botao (24)
   m_TagString: Untagged
@@ -12727,6 +13131,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407779141}
   m_CullTransparentMesh: 1
+--- !u!114 &1407779146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407779141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1001 &1415826936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12910,6 +13327,7 @@ GameObject:
   - component: {fileID: 1425649684}
   - component: {fileID: 1425649683}
   - component: {fileID: 1425649682}
+  - component: {fileID: 1425649685}
   m_Layer: 5
   m_Name: Botao (6)
   m_TagString: Untagged
@@ -13031,6 +13449,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425649680}
   m_CullTransparentMesh: 1
+--- !u!114 &1425649685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425649680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &1442143099
 GameObject:
   m_ObjectHideFlags: 0
@@ -13043,6 +13474,7 @@ GameObject:
   - component: {fileID: 1442143103}
   - component: {fileID: 1442143102}
   - component: {fileID: 1442143101}
+  - component: {fileID: 1442143104}
   m_Layer: 5
   m_Name: Botao (31)
   m_TagString: Untagged
@@ -13164,6 +13596,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442143099}
   m_CullTransparentMesh: 1
+--- !u!114 &1442143104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442143099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &1445146472
 GameObject:
   m_ObjectHideFlags: 0
@@ -13655,6 +14100,7 @@ GameObject:
   - component: {fileID: 1479155487}
   - component: {fileID: 1479155486}
   - component: {fileID: 1479155485}
+  - component: {fileID: 1479155488}
   m_Layer: 5
   m_Name: Botao (39)
   m_TagString: Untagged
@@ -13776,6 +14222,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479155483}
   m_CullTransparentMesh: 1
+--- !u!114 &1479155488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479155483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!4 &1481619584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -13794,6 +14253,7 @@ GameObject:
   - component: {fileID: 1490379208}
   - component: {fileID: 1490379207}
   - component: {fileID: 1490379206}
+  - component: {fileID: 1490379209}
   m_Layer: 5
   m_Name: Botao (11)
   m_TagString: Untagged
@@ -13915,6 +14375,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490379204}
   m_CullTransparentMesh: 1
+--- !u!114 &1490379209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490379204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &1509045405
 GameObject:
   m_ObjectHideFlags: 0
@@ -14551,6 +15024,7 @@ GameObject:
   - component: {fileID: 1599402158}
   - component: {fileID: 1599402157}
   - component: {fileID: 1599402156}
+  - component: {fileID: 1599402159}
   m_Layer: 5
   m_Name: Botao (37)
   m_TagString: Untagged
@@ -14672,6 +15146,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599402154}
   m_CullTransparentMesh: 1
+--- !u!114 &1599402159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599402154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!4 &1601081072 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -14690,6 +15177,7 @@ GameObject:
   - component: {fileID: 1603746601}
   - component: {fileID: 1603746600}
   - component: {fileID: 1603746599}
+  - component: {fileID: 1603746602}
   m_Layer: 5
   m_Name: Botao (38)
   m_TagString: Untagged
@@ -14811,6 +15299,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603746597}
   m_CullTransparentMesh: 1
+--- !u!114 &1603746602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603746597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &1609913897
 GameObject:
   m_ObjectHideFlags: 0
@@ -15023,6 +15524,7 @@ GameObject:
   - component: {fileID: 1626727227}
   - component: {fileID: 1626727226}
   - component: {fileID: 1626727225}
+  - component: {fileID: 1626727228}
   m_Layer: 5
   m_Name: Botao (40)
   m_TagString: Untagged
@@ -15144,6 +15646,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626727223}
   m_CullTransparentMesh: 1
+--- !u!114 &1626727228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626727223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &1657329821
 GameObject:
   m_ObjectHideFlags: 0
@@ -15708,6 +16223,7 @@ GameObject:
   - component: {fileID: 1734002696}
   - component: {fileID: 1734002695}
   - component: {fileID: 1734002694}
+  - component: {fileID: 1734002697}
   m_Layer: 5
   m_Name: Botao (14)
   m_TagString: Untagged
@@ -15829,6 +16345,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734002692}
   m_CullTransparentMesh: 1
+--- !u!114 &1734002697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734002692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &1741694562
 GameObject:
   m_ObjectHideFlags: 0
@@ -15841,6 +16370,7 @@ GameObject:
   - component: {fileID: 1741694566}
   - component: {fileID: 1741694565}
   - component: {fileID: 1741694564}
+  - component: {fileID: 1741694567}
   m_Layer: 5
   m_Name: Botao (5)
   m_TagString: Untagged
@@ -15962,6 +16492,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741694562}
   m_CullTransparentMesh: 1
+--- !u!114 &1741694567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741694562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &1745608893
 GameObject:
   m_ObjectHideFlags: 0
@@ -16228,6 +16771,7 @@ GameObject:
   - component: {fileID: 1781742365}
   - component: {fileID: 1781742364}
   - component: {fileID: 1781742363}
+  - component: {fileID: 1781742366}
   m_Layer: 5
   m_Name: Botao (12)
   m_TagString: Untagged
@@ -16349,6 +16893,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781742361}
   m_CullTransparentMesh: 1
+--- !u!114 &1781742366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781742361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!4 &1783695977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -17524,6 +18081,7 @@ GameObject:
   - component: {fileID: 1866917303}
   - component: {fileID: 1866917302}
   - component: {fileID: 1866917301}
+  - component: {fileID: 1866917304}
   m_Layer: 5
   m_Name: Botao (3)
   m_TagString: Untagged
@@ -17645,6 +18203,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866917299}
   m_CullTransparentMesh: 1
+--- !u!114 &1866917304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866917299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &1868802990
 GameObject:
   m_ObjectHideFlags: 0
@@ -17909,6 +18480,7 @@ GameObject:
   - component: {fileID: 1912289873}
   - component: {fileID: 1912289872}
   - component: {fileID: 1912289871}
+  - component: {fileID: 1912289874}
   m_Layer: 5
   m_Name: Botao (30)
   m_TagString: Untagged
@@ -18030,6 +18602,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912289869}
   m_CullTransparentMesh: 1
+--- !u!114 &1912289874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912289869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &1913547896
 GameObject:
   m_ObjectHideFlags: 0
@@ -18374,6 +18959,7 @@ GameObject:
   - component: {fileID: 1950156884}
   - component: {fileID: 1950156883}
   - component: {fileID: 1950156882}
+  - component: {fileID: 1950156885}
   m_Layer: 5
   m_Name: Botao (2)
   m_TagString: Untagged
@@ -18495,6 +19081,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950156880}
   m_CullTransparentMesh: 1
+--- !u!114 &1950156885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950156880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &1954161091
 GameObject:
   m_ObjectHideFlags: 0
@@ -19133,6 +19732,141 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2945586ebc40a264d887c171b2cf0a3c, type: 3}
+--- !u!1 &2054168495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2054168496}
+  - component: {fileID: 2054168498}
+  - component: {fileID: 2054168497}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2054168496
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054168495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.297, y: 1.297, z: 1.297}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 33386648}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 998.30005, y: -420}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2054168497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054168495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: M
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 5a5b2006f1686b9419774dcbcda7b333, type: 2}
+  m_sharedMaterial: {fileID: 2913648031800122740, guid: 5a5b2006f1686b9419774dcbcda7b333,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2054168498
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054168495}
+  m_CullTransparentMesh: 1
 --- !u!1 &2060711875
 GameObject:
   m_ObjectHideFlags: 0
@@ -19700,6 +20434,7 @@ GameObject:
   - component: {fileID: 2088588356}
   - component: {fileID: 2088588355}
   - component: {fileID: 2088588354}
+  - component: {fileID: 2088588357}
   m_Layer: 5
   m_Name: Botao (16)
   m_TagString: Untagged
@@ -19821,6 +20556,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088588352}
   m_CullTransparentMesh: 1
+--- !u!114 &2088588357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088588352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &2089739340
 GameObject:
   m_ObjectHideFlags: 0
@@ -19833,6 +20581,7 @@ GameObject:
   - component: {fileID: 2089739344}
   - component: {fileID: 2089739343}
   - component: {fileID: 2089739342}
+  - component: {fileID: 2089739345}
   m_Layer: 5
   m_Name: Botao (7)
   m_TagString: Untagged
@@ -19954,6 +20703,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089739340}
   m_CullTransparentMesh: 1
+--- !u!114 &2089739345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089739340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6790ffe4435f7c49a50b382e3cef0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite: {fileID: 21300000, guid: 03f911a8a81b4df4f8dc8fd02d517754, type: 3}
 --- !u!1 &2095032694
 GameObject:
   m_ObjectHideFlags: 0
@@ -20272,12 +21034,12 @@ PrefabInstance:
     - target: {fileID: 91692562319738056, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000018953141
+      value: 0.000000018953145
       objectReference: {fileID: 0}
     - target: {fileID: 91692562319738056, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000032943555
+      value: -0.0000000032943561
       objectReference: {fileID: 0}
     - target: {fileID: 313563265689343634, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
@@ -20342,12 +21104,12 @@ PrefabInstance:
     - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000018953141
+      value: 0.000000018953145
       objectReference: {fileID: 0}
     - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000032943555
+      value: -0.000000003294356
       objectReference: {fileID: 0}
     - target: {fileID: 4988293756198672943, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
@@ -20442,17 +21204,17 @@ PrefabInstance:
     - target: {fileID: 6216095445974344380, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.16449593
+      value: 0.16449596
       objectReference: {fileID: 0}
     - target: {fileID: 6216095445974344380, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -4.8395856e-17
+      value: -0.00000002939635
       objectReference: {fileID: 0}
     - target: {fileID: 6216095445974344380, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -1.4031789e-16
+      value: 0.000000004902362
       objectReference: {fileID: 0}
     - target: {fileID: 6352444323921365055, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
@@ -21311,7 +22073,7 @@ PrefabInstance:
     - target: {fileID: 3426779677282264581, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3587942473853015790, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
@@ -21422,7 +22184,7 @@ PrefabInstance:
     - target: {fileID: 3955795049752610585, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3986928603923316639, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
@@ -22382,6 +23144,14 @@ PrefabInstance:
     - {fileID: 62146124635377686, guid: 182b31042dba36d40b5f1d79b8d71edc, type: 3}
     - {fileID: 40039624450117115, guid: 182b31042dba36d40b5f1d79b8d71edc, type: 3}
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1826419853794380383, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 151740147}
+    - targetCorrespondingSourceObject: {fileID: 1826419853794380383, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2054168496}
     - targetCorrespondingSourceObject: {fileID: 7363449335623582034, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
       insertIndex: 1
