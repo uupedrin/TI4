@@ -6,6 +6,10 @@ public class PlayerColisions : MonoBehaviour
     [SerializeField] private PlayerController player;
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        if(hit.transform.CompareTag("InimigoInteracao"))
+        {
+            Debug.Log("Colidiu - Procure o script Player Collisions para mais informações");
+        }
         if(hit.transform.CompareTag("Obstaculo"))
         {
             //GetDamage do player
