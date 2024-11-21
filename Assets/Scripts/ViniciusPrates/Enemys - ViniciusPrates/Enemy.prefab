@@ -263,6 +263,7 @@ GameObject:
   - component: {fileID: 2549674012702287153}
   - component: {fileID: 3674420410957109721}
   - component: {fileID: 2568761619352771976}
+  - component: {fileID: 2801302146310560197}
   m_Layer: 0
   m_Name: body
   m_TagString: Obstaculo
@@ -347,17 +348,30 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1073743863
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 3.1935575, z: 1}
+  m_Center: {x: 0, y: 0.5967788, z: 0}
+--- !u!114 &2801302146310560197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6537183584589856041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f626fe04355a7fa4cbc6fd4838540610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempo: 0
 --- !u!1 &6679515849833370486
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +564,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Intensity
       value: 113.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
+      propertyPath: tempo
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8278752773840924885, guid: 12f57145a71674442b897dca8145e77e,
         type: 3}
