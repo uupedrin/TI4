@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 411207495206623398}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.10500002, y: 4.868, z: -7.41}
+  m_LocalPosition: {x: -0.10500002, y: 4.8680005, z: -7.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -787,7 +787,7 @@ Transform:
   m_GameObject: {fileID: 5919200017831822201}
   serializedVersion: 2
   m_LocalRotation: {x: 0.17733242, y: 0.00000000846684, z: -0.0000000015256245, w: 0.98415107}
-  m_LocalPosition: {x: -0.10500002, y: 4.868, z: -7.41}
+  m_LocalPosition: {x: -0.10500002, y: 4.8680005, z: -7.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -956,7 +956,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7285730378915978839}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17147206, y: 5.2680892e-15, z: -2.0972587e-15, w: 0.985189}
+  m_LocalRotation: {x: 0.17147206, y: -1.6268612e-15, z: -1.0458317e-16, w: 0.985189}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1066,7 +1066,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8059542042740033684}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17147206, y: -1.6268612e-15, z: -1.0458317e-16, w: 0.985189}
+  m_LocalRotation: {x: 0.17147206, y: 1.6268612e-15, z: 1.0458317e-16, w: 0.985189}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1249,94 +1249,9 @@ PrefabInstance:
       objectReference: {fileID: 4134554061978500765}
     - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
         type: 3}
-      propertyPath: run
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: Dash
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: PuloAbl
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: correAbl
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
       propertyPath: myCamera
       value: 
       objectReference: {fileID: 3646863224000110362}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: DashSpeed
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: DashTempo
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: puloAltura
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: PuloDoploAbl
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: rolamentoAbl
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: velocidadeCorrida
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: velocidadeRolamento
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: rolamentoCurva.m_Curve.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: rolamentoCurva.m_Curve.Array.data[1].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: rolamentoCurva.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: rolamentoCurva.m_Curve.Array.data[1].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: rolamentoCurva.m_Curve.Array.data[0].tangentMode
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 7342486947707693967, guid: 48c432db6bbe3574ca4f144f27d1fabd,
-        type: 3}
-      propertyPath: rolamentoCurva.m_Curve.Array.data[1].tangentMode
-      value: 34
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8064870501255573144, guid: 48c432db6bbe3574ca4f144f27d1fabd, type: 3}

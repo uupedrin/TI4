@@ -177,21 +177,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallJump: 0
   AgarrarAbl: 0
-  PuloAbl: 0
-  PuloDoploAbl: 0
-  correAbl: 0
+  PuloAbl: 1
+  PuloDoploAbl: 1
+  correAbl: 1
   rolamentoAbl: 0
   podeMover: 1
   gravidadeBool: 1
   velocidade: 3
-  velocidadeCorrida: 6
+  velocidadeCorrida: 4
   rotVel: 10
   myCamera: {fileID: 0}
   animator: {fileID: 4890022487155186575}
-  run: 0
+  run: 1
   sideScroller: 0
   gravidade: 30
-  puloAltura: 1.5
+  puloAltura: 2.5
   molaAltura: 8
   chao: 0
   pulo: 0
@@ -201,16 +201,35 @@ MonoBehaviour:
   rolamento: 0
   rolamentoCurva:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  velocidadeRolamento: 0
-  DashTempo: 0
-  DashSpeed: 0
+  velocidadeRolamento: 5
+  DashTempo: 0.2
+  DashSpeed: 20
   Dash: 1
   timerRolamento: 0
   life: 3
+  podeTomarDano: 1
 --- !u!143 &5696166695483287149
 CharacterController:
   m_ObjectHideFlags: 0

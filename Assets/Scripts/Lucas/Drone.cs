@@ -9,7 +9,7 @@ public class Drone : MonoBehaviour
     [SerializeField] GameObject _mesa, prefab;
     [SerializeField] float _speed;
     [SerializeField] Transform MeioSala, mesaSpawn;
-    [SerializeField] private bool indo, voltando, meio;
+    [SerializeField] private bool indo, voltando, meio, colocando;
     [SerializeField] private Transform transformAtual;
     [SerializeField] private float timeEspera;
     private float startTime;
@@ -20,6 +20,8 @@ public class Drone : MonoBehaviour
     private int mesasInstanciadas = 0;
     [SerializeField] private TextMeshProUGUI mesasText;
     private List<GameObject> mesasCriadas = new List<GameObject>(); 
+    [SerializeField] private List<Transform> lugares = new List<Transform>();
+    private Transform atual;
 
     void Awake()
     {
@@ -39,10 +41,19 @@ public class Drone : MonoBehaviour
 
     public void Colocar(Transform Pos)
     {
-        transformAtual = Pos;
-        startPos = transform.position;
-        meio = true;
-        StartCoroutine(MoveObject());
+        if(colocando)
+        {
+            lugares.Add(Pos);
+            atual = Pos;
+        }
+        else
+        {
+            transformAtual = Pos;
+            startPos = transform.position;
+            meio = true;
+            colocando = true;
+            StartCoroutine(MoveObject());
+        }
     }
 
     IEnumerator MoveObject()
@@ -80,7 +91,7 @@ public class Drone : MonoBehaviour
                 {
                     voltando = false;
                     startPos = transform.position;
-
+                    colocando = false;
                     if (mesasInstanciadas < maxMesas)
                     {
                         _mesa = Instantiate(prefab, mesaSpawn.position, mesaSpawn.rotation, transform);
@@ -95,7 +106,16 @@ public class Drone : MonoBehaviour
                 }
             }
             yield return null;
+            
         }
+        if(lugares.Count != 0 && !colocando)
+            {
+                Colocar(lugares[0]);
+                lugares.Remove(atual);
+                yield return null;
+            }
+        yield return null;
+            
     }
     public void DestruirUltimaMesa()
     {
