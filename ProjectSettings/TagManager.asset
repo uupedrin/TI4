@@ -10,6 +10,7 @@ TagManager:
   - PontoEntrega
   - Espinhos
   - Mola
+  - Collectable
   layers:
   - Default
   - TransparentFX

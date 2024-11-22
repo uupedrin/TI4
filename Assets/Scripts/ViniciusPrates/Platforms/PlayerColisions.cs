@@ -38,5 +38,8 @@ public class PlayerColisions : MonoBehaviour
         
         if(hit.transform.TryGetComponent<ResponsivePlatform>(out ResponsivePlatform responsivePlatform))
             responsivePlatform.Move(GetComponent<CharacterController>());
+        
+        if(hit.transform.TryGetComponent<Collectable>(out Collectable collectable))
+            collectable.Collect();
     }
 }
