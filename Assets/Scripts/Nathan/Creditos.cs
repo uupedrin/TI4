@@ -5,7 +5,8 @@ using UnityEngine;
 public class Creditos : MonoBehaviour
 {
     public GameObject panel;
-    public Collider colliderToToggle;  
+    public Collider colliderToToggle1; 
+    public Collider colliderToToggle2; 
 
     private bool isPanelActive = false;
 
@@ -13,14 +14,17 @@ public class Creditos : MonoBehaviour
     {
         
         isPanelActive = !isPanelActive;
-
-        
         panel.SetActive(isPanelActive);
 
         
-        if (colliderToToggle != null)
+        if (colliderToToggle1 != null)
         {
-            colliderToToggle.enabled = !isPanelActive;
+            colliderToToggle1.enabled = !isPanelActive;
+        }
+
+        if (colliderToToggle2 != null)
+        {
+            colliderToToggle2.enabled = !isPanelActive;
         }
     }
 }

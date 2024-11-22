@@ -23,7 +23,7 @@ public class CameraAtaque : MonoBehaviour
     {
         yield return new WaitForSeconds(tempo);
         if(dentro)
-        SceneManager.LoadScene("Lose");
+        SceneManager.LoadScene("GameOver");
         
     }
 
