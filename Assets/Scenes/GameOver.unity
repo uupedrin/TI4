@@ -1821,7 +1821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a8d0a0840330314fbfc2187f4d77815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Fase1P1
+  sceneName: MAINGameScene
 --- !u!1 &1125557967
 GameObject:
   m_ObjectHideFlags: 0
@@ -3399,7 +3399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00981a835e9f4474a8f69dae5e3683fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Fase1P1
+  sceneName: MAINGameScene
   delay: 5
 --- !u!1 &2113148496
 GameObject:

@@ -1,29 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;  // Necessário para trabalhar com UI
+using UnityEngine.UI; 
 
 public class Quadro : MonoBehaviour
 {
-    public GameObject panel;  
+    public GameObject panel;
     public GameObject objectToToggle;
-    public Button closeButton;  // Botão para desativar o painel
-    public Collider colliderToToggle;  // Colisor a ser alternado
+    public Button closeButton; 
+    public Collider colliderToToggle1; 
+    public Collider colliderToToggle2; 
 
-    private bool isPanelActive = false; 
+    private bool isPanelActive = false;
 
     void Start()
     {
-        // Verifica se o botão foi atribuído e adiciona o listener para o método de desativação do painel
+        
         if (closeButton != null)
         {
             closeButton.onClick.AddListener(DeactivatePanel);
         }
-        
-        // Garante que o colisor esteja ativo no início
-        if (colliderToToggle != null)
+
+       
+        if (colliderToToggle1 != null)
         {
-            colliderToToggle.enabled = true;
+            colliderToToggle1.enabled = true;
+        }
+
+        if (colliderToToggle2 != null)
+        {
+            colliderToToggle2.enabled = true;
         }
     }
 
@@ -31,14 +37,19 @@ public class Quadro : MonoBehaviour
     {
         isPanelActive = !isPanelActive;
 
-        // Ativa ou desativa o painel e o objeto alternadamente
+       
         panel.SetActive(isPanelActive);
         objectToToggle.SetActive(!isPanelActive);
 
-        // Ativa ou desativa o colisor com base no estado do painel
-        if (colliderToToggle != null)
+        
+        if (colliderToToggle1 != null)
         {
-            colliderToToggle.enabled = !isPanelActive;
+            colliderToToggle1.enabled = !isPanelActive;
+        }
+
+        if (colliderToToggle2 != null)
+        {
+            colliderToToggle2.enabled = !isPanelActive;
         }
     }
 
@@ -46,13 +57,18 @@ public class Quadro : MonoBehaviour
     public void DeactivatePanel()
     {
         panel.SetActive(false);
-        objectToToggle.SetActive(true);  // Ativa o objeto quando o painel é desativado
+        objectToToggle.SetActive(true); // Ativa o objeto quando o painel é desativado
         isPanelActive = false;
 
-        // Ativa o colisor quando o painel é desativado
-        if (colliderToToggle != null)
+        // Ativa os colisores quando o painel é desativado
+        if (colliderToToggle1 != null)
         {
-            colliderToToggle.enabled = true;
+            colliderToToggle1.enabled = true;
+        }
+
+        if (colliderToToggle2 != null)
+        {
+            colliderToToggle2.enabled = true;
         }
     }
 }
