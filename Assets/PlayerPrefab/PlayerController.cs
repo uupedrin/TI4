@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private Animator animator;
 	[SerializeField] private bool run;    
 	[SerializeField] private bool sideScroller;
+	private int xPos =1 , yPos = 1;
 	#endregion
 	#region Pulo var
 	[Header("Config Pular")]
@@ -159,13 +160,27 @@ public class PlayerController : MonoBehaviour
 		Vector3 right = myCamera.TransformDirection(Vector3.right);
 		Vector3 targetDirection = myInput.x * right + myInput.y * forward;
 
-		if (myInput != Vector2.zero && targetDirection.magnitude > 0.1f && podeMover)
-		{
-			float rotVelTemp = rotVel;
-			if(sideScroller) rotVelTemp *= 10;
-			Quaternion freeRotation = Quaternion.LookRotation(targetDirection.normalized);
-			transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), rotVelTemp * Time.deltaTime);
-		}
+			if (myInput != Vector2.zero && targetDirection.magnitude > 0.1f)
+			{
+					
+					float rotVelTemp = rotVel;
+					//podeMover = false; // Bloqueia o movimento durante a rotação
+				if(sideScroller) rotVelTemp *= 10;
+					Quaternion freeRotation  = Quaternion.LookRotation(targetDirection.normalized);
+
+					
+					Quaternion a = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), rotVelTemp *10* Time.deltaTime);
+					Quaternion b = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), rotVelTemp * Time.deltaTime);
+					if(Math.Abs(Math.Abs(a.eulerAngles.y) - Math.Abs(b.eulerAngles.y)) > 45f )
+					podeMover = false;
+					else
+					podeMover = true;
+					transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), rotVelTemp * Time.deltaTime);
+					
+					
+			}
+			
+		
 	}
 
 	public void Correr(InputAction.CallbackContext value)
@@ -203,7 +218,7 @@ public class PlayerController : MonoBehaviour
 		{
 			//velocidadeMovimento = Vector3.zero;
 			if(velocidadeMovimento.y > 0)
-			velocidadeMovimento.y = Mathf.Sqrt((puloAltura/10) * 2 * gravidade);
+			velocidadeMovimento.y = Mathf.Sqrt((puloAltura/5) * 2 * gravidade);
 		}
 	}
 	IEnumerator WaitToSmoke()

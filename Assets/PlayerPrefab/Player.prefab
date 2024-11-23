@@ -183,15 +183,15 @@ MonoBehaviour:
   rolamentoAbl: 0
   podeMover: 1
   gravidadeBool: 1
-  velocidade: 3
+  velocidade: 4
   velocidadeCorrida: 4
-  rotVel: 10
+  rotVel: 60
   myCamera: {fileID: 0}
   animator: {fileID: 4890022487155186575}
   run: 1
   sideScroller: 0
-  gravidade: 30
-  puloAltura: 2.5
+  gravidade: 25
+  puloAltura: 3
   molaAltura: 8
   chao: 0
   pulo: 0
