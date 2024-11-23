@@ -10,7 +10,7 @@ public class ColliderLaser : MonoBehaviour
     void Start()
     {
         Vector3 center = (a.position + b.position)/2;
-        Vector3 size = new Vector3(Mathf.Abs(a.position.x - b.position.x),0.1f,Mathf.Abs(a.position.z - b.position.z));
+        Vector3 size = new Vector3(Mathf.Abs(a.position.x - b.position.x),0.3f,0.3f);
         transform.position = center;
         colider.size = size;
     }
