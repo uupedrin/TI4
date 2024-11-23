@@ -688,18 +688,18 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 6452643730664950356, guid: 92a76cd9257283e49aa75a45d6e38f81,
+    m_Motion: {fileID: 6452643730664950356, guid: 53fe9abee890b774883be4df2de8a51f,
       type: 3}
-    m_Threshold: 1
+    m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: Blend
+    m_DirectBlendParameter: IdleState
     m_Mirror: 0
   m_BlendParameter: IdleState
   m_BlendParameterY: Blend
   m_MinThreshold: 0
-  m_MaxThreshold: 15
+  m_MaxThreshold: 0
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0
