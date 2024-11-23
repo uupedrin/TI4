@@ -33,6 +33,7 @@ public class Drone : MonoBehaviour
 
     void Start(){
         AtualizarTextoMesas();
+
     }
     void Update()
     {
@@ -111,7 +112,7 @@ public class Drone : MonoBehaviour
         if(lugares.Count != 0 && !colocando)
             {
                 Colocar(lugares[0]);
-                lugares.Remove(atual);
+                lugares.RemoveAt(0);
                 yield return null;
             }
         yield return null;
