@@ -4,27 +4,35 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    public int type;
-    [SerializeField] int scoreAdd;
-    public PlayerController player;
-    public GameManager instance;
+    public int type; 
+    [SerializeField] int scoreAdd; 
+    public PlayerController player; //botei teu case inteiro no trigger paulao, nao gostou vem x1 praça liberdade
 
-    public void Collect()
+    private void OnTriggerEnter(Collider other)
     {
-        switch(type)
+        
+        if (other.CompareTag("Player"))
         {
-            case 0:
-            instance.SumScore(scoreAdd);
-            break;
+            switch (type)
+            {
+                case 0:
+                    
+                    GameManager.instance.SumScore(scoreAdd);
+                    break;
 
-            case 1:
-            player.PuloDoploAbl = true;
-            break;
+                case 1:
+                    
+                    player.PuloDoploAbl = true;
+                    break;
 
-            case 2:
-            player.correAbl = true;
-            break;
+                case 2:
+                    
+                    player.correAbl = true;
+                    break;
+            }
+
+            
+            gameObject.SetActive(false);
         }
-        gameObject.SetActive(false);
     }
 }
