@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PortaAtivar : MonoBehaviour
 {
     [SerializeField] Collider otherCollider;
+    [SerializeField] string cena;
     public void Ativar(){
         if(otherCollider != null){
             OnTriggerEnter(otherCollider);
@@ -14,7 +15,7 @@ public class PortaAtivar : MonoBehaviour
     }
     void OnTriggerEnter(Collider other){
         if(other.gameObject.CompareTag("Player")){
-            SceneManager.LoadScene("Fase1V2");
+            SceneManager.LoadScene(cena);
         }
     }
 }
