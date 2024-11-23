@@ -185,7 +185,7 @@ MonoBehaviour:
   gravidadeBool: 1
   velocidade: 4
   velocidadeCorrida: 4
-  rotVel: 60
+  rotVel: 10
   myCamera: {fileID: 0}
   animator: {fileID: 4890022487155186575}
   run: 1
