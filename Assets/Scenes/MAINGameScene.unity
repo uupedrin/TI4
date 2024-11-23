@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -178,23 +178,53 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 91692562319738056, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.05472271
+      objectReference: {fileID: 0}
+    - target: {fileID: 91692562319738056, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016933674
+      value: 0.032802496
       objectReference: {fileID: 0}
     - target: {fileID: 91692562319738056, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000003051248
+      value: -0.0017987092
+      objectReference: {fileID: 0}
+    - target: {fileID: 313563265689343634, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.43334043
+      objectReference: {fileID: 0}
+    - target: {fileID: 313563265689343634, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.657999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.43334043
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.657999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.989208
       objectReference: {fileID: 0}
     - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016933674
+      value: 0.032818694
       objectReference: {fileID: 0}
     - target: {fileID: 3646863224000110362, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000003051248
+      value: -0.0014738595
       objectReference: {fileID: 0}
     - target: {fileID: 4988293756198672943, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
@@ -248,23 +278,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5690171957393297261, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.044839714
+      objectReference: {fileID: 0}
+    - target: {fileID: 5690171957393297261, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000000847577
+      value: 0.032818694
       objectReference: {fileID: 0}
     - target: {fileID: 5690171957393297261, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000014752071
+      value: -0.0014738595
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216095445974344380, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.044839714
       objectReference: {fileID: 0}
     - target: {fileID: 6216095445974344380, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000000847577
+      value: 0.032818694
       objectReference: {fileID: 0}
     - target: {fileID: 6216095445974344380, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000014752071
+      value: -0.0014738595
       objectReference: {fileID: 0}
     - target: {fileID: 8306649777573717108, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
