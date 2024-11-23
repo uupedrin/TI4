@@ -75,6 +75,11 @@ public class PlayerController : MonoBehaviour
 		set => podeTomarDano = false;
 	}
 	#endregion
+	
+	#region Events
+	public event Action PlayerJustJumped;
+	public event Action EmitSmoke;
+	#endregion
 
 	private void Awake()
 	{
@@ -171,8 +176,6 @@ public class PlayerController : MonoBehaviour
 			
 		}
 	}
-
-	public event Action PlayerJustJumped;
 	
 	public void Pulo(InputAction.CallbackContext value)
 	{
@@ -183,6 +186,7 @@ public class PlayerController : MonoBehaviour
 			pulo = true;
 			velocidadeMovimento.y = Mathf.Sqrt(puloAltura * 2 * gravidade);
 			PlayerJustJumped?.Invoke();
+			StartCoroutine(WaitToSmoke());
 		}
 		else if (value.started && !NoChao() && podePuloDoplo && PuloDoploAbl)
 		{
@@ -191,7 +195,8 @@ public class PlayerController : MonoBehaviour
 			pulo = true;
 			velocidadeMovimento = Vector3.zero;
 			velocidadeMovimento.y = Mathf.Sqrt(puloAltura * gravidade);
-			PlayerJustJumped?.Invoke();
+			//PlayerJustJumped?.Invoke();
+			EmitSmoke?.Invoke();
 			podePuloDoplo = false;
 		}
 		else if(value.canceled)
@@ -200,8 +205,11 @@ public class PlayerController : MonoBehaviour
 			if(velocidadeMovimento.y > 0)
 			velocidadeMovimento.y = Mathf.Sqrt((puloAltura/10) * 2 * gravidade);
 		}
-		
-
+	}
+	IEnumerator WaitToSmoke()
+	{
+		yield return new WaitForSeconds(.2f);
+		EmitSmoke?.Invoke();
 	}
 	public bool NoChao() => characterController.isGrounded;
 
@@ -224,6 +232,7 @@ public class PlayerController : MonoBehaviour
 			timerRolamento = 0;
 			Dash = false;
 			animator.SetTrigger("Dash");
+			EmitSmoke?.Invoke();
 
 			while (timerRolamento < DashTempo)
 			{
