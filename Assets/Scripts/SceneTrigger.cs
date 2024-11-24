@@ -41,18 +41,18 @@ public class SceneTrigger : MonoBehaviour
 	
 	private void UnloadScenes(Collider other)
 	{
-		other.GetComponent<CharacterController>().enabled = false;
-		for (int i = 0; i < _scenesToUnload.Length; i++)
-		{
-			for (int j = 0; j < SceneManager.sceneCount; j++)
-			{
-				Scene loadedScene = SceneManager.GetSceneAt(j);
-				if(loadedScene.name == _scenesToUnload[i].SceneName)
-				{
-					SceneManager.UnloadSceneAsync(_scenesToUnload[i]);
-					break;
-				}
-			}
-		}
+		// other.GetComponent<CharacterController>().enabled = false;
+		// for (int i = 0; i < _scenesToUnload.Length; i++)
+		// {
+		// 	for (int j = 0; j < SceneManager.sceneCount; j++)
+		// 	{
+		// 		Scene loadedScene = SceneManager.GetSceneAt(j);
+		// 		if(loadedScene.name == _scenesToUnload[i].SceneName)
+		// 		{
+		// 			SceneManager.UnloadSceneAsync(_scenesToUnload[i]);
+		// 			break;
+		// 		}
+		// 	}
+		// }
 	}
 }
