@@ -50,13 +50,12 @@ public class GameLoader : MonoBehaviour
 	
 	IEnumerator TPPlayer()
 	{
+		player.GetComponent<CharacterController>().enabled = false;
 		yield return new WaitForSeconds(.05f);
 		foreach (GameObject child in firstLoadedScene.GetRootGameObjects())
 		{
 			if(child.name == "SPAWN")
 			{
-				Debug.Log(child.transform.position);
-				player.GetComponent<CharacterController>().enabled = false;
 				player.transform.position = child.transform.position;
 				player.transform.rotation = child.transform.rotation;
 				player.GetComponent<CharacterController>().enabled = true;
