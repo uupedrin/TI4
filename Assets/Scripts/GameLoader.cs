@@ -51,7 +51,7 @@ public class GameLoader : MonoBehaviour
 	IEnumerator TPPlayer()
 	{
 		player.GetComponent<CharacterController>().enabled = false;
-		yield return new WaitForSeconds(.05f);
+		yield return new WaitForSeconds(.09f);
 		foreach (GameObject child in firstLoadedScene.GetRootGameObjects())
 		{
 			if(child.name == "SPAWN")
@@ -79,7 +79,7 @@ public class GameLoader : MonoBehaviour
 			if(loadedScene.name == sceneToLoad.SceneName)
 			{
 				isSceneLoaded = true;
-				if(firstLoadedScene.name == "Null") SceneManager.UnloadSceneAsync(firstLoadedScene);
+				//if(firstLoadedScene.name == "Null") SceneManager.UnloadSceneAsync(firstLoadedScene);
 				firstLoadedScene = SceneManager.GetSceneAt(j);
 				break;
 			}
@@ -87,7 +87,7 @@ public class GameLoader : MonoBehaviour
 		if(!isSceneLoaded)
 		{
 			SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
-			if(firstLoadedScene.name == "Null") SceneManager.UnloadSceneAsync(firstLoadedScene);
+			//if(firstLoadedScene.name == "Null") SceneManager.UnloadSceneAsync(firstLoadedScene);
 			firstLoadedScene = SceneManager.GetSceneByName(sceneToLoad.SceneName);
 		}
 	}
