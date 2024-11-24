@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] float velocidadeRolamento;
 	[SerializeField] float DashTempo;
 	[SerializeField] float DashSpeed;
-	[SerializeField] bool Dash = true;
+	[SerializeField] public bool Dash = true;
 	#endregion
 
 	#region Verificacao

@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour
 
     void LoadScene()
     {
-        
+        Debug.Log("TImer");
         SceneManager.LoadScene(sceneName);
     }
 }

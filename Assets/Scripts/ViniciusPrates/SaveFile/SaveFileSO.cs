@@ -9,8 +9,8 @@ public class SaveFileSO : ScriptableObject
     public string currentSceneName;
     public Vector3 postition;
     public int score;
-    public bool powerUpDash;
-    public bool powerUpDoubleJump;
+    public bool Dash;
+    public bool PuloDoploAbl;
 
     public void SaveToFile(string filePath)
     {

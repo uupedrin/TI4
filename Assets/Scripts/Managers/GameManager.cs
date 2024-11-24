@@ -38,24 +38,25 @@ public class GameManager : MonoBehaviour
 
 	public void SaveGame()
 	{
-		PlayerMovement player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-		//saveFile.postition = player.transform.position;
-		saveFile.powerUpDash = player.PowerUpDash;
-		saveFile.powerUpDoubleJump = player.PowerUpDoubleJump;
-		saveFile.sceneName = SceneManager.GetActiveScene().name;
-		//saveFile.currentSceneName = currentCheckPoint;
+		PlayerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+		saveFile.PuloDoploAbl = player.PuloDoploAbl;
+		saveFile.Dash = player.Dash;
 		saveFile.score = this.score;
+		//saveFile.postition = player.transform.position;
+		//saveFile.currentSceneName = currentCheckPoint;
 		saveFile.SaveToFile(Application.persistentDataPath + "/SaveFile.json");
 		Debug.Log("SavedGame");
+		Debug.Log(Application.persistentDataPath);
 	}
 
 	public void LoadSavedGame()
 	{
 		saveFile.LoadFromFile(Application.persistentDataPath + "/SaveFile.json");
-		PlayerMovement player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+		PlayerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 		this.score = saveFile.score;
-		player.transform.position = saveFile.postition;
-		player.PowerUpDash = saveFile.powerUpDash;
+		player.Dash = saveFile.Dash;
+		player.PuloDoploAbl = saveFile.PuloDoploAbl;
+		//player.transform.position = saveFile.postition;
 		//currentCheckPoint = saveFile.currentSceneName;
 		Debug.Log("LoadedSavedGame");
 	}
