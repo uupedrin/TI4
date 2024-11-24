@@ -243,7 +243,7 @@ public class PlayerController : MonoBehaviour
 
 	 public void RolamentoInput(InputAction.CallbackContext value)
 	{
-			if(!NoChao())
+			if(!characterController.isGrounded)
 			StartCoroutine(Rolamento());
 	}
 	IEnumerator Rolamento()
@@ -277,6 +277,8 @@ public class PlayerController : MonoBehaviour
 	{
 		animator.SetTrigger("Pulo");
 			pulo = true;
+
+			coyoteTimeCounter = 0;
 			velocidadeMovimento.y = Mathf.Sqrt(molaAltura * gravidade);
 	}
 
