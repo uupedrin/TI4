@@ -10,7 +10,7 @@ public class SceneTrigger : MonoBehaviour
 	private void OnTriggerEnter(Collider other)
 	{
 		LoadScenes();
-		UnloadScenes();
+		UnloadScenes(other);
 	}
 	
 	// private void LoadScenes()
@@ -39,8 +39,9 @@ public class SceneTrigger : MonoBehaviour
 		GameLoader.instance.SetScene(_sceneToLoad);
 	}
 	
-	private void UnloadScenes()
+	private void UnloadScenes(Collider other)
 	{
+		other.GetComponent<CharacterController>().enabled = false;
 		for (int i = 0; i < _scenesToUnload.Length; i++)
 		{
 			for (int j = 0; j < SceneManager.sceneCount; j++)
