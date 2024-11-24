@@ -282,6 +282,11 @@ public class PlayerController : MonoBehaviour
 			velocidadeMovimento.y = Mathf.Sqrt(molaAltura * gravidade);
 	}
 
+	public void CHEAT()
+	{
+		GameManager.instance.cheat = !GameManager.instance.cheat;
+	}
+
 }
 
 

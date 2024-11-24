@@ -50,7 +50,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""name"": ""Correr"",
                     ""type"": ""Button"",
                     ""id"": ""95eede5b-3f2a-45e4-a2b6-007221e5a59f"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -68,7 +68,16 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""name"": ""Rolamento"",
                     ""type"": ""Button"",
                     ""id"": ""cf171e34-3764-44d2-a35f-48b3f8046bcd"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Cheat"",
+                    ""type"": ""Button"",
+                    ""id"": ""b3c3f912-9014-4911-8254-6a2ef2258490"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -228,6 +237,17 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""action"": ""Rolamento"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""15976961-b148-4156-ac47-75a083cdabfb"",
+                    ""path"": ""<Keyboard>/f12"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cheat"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -241,6 +261,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
         m_Move_Correr = m_Move.FindAction("Correr", throwIfNotFound: true);
         m_Move_Pulo = m_Move.FindAction("Pulo", throwIfNotFound: true);
         m_Move_Rolamento = m_Move.FindAction("Rolamento", throwIfNotFound: true);
+        m_Move_Cheat = m_Move.FindAction("Cheat", throwIfNotFound: true);
     }
 
     ~@Player()
@@ -312,6 +333,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
     private readonly InputAction m_Move_Correr;
     private readonly InputAction m_Move_Pulo;
     private readonly InputAction m_Move_Rolamento;
+    private readonly InputAction m_Move_Cheat;
     public struct MoveActions
     {
         private @Player m_Wrapper;
@@ -321,6 +343,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
         public InputAction @Correr => m_Wrapper.m_Move_Correr;
         public InputAction @Pulo => m_Wrapper.m_Move_Pulo;
         public InputAction @Rolamento => m_Wrapper.m_Move_Rolamento;
+        public InputAction @Cheat => m_Wrapper.m_Move_Cheat;
         public InputActionMap Get() { return m_Wrapper.m_Move; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -345,6 +368,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @Rolamento.started += instance.OnRolamento;
             @Rolamento.performed += instance.OnRolamento;
             @Rolamento.canceled += instance.OnRolamento;
+            @Cheat.started += instance.OnCheat;
+            @Cheat.performed += instance.OnCheat;
+            @Cheat.canceled += instance.OnCheat;
         }
 
         private void UnregisterCallbacks(IMoveActions instance)
@@ -364,6 +390,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @Rolamento.started -= instance.OnRolamento;
             @Rolamento.performed -= instance.OnRolamento;
             @Rolamento.canceled -= instance.OnRolamento;
+            @Cheat.started -= instance.OnCheat;
+            @Cheat.performed -= instance.OnCheat;
+            @Cheat.canceled -= instance.OnCheat;
         }
 
         public void RemoveCallbacks(IMoveActions instance)
@@ -388,5 +417,6 @@ public partial class @Player: IInputActionCollection2, IDisposable
         void OnCorrer(InputAction.CallbackContext context);
         void OnPulo(InputAction.CallbackContext context);
         void OnRolamento(InputAction.CallbackContext context);
+        void OnCheat(InputAction.CallbackContext context);
     }
 }

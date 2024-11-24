@@ -8,6 +8,8 @@ public class CameraAtaque : MonoBehaviour
     private bool dentro;
     void OnTriggerEnter(Collider other)
     {
+        if(GameManager.instance.cheat)
+        return;
         if(!dentro)
         {
             dentro = true;
