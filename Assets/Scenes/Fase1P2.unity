@@ -1661,6 +1661,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476856332}
   m_CullTransparentMesh: 1
+--- !u!1 &477366323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 477366324}
+  m_Layer: 0
+  m_Name: SPAWN
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &477366324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477366323}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.058, z: 39.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &481005840
 GameObject:
   m_ObjectHideFlags: 0
@@ -7737,7 +7768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1875748923}
   - component: {fileID: 1875748922}
-  - component: {fileID: 1875748921}
+  - component: {fileID: 1875748924}
   m_Layer: 30
   m_Name: Teleport
   m_TagString: Untagged
@@ -7745,19 +7776,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1875748921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875748920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34812f8cd145f824fabb7e7467e6b0cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  whereToGo: {fileID: 2078202769}
 --- !u!65 &1875748922
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7794,6 +7812,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1875748924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875748920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3f34580d4244799ac8ea47dccb026d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneToLoad:
+    m_SceneAsset: {fileID: 102900000, guid: f280090cda451ca459d8538353ebb549, type: 3}
+    m_SceneName: Fase1P3
+  _scenesToUnload:
+  - m_SceneAsset: {fileID: 102900000, guid: fc8999a70d0cb2746a99340bb5c34f43, type: 3}
+    m_SceneName: Fase1P2
 --- !u!1 &1877957696
 GameObject:
   m_ObjectHideFlags: 0
@@ -8567,78 +8603,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048499331}
   m_CullTransparentMesh: 1
---- !u!1 &2078202768
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2078202769}
-  - component: {fileID: 2078202770}
-  - component: {fileID: 2078202771}
-  m_Layer: 30
-  m_Name: WhereToGo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2078202769
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078202768}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 86.27}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2078202770
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078202768}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 2.6174853, z: 1}
-  m_Center: {x: 0, y: 0.8087429, z: 0}
---- !u!114 &2078202771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078202768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb3f34580d4244799ac8ea47dccb026d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scenesToLoad:
-  - m_SceneAsset: {fileID: 102900000, guid: f280090cda451ca459d8538353ebb549, type: 3}
-    m_SceneName: Fase1P3
-  _scenesToUnload:
-  - m_SceneAsset: {fileID: 102900000, guid: fc8999a70d0cb2746a99340bb5c34f43, type: 3}
-    m_SceneName: Fase1P2
 --- !u!1001 &2103154050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8941,6 +8905,7 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 477366324}
   - {fileID: 12618120}
   - {fileID: 310227482}
   - {fileID: 67347450}
@@ -8951,6 +8916,5 @@ SceneRoots:
   - {fileID: 397608815}
   - {fileID: 945602918}
   - {fileID: 1875748923}
-  - {fileID: 2078202769}
   - {fileID: 1581989355}
   - {fileID: 814699468}

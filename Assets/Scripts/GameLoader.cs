@@ -1,20 +1,74 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameLoader : MonoBehaviour
 {
+	public static GameLoader instance;
 	[SerializeField] SceneField sceneToLoad;
 	
 	[SerializeField] SceneTrigger sceneTrigger;
 
 	[SerializeField] Transform player;
+	Scene firstLoadedScene;
+	
+	public void SetScene(SceneField scene)
+	{
+		sceneToLoad = scene;
+		Reload();
+	}
 	
 	private void Awake()
 	{
+		if(instance is null)
+		{
+			instance = this;
+		}
+		else
+		{
+			Destroy(gameObject);
+		}
+		
 		sceneTrigger?.gameObject.SetActive(false);
 		LoadScenes();
+	}
+	
+	private void OnDestroy()
+	{
+		if(instance == this)
+		{
+			instance = null;
+		}
+	}
+	
+	private void Start()
+	{
+		StartCoroutine(TPPlayer());
+	}
+	
+	IEnumerator TPPlayer()
+	{
+		yield return new WaitForSeconds(.05f);
+		foreach (GameObject child in firstLoadedScene.GetRootGameObjects())
+		{
+			if(child.name == "SPAWN")
+			{
+				Debug.Log(child.transform.position);
+				player.GetComponent<CharacterController>().enabled = false;
+				player.transform.position = child.transform.position;
+				player.transform.rotation = child.transform.rotation;
+				player.GetComponent<CharacterController>().enabled = true;
+				break;
+			}
+		}
+	}
+	
+	public void Reload()
+	{
+		LoadScenes();
+		StartCoroutine(TPPlayer());
 	}
 	
 	private void LoadScenes()
@@ -26,25 +80,16 @@ public class GameLoader : MonoBehaviour
 			if(loadedScene.name == sceneToLoad.SceneName)
 			{
 				isSceneLoaded = true;
+				if(firstLoadedScene.name == "Null") SceneManager.UnloadSceneAsync(firstLoadedScene);
+				firstLoadedScene = SceneManager.GetSceneAt(j);
 				break;
 			}
 		}
 		if(!isSceneLoaded)
 		{
 			SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
+			if(firstLoadedScene.name == "Null") SceneManager.UnloadSceneAsync(firstLoadedScene);
+			firstLoadedScene = SceneManager.GetSceneByName(sceneToLoad.SceneName);
 		}
-	
-		if(sceneTrigger != null)
-		{
-			sceneTrigger.transform.position = player.position;
-			sceneTrigger.gameObject.SetActive(true);
-			StartCoroutine(DisableTrigger());			
-		}
-	}
-	
-	IEnumerator DisableTrigger()
-	{
-		yield return new WaitForSeconds(.1f);
-		sceneTrigger.gameObject.SetActive(false);
 	}
 }

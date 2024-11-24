@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MAINGameScene.unity
     guid: 6398fc0842704ef4da754b8ecb25ffd5
   - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: 8950bfaed19209446bb8bf9996ec0d4d
+  - enabled: 1
     path: Assets/Scenes/Fase1V1.unity
     guid: c621a105fa141ff42a4eb0e1a3d540b3
   - enabled: 1
@@ -35,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase1P2.unity
     guid: fc8999a70d0cb2746a99340bb5c34f43
+  - enabled: 1
+    path: Assets/Scenes/PowerUpCenaV.unity
+    guid: e6d7c72f919006e44972f4d978426ba7
   - enabled: 1
     path: Assets/Scenes/Fase1P3.unity
     guid: f280090cda451ca459d8538353ebb549
