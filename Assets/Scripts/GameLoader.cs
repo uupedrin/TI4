@@ -8,15 +8,14 @@ public class GameLoader : MonoBehaviour
 {
 	public static GameLoader instance;
 	[SerializeField] SceneField sceneToLoad;
-	SceneField lastLoadedScene;
-	[SerializeField] SceneTrigger sceneTrigger;
+	[SerializeField] Scene emptyScene;
 
 	[SerializeField] Transform player;
 	Scene firstLoadedScene;
+	Scene lastLoadedScene;
 	
 	public void SetScene(SceneField scene)
 	{
-		lastLoadedScene = sceneToLoad;
 		sceneToLoad = scene;
 		Reload();
 	}
@@ -32,7 +31,7 @@ public class GameLoader : MonoBehaviour
 			Destroy(gameObject);
 		}
 		
-		sceneTrigger?.gameObject.SetActive(false);
+		//sceneTrigger?.gameObject.SetActive(false);
 		LoadScenes();
 	}
 	
@@ -52,7 +51,7 @@ public class GameLoader : MonoBehaviour
 	IEnumerator TPPlayer()
 	{
 		player.GetComponent<CharacterController>().enabled = false;
-		yield return new WaitForSeconds(.1f);
+		yield return new WaitForSeconds(.3f);
 		foreach (GameObject child in firstLoadedScene.GetRootGameObjects())
 		{
 			if(child.name == "SPAWN")
@@ -81,7 +80,8 @@ public class GameLoader : MonoBehaviour
 			if(loadedScene.name == sceneToLoad.SceneName)
 			{
 				isSceneLoaded = true;
-				if(firstLoadedScene.name != "Null") SceneManager.UnloadSceneAsync(firstLoadedScene);
+				//if(firstLoadedScene.name != "Null") SceneManager.UnloadSceneAsync(firstLoadedScene);
+				lastLoadedScene = firstLoadedScene;
 				firstLoadedScene = SceneManager.GetSceneAt(j);
 				break;
 			}
@@ -90,12 +90,14 @@ public class GameLoader : MonoBehaviour
 		{
 			SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
 			//if(firstLoadedScene.name == "Null") SceneManager.UnloadSceneAsync(firstLoadedScene);
+			lastLoadedScene = firstLoadedScene;
 			firstLoadedScene = SceneManager.GetSceneByName(sceneToLoad.SceneName);
 		}
 	}
 	
 	private void UnloadScenes()
 	{
-		if(firstLoadedScene.name != "Null") SceneManager.UnloadSceneAsync(lastLoadedScene);
+		string scenename = lastLoadedScene.name;
+		if(lastLoadedScene.IsValid()) SceneManager.UnloadSceneAsync(lastLoadedScene);
 	}
 }
