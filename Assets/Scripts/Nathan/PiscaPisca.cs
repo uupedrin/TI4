@@ -4,30 +4,35 @@ using UnityEngine;
 
 public class PiscaPisca : MonoBehaviour
 {
-    public Light lightSource; 
-    public float intensityMin = 0f; 
-    public float intensityMax = 300f; 
-    public float interval = 1f; 
-    private float timer;
+	public GameObject [] luzes;
+	public float interval;
+	public float timer;
+	void Start()
+	{
+		timer = interval;
+	}
 
-    void Start()
-    {
-        if (lightSource == null)
-            lightSource = GetComponent<Light>(); 
-
-        timer = interval;
-    }
-
-    void Update()
-    {
-        timer -= Time.deltaTime;
-
-        
-        if (timer <= 0f)
-        {
-            
-            lightSource.intensity = (lightSource.intensity == intensityMax) ? intensityMin : intensityMax;
-            timer = interval; 
-        }
-    }
+	void Update()
+	{
+		timer -= Time.deltaTime;
+		
+		if (timer <= 0f)
+		{
+			if(luzes[0].activeSelf != true)
+			{
+				foreach(var luz in luzes)
+				{
+					luz.SetActive(true);
+					timer = interval;
+				}
+			}else if (luzes[0].activeSelf == true)
+			{
+				foreach(var luz in luzes)
+				{
+					luz.SetActive(false);
+					timer = interval;
+				}
+			}
+		}
+	}
 }
