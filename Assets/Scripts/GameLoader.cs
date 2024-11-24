@@ -8,7 +8,7 @@ public class GameLoader : MonoBehaviour
 {
 	public static GameLoader instance;
 	[SerializeField] SceneField sceneToLoad;
-	
+	SceneField lastLoadedScene;
 	[SerializeField] SceneTrigger sceneTrigger;
 
 	[SerializeField] Transform player;
@@ -16,6 +16,7 @@ public class GameLoader : MonoBehaviour
 	
 	public void SetScene(SceneField scene)
 	{
+		lastLoadedScene = sceneToLoad;
 		sceneToLoad = scene;
 		Reload();
 	}
@@ -51,7 +52,7 @@ public class GameLoader : MonoBehaviour
 	IEnumerator TPPlayer()
 	{
 		player.GetComponent<CharacterController>().enabled = false;
-		yield return new WaitForSeconds(.09f);
+		yield return new WaitForSeconds(.1f);
 		foreach (GameObject child in firstLoadedScene.GetRootGameObjects())
 		{
 			if(child.name == "SPAWN")
@@ -59,6 +60,7 @@ public class GameLoader : MonoBehaviour
 				player.transform.position = child.transform.position;
 				player.transform.rotation = child.transform.rotation;
 				player.GetComponent<CharacterController>().enabled = true;
+				UnloadScenes();
 				break;
 			}
 		}
@@ -79,7 +81,7 @@ public class GameLoader : MonoBehaviour
 			if(loadedScene.name == sceneToLoad.SceneName)
 			{
 				isSceneLoaded = true;
-				//if(firstLoadedScene.name == "Null") SceneManager.UnloadSceneAsync(firstLoadedScene);
+				if(firstLoadedScene.name != "Null") SceneManager.UnloadSceneAsync(firstLoadedScene);
 				firstLoadedScene = SceneManager.GetSceneAt(j);
 				break;
 			}
@@ -90,5 +92,10 @@ public class GameLoader : MonoBehaviour
 			//if(firstLoadedScene.name == "Null") SceneManager.UnloadSceneAsync(firstLoadedScene);
 			firstLoadedScene = SceneManager.GetSceneByName(sceneToLoad.SceneName);
 		}
+	}
+	
+	private void UnloadScenes()
+	{
+		if(firstLoadedScene.name != "Null") SceneManager.UnloadSceneAsync(lastLoadedScene);
 	}
 }
