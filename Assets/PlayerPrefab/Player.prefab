@@ -193,7 +193,10 @@ MonoBehaviour:
   gravidade: 25
   puloAltura: 3
   molaAltura: 8
+  coyoteTime: 0.5
+  coyoteTimeCounter: 0
   chao: 0
+  coyote: 0
   pulo: 0
   caindo: 0
   podePuloDoplo: 0

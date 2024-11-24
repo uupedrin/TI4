@@ -36,8 +36,11 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private float gravidade = 9.81f;
 	[SerializeField] private float puloAltura = 2.0f;
 	[SerializeField] private float molaAltura = 8.0f;
+	[SerializeField] private float coyoteTime;
+	[SerializeField] private float coyoteTimeCounter;
 	private Vector3 velocidadeMovimento;
 	[SerializeField] private bool chao;
+	[SerializeField] private bool coyote;
 	[SerializeField] private bool pulo;
 	[SerializeField] private bool caindo;
 	[SerializeField] private bool podePuloDoplo;
@@ -110,6 +113,11 @@ public class PlayerController : MonoBehaviour
 
 	private void Update()
 	{
+		if(characterController.isGrounded)
+		coyoteTimeCounter = coyoteTime;
+		else
+		coyoteTimeCounter -= Time.deltaTime;
+
 
 		animator.SetBool("Run", run);
 		chao = NoChao();
@@ -196,7 +204,7 @@ public class PlayerController : MonoBehaviour
 	{
 		if (value.started && NoChao())
 		{
-			
+			coyoteTimeCounter = 0;
 			animator.SetTrigger("Pulo");
 			pulo = true;
 			velocidadeMovimento.y = Mathf.Sqrt(puloAltura * 2 * gravidade);
@@ -226,7 +234,7 @@ public class PlayerController : MonoBehaviour
 		yield return new WaitForSeconds(.2f);
 		EmitSmoke?.Invoke();
 	}
-	public bool NoChao() => characterController.isGrounded;
+	public bool NoChao() => coyoteTimeCounter > 0;
 
 	void PodeMover()
 	{
