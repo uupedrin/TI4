@@ -27,7 +27,7 @@
                     "name": "Correr",
                     "type": "Button",
                     "id": "95eede5b-3f2a-45e4-a2b6-007221e5a59f",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -45,7 +45,16 @@
                     "name": "Rolamento",
                     "type": "Button",
                     "id": "cf171e34-3764-44d2-a35f-48b3f8046bcd",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Cheat",
+                    "type": "Button",
+                    "id": "b3c3f912-9014-4911-8254-6a2ef2258490",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -203,6 +212,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Rolamento",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "15976961-b148-4156-ac47-75a083cdabfb",
+                    "path": "<Keyboard>/f12",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cheat",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
