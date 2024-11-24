@@ -857,6 +857,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Loader
       objectReference: {fileID: 0}
+    - target: {fileID: 2539900900759562737, guid: c72eb4e8c0ab2714c9f1e220b9fe22fd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6706420085031624376, guid: c72eb4e8c0ab2714c9f1e220b9fe22fd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -912,6 +917,22 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1865838828}
+    - target: {fileID: 6767063371400618597, guid: c72eb4e8c0ab2714c9f1e220b9fe22fd,
+        type: 3}
+      propertyPath: sceneTrigger
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6767063371400618597, guid: c72eb4e8c0ab2714c9f1e220b9fe22fd,
+        type: 3}
+      propertyPath: sceneToLoad.m_SceneName
+      value: Lobby
+      objectReference: {fileID: 0}
+    - target: {fileID: 6767063371400618597, guid: c72eb4e8c0ab2714c9f1e220b9fe22fd,
+        type: 3}
+      propertyPath: sceneToLoad.m_SceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 8950bfaed19209446bb8bf9996ec0d4d,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
