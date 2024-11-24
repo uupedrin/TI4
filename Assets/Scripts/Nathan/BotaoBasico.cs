@@ -10,7 +10,7 @@ public class BotaoBasico : MonoBehaviour
     
     public void ChangeScene()
     {
-        
+        GameManager.instance.SaveGame();
         SceneManager.LoadScene(sceneName);
     }
 }

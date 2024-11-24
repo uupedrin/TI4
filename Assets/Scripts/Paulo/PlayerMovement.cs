@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Xml.Linq;
 using Unity.Mathematics;
 using Unity.VisualScripting;
@@ -36,6 +37,16 @@ public class PlayerMovement : MonoBehaviour
     [Header("Booleans")]
     [SerializeField] [Tooltip ("Whether or not the Double Jump power up is active")] bool powerUpDoubleJump;
     [SerializeField] [Tooltip ("Whether or not the Dash power up is active")] bool powerUpDash; 
+    public bool PowerUpDash
+    {
+        get { return powerUpDash; }
+        set { powerUpDash = value; }
+    }
+    public bool PowerUpDoubleJump
+    {
+        get { return powerUpDoubleJump; }
+        set { powerUpDoubleJump = value; }
+    }
 
     [Header("Dash Settings")]
     
