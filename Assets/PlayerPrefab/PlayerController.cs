@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+	public int health;
 	#region Habilidades
 	[Header("Habilidades")]
 	[SerializeField] private bool wallJump;

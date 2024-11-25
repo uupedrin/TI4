@@ -8545,6 +8545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempo: 0
+  spawn: {fileID: 693668040}
 --- !u!65 &1194719851
 BoxCollider:
   m_ObjectHideFlags: 0

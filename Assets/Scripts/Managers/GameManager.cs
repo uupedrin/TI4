@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public int score = 0;
+	public int health;
 	public bool cheat;
 	public bool vitoria1, vitoria2;
     void Awake()
