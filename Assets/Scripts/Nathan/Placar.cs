@@ -6,6 +6,7 @@ using TMPro;
 public class Placar : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreText; 
+    [SerializeField] private TextMeshProUGUI healthText; 
 
     void Update()
     {
@@ -13,6 +14,7 @@ public class Placar : MonoBehaviour
         if (GameManager.instance != null)
         {
             scoreText.text = "Pontos: " + GameManager.instance.score;
+            healthText.text = "Vida: " + CrossSceneReference.instance.playerController.health;
         }
     }
 }

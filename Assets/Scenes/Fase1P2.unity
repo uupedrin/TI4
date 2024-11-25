@@ -671,6 +671,11 @@ PrefabInstance:
       propertyPath: seMove
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4163152744286759943, guid: 719a3ca0ae10c0940b8c66ae5fcd013c,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 477366323}
     - target: {fileID: 9002239733824299253, guid: 719a3ca0ae10c0940b8c66ae5fcd013c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7788,6 +7793,11 @@ PrefabInstance:
       propertyPath: seMove
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4163152744286759943, guid: 719a3ca0ae10c0940b8c66ae5fcd013c,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 477366323}
     - target: {fileID: 9002239733824299253, guid: 719a3ca0ae10c0940b8c66ae5fcd013c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9044,6 +9054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempo: 0
+  spawn: {fileID: 477366323}
 --- !u!65 &1581989354
 BoxCollider:
   m_ObjectHideFlags: 0
