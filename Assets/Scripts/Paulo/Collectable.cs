@@ -21,13 +21,13 @@ public class Collectable : MonoBehaviour
                     break;
 
                 case 1:
-                    
-                    player.PuloDoploAbl = true;
+                    GameManager.instance.vitoria1 = true;
+                    CrossSceneReference.instance.playerController.PuloDoploAbl = true;
                     break;
 
                 case 2:
-                    
-                    player.correAbl = true;
+                    GameManager.instance.vitoria2 = true;
+                    CrossSceneReference.instance.playerController.rolamentoAbl = true;
                     break;
             }
 
