@@ -717,6 +717,16 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.0007549787
       objectReference: {fileID: 0}
+    - target: {fileID: 6352444323921365055, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_XAxis.m_MaxSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352444323921365055, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_YAxis.m_MaxSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8306649777573717108, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: m_Name
@@ -2043,6 +2053,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2840439115924192808, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3846499483086017565, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
       propertyPath: m_text
@@ -2057,6 +2072,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -146
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369253338190001417, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4703222721199502216, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
