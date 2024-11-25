@@ -5428,6 +5428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempo: 0
+  spawn: {fileID: 631215138}
 --- !u!1 &620992262 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3728463723741408896, guid: 182b31042dba36d40b5f1d79b8d71edc,
@@ -10019,6 +10020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempo: 0
+  spawn: {fileID: 0}
 --- !u!1001 &1299338720
 PrefabInstance:
   m_ObjectHideFlags: 0
