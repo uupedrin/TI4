@@ -178,7 +178,7 @@ MonoBehaviour:
   wallJump: 0
   AgarrarAbl: 0
   PuloAbl: 1
-  PuloDoploAbl: 1
+  PuloDoploAbl: 0
   correAbl: 1
   rolamentoAbl: 0
   podeMover: 1

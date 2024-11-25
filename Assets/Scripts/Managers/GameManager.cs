@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public int score = 0;
 	public bool cheat;
-
+	public bool vitoria1, vitoria2;
     void Awake()
 	{
 		if(instance != null && instance != this)

@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private bool PuloAbl;
 	[SerializeField] public bool PuloDoploAbl;
 	[SerializeField] public bool correAbl;
-	[SerializeField] private bool rolamentoAbl;
+	[SerializeField] public bool rolamentoAbl;
 	[SerializeField] private bool podeMover;
 	[SerializeField] private bool gravidadeBool;
 
@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private bool coyote;
 	[SerializeField] private bool pulo;
 	[SerializeField] private bool caindo;
+	[SerializeField] private bool cancel = true;
 	[SerializeField] private bool podePuloDoplo;
 	public bool queda = false;
 	#endregion
@@ -204,12 +205,13 @@ public class PlayerController : MonoBehaviour
 	{
 		if (value.started && NoChao())
 		{
-			coyoteTimeCounter = 0;
+			coyoteTimeCounter = -1;
 			animator.SetTrigger("Pulo");
 			pulo = true;
 			velocidadeMovimento.y = Mathf.Sqrt(puloAltura * 2 * gravidade);
 			PlayerJustJumped?.Invoke();
 			StartCoroutine(WaitToSmoke());
+			cancel = false;
 		}
 		else if (value.started && !NoChao() && podePuloDoplo && PuloDoploAbl)
 		{
@@ -222,11 +224,15 @@ public class PlayerController : MonoBehaviour
 			EmitSmoke?.Invoke();
 			podePuloDoplo = false;
 		}
-		else if(value.canceled)
+		else if(value.canceled && !cancel)
 		{
 			//velocidadeMovimento = Vector3.zero;
 			if(velocidadeMovimento.y > 0)
-			velocidadeMovimento.y = Mathf.Sqrt((puloAltura/5) * 2 * gravidade);
+			{
+				coyoteTimeCounter = -1;
+				velocidadeMovimento.y = Mathf.Sqrt((puloAltura/5) * 2 * gravidade);
+				cancel = true;
+			}
 		}
 	}
 	IEnumerator WaitToSmoke()
@@ -243,7 +249,7 @@ public class PlayerController : MonoBehaviour
 
 	 public void RolamentoInput(InputAction.CallbackContext value)
 	{
-			if(!characterController.isGrounded)
+			if(!characterController.isGrounded && rolamentoAbl)
 			StartCoroutine(Rolamento());
 	}
 	IEnumerator Rolamento()
