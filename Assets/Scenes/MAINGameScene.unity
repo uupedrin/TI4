@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18263802, g: 0.22834924, b: 0.30714586, a: 1}
+  m_IndirectSpecularColor: {r: 0.18263784, g: 0.2283489, b: 0.30714524, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -741,6 +741,18 @@ PrefabInstance:
       addedObject: {fileID: 993038298}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b55a93cf202ee847816253457841e2a, type: 3}
+--- !u!114 &960021861 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3316496209852070229, guid: 6b55a93cf202ee847816253457841e2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 960021860}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f5f8dc0d3efd4498ead2fe8e993814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &993038297
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,6 +2300,7 @@ MonoBehaviour:
   cheat: 0
   vitoria1: 0
   vitoria2: 0
+  player: {fileID: 960021861}
 --- !u!1001 &6778238506548450495
 PrefabInstance:
   m_ObjectHideFlags: 0
