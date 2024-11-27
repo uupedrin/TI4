@@ -8,6 +8,12 @@ public class GameLoader : MonoBehaviour
 {
 	public static GameLoader instance;
 	[SerializeField] SceneField sceneToLoad;
+	public SceneField SceneToLoad
+	{
+		get => sceneToLoad;
+		set => sceneToLoad = value;
+	}
+
 	[SerializeField] Scene emptyScene;
 
 	[SerializeField] Transform player;

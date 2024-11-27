@@ -12,8 +12,18 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private bool AgarrarAbl;
 	[SerializeField] private bool PuloAbl;
 	[SerializeField] public bool PuloDoploAbl;
+	public bool PodePuloDoploAbl
+	{
+		get => PuloDoploAbl;
+		set => PuloDoploAbl = value;
+	}
 	[SerializeField] public bool correAbl;
 	[SerializeField] public bool rolamentoAbl;
+	public bool PodeDashAbl
+	{
+		get => rolamentoAbl;
+		set => rolamentoAbl = value;
+	}
 	[SerializeField] private bool podeMover;
 	[SerializeField] private bool gravidadeBool;
 

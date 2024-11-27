@@ -8,7 +8,6 @@ public class SaidaNaPlaca : MonoBehaviour
 {
     void OnMouseDown()
     {
-        
         Application.Quit();
     }
 }
