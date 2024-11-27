@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
 	#endregion
     void Awake()
 	{
+		Load();
 		Debug.Log(Application.persistentDataPath);
 		if(instance != null && instance != this)
 		{
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour
 		player.PodePuloDoploAbl = saveFile.PuloDoploAbl;
 		player.PodeDashAbl = saveFile.Dash;
 		loader.SetScene(saveFile.currentScene);
+
 	}
 
     public void SumScore(int add)
