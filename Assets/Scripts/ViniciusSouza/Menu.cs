@@ -55,10 +55,10 @@ public class Menu : MonoBehaviour
         isPaused = false;
     }
 
-    void Pause()
+    void Pause() //altera o timescale pra 0 nao,, galera encrespou com o pause, se quiserem q volta so voltar aqui pra 0, celular/tablet continua com pause
     {
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.None;
         isPaused = true;
     }
