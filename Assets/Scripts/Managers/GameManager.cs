@@ -13,11 +13,10 @@ public class GameManager : MonoBehaviour
 	[SerializeField] GameLoader loader;
 
 	#region SaveFile
-	SaveFileSO saveFile;
+	[SerializeField] SaveFileSO saveFile;
 	#endregion
     void Awake()
 	{
-		Load();
 		Debug.Log(Application.persistentDataPath);
 		if(instance != null && instance != this)
 		{
@@ -29,6 +28,8 @@ public class GameManager : MonoBehaviour
 		}
 		//transform.SetParent(null);
 		DontDestroyOnLoad(gameObject);
+		if(saveFile.isSaved)
+			Load();
 	}
 
 	public void Save()
