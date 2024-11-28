@@ -1222,6 +1222,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263129539}
   m_CullTransparentMesh: 1
+--- !u!114 &1358870353 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6767063371400618597, guid: c72eb4e8c0ab2714c9f1e220b9fe22fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 6778238506548450495}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a37847518a7434882734e13090723a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1365356931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2321,7 +2333,8 @@ MonoBehaviour:
   vitoria1: 0
   vitoria2: 0
   player: {fileID: 960021861}
-  loader: {fileID: 0}
+  loader: {fileID: 1358870353}
+  saveFile: {fileID: 11400000, guid: ffe222cf9e1dead4298d115bb8810042, type: 2}
 --- !u!1001 &6778238506548450495
 PrefabInstance:
   m_ObjectHideFlags: 0
