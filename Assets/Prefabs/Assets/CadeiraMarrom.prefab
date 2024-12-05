@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3383894186431499892}
+  - component: {fileID: 5639077628753065391}
   m_Layer: 0
   m_Name: CadeiraMarrom
   m_TagString: Untagged
@@ -32,6 +33,27 @@ Transform:
   - {fileID: 3631908807191530134}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!65 &5639077628753065391
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6574816187204983438}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1588087, y: 0.90375245, z: 1.1828707}
+  m_Center: {x: -0.0024062395, y: 0.033686876, z: 0.07218593}
 --- !u!1001 &3885929918998965629
 PrefabInstance:
   m_ObjectHideFlags: 0
