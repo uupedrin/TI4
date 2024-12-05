@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8186000116153096876}
+  - component: {fileID: -7529009910731821972}
   m_Layer: 0
   m_Name: ArmarioFinoCinza
   m_TagString: Untagged
@@ -32,6 +33,27 @@ Transform:
   - {fileID: 6089980435051071697}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!65 &-7529009910731821972
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3750816042789901736}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8674536, y: 0.6070945, z: 1.729006}
+  m_Center: {x: -0.1798844, y: 0.002367273, z: 0.1136113}
 --- !u!1001 &5983398852067143482
 PrefabInstance:
   m_ObjectHideFlags: 0

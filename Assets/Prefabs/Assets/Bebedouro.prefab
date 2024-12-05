@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6384194028438009599}
+  - component: {fileID: 3075403975052115878}
   m_Layer: 0
   m_Name: Bebedouro
   m_TagString: Untagged
@@ -32,6 +33,27 @@ Transform:
   - {fileID: 942858705567234488}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!65 &3075403975052115878
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8126136267658769709}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.57638264, y: 0.46144825, z: 1.1247864}
+  m_Center: {x: -0.08373835, y: 0.00000011920929, z: 0.06239319}
 --- !u!1001 &765345314545950291
 PrefabInstance:
   m_ObjectHideFlags: 0

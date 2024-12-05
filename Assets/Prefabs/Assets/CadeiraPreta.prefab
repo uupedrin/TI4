@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 696050367818658229}
+  - component: {fileID: 1133801902816814027}
   m_Layer: 0
   m_Name: CadeiraPreta
   m_TagString: Untagged
@@ -32,6 +33,27 @@ Transform:
   - {fileID: 6172040005293003609}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!65 &1133801902816814027
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6846012276531734129}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.87895334, y: 0.75790757, z: 1.1654301}
+  m_Center: {x: -0.008069828, y: 9.484033e-16, z: 0.3167379}
 --- !u!1001 &5921605493033284786
 PrefabInstance:
   m_ObjectHideFlags: 0
