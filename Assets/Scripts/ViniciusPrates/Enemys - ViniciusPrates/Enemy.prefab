@@ -350,6 +350,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempo: 0
+  spawn: {fileID: 0}
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &6679515849833370486
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,8 +551,73 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
         type: 3}
+      propertyPath: drone
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
       propertyPath: tempo
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
+      propertyPath: endColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
+      propertyPath: endColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
+      propertyPath: endColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
+      propertyPath: endColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
+      propertyPath: corPadrao.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
+      propertyPath: corPadrao.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
+      propertyPath: corPadrao.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
+      propertyPath: corPadrao.r
+      value: 0.0339154
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
+      propertyPath: startColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
+      propertyPath: startColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
+      propertyPath: startColor.g
+      value: 0.9906887
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967295293947175915, guid: 12f57145a71674442b897dca8145e77e,
+        type: 3}
+      propertyPath: startColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8278752773840924885, guid: 12f57145a71674442b897dca8145e77e,
         type: 3}
