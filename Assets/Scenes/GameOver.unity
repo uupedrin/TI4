@@ -1151,6 +1151,54 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 0.0000030000228, z: 10.000001}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &690991355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 690991356}
+  - component: {fileID: 690991357}
+  m_Layer: 0
+  m_Name: piscaMAnager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &690991356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690991355}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.3586473, y: 9.33223, z: -15.840517}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &690991357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690991355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2580254b03d712c4c9f25353104029da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  luzes:
+  - {fileID: 789943848}
+  interval: 1
+  timer: 0
 --- !u!1 &789943848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,7 +1210,6 @@ GameObject:
   - component: {fileID: 789943849}
   - component: {fileID: 789943852}
   - component: {fileID: 789943851}
-  - component: {fileID: 789943850}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -1185,22 +1232,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -85.315, y: 0, z: 0}
---- !u!114 &789943850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789943848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2580254b03d712c4c9f25353104029da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lightSource: {fileID: 789943852}
-  intensityMin: 0
-  intensityMax: 20
-  interval: 0.5
 --- !u!114 &789943851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3581,3 +3612,4 @@ SceneRoots:
   - {fileID: 1361818453}
   - {fileID: 1408807935}
   - {fileID: 2069060785}
+  - {fileID: 690991356}
