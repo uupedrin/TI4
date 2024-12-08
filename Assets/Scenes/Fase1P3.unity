@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3226,6 +3226,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2019436246}
     m_Modifications:
+    - target: {fileID: 2801302146310560197, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 693668040}
     - target: {fileID: 4765058656582231545, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5132,6 +5137,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2019436246}
     m_Modifications:
+    - target: {fileID: 2801302146310560197, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 693668040}
     - target: {fileID: 5852412046149859586, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5330,6 +5340,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -18.026
       objectReference: {fileID: 0}
+    - target: {fileID: 2801302146310560197, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 693668040}
     - target: {fileID: 5852412046149859586, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7477,6 +7492,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -18.026
       objectReference: {fileID: 0}
+    - target: {fileID: 2801302146310560197, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 693668040}
     - target: {fileID: 5852412046149859586, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
         type: 3}
       propertyPath: m_LocalPosition.x
