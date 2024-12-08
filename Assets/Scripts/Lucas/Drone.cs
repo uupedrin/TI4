@@ -120,17 +120,17 @@ public class Drone : MonoBehaviour
     }
     public void DestruirUltimaMesa()
     {
-        if (mesasCriadas.Count > 1)
+        if (mesasCriadas.Count > 1) 
         {
-            GameObject ultimaMesa = mesasCriadas[0];
-            mesasCriadas.RemoveAt(0);
-            Destroy(ultimaMesa);
-            mesasInstanciadas--;
-            AtualizarTextoMesas();
+            GameObject penultimaMesa = mesasCriadas[mesasCriadas.Count - 2];
+            mesasCriadas.RemoveAt(mesasCriadas.Count - 2); 
+            Destroy(penultimaMesa); 
+            mesasInstanciadas--; 
+            AtualizarTextoMesas(); 
         }
         else
         {
-            Debug.Log("Não há mesas para destruir.");
+            Debug.Log("Não há mesas suficientes para destruir a penúltima.");
         }
     }
 

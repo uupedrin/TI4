@@ -309,6 +309,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &43366379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -437,6 +445,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &73977647
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,6 +694,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &78134155
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,6 +1010,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &97802003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1109,6 +1141,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &101761543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -1327,6 +1367,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &115927289
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,6 +2049,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &190660487
 GameObject:
   m_ObjectHideFlags: 0
@@ -2614,6 +2670,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &227445547
 GameObject:
   m_ObjectHideFlags: 0
@@ -4171,6 +4235,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &358935109
 GameObject:
   m_ObjectHideFlags: 0
@@ -4471,6 +4543,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &388229027 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -4695,6 +4775,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &401946363
 GameObject:
   m_ObjectHideFlags: 0
@@ -5116,6 +5204,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &427142290
 GameObject:
   m_ObjectHideFlags: 0
@@ -6437,6 +6533,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &560940466
 GameObject:
   m_ObjectHideFlags: 0
@@ -6680,6 +6784,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &588605835
 GameObject:
   m_ObjectHideFlags: 0
@@ -6768,7 +6880,7 @@ MonoBehaviour:
         m_MethodName: Colocar
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 547279249}
+          m_ObjectArgument: {fileID: 1554412483}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -7574,6 +7686,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &657773443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3955795049752610585, guid: 182b31042dba36d40b5f1d79b8d71edc,
@@ -8212,6 +8332,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &703427154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8335,6 +8463,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &703614428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8621,6 +8757,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &743893529
 GameObject:
   m_ObjectHideFlags: 0
@@ -8885,6 +9029,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &750404493 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -10071,6 +10223,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &855690416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -10799,6 +10959,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &920425576
 GameObject:
   m_ObjectHideFlags: 0
@@ -11474,7 +11642,7 @@ MonoBehaviour:
         m_MethodName: Colocar
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 679180931}
+          m_ObjectArgument: {fileID: 547279249}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -11901,6 +12069,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 631215138}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1012313797
 GameObject:
   m_ObjectHideFlags: 0
@@ -12792,6 +12968,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1111806749
 GameObject:
   m_ObjectHideFlags: 0
@@ -13067,6 +13251,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1125318846
 GameObject:
   m_ObjectHideFlags: 0
@@ -13946,6 +14138,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!120 &1210434410
 LineRenderer:
   serializedVersion: 2
@@ -15684,6 +15884,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1403867766
 GameObject:
   m_ObjectHideFlags: 0
@@ -15953,6 +16161,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1407779141
 GameObject:
   m_ObjectHideFlags: 0
@@ -16227,6 +16443,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1418696266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16350,6 +16574,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1424598740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16541,7 +16773,7 @@ MonoBehaviour:
         m_MethodName: Colocar
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 294912301}
+          m_ObjectArgument: {fileID: 1204830432}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -16776,7 +17008,7 @@ MonoBehaviour:
         m_MethodName: Colocar
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 671552389}
+          m_ObjectArgument: {fileID: 679180931}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -17332,6 +17564,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 631215138}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!65 &1488209504
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17441,7 +17681,7 @@ MonoBehaviour:
         m_MethodName: Colocar
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1657329822}
+          m_ObjectArgument: {fileID: 294912301}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -18280,7 +18520,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1609913899}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1811230795}
+        m_TargetAssemblyTypeName: Drone, Assembly-CSharp
+        m_MethodName: DestruirUltimaMesa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1609913899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19674,6 +19926,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1691929916
 GameObject:
   m_ObjectHideFlags: 0
@@ -19768,6 +20028,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1715372531
 GameObject:
   m_ObjectHideFlags: 0
@@ -20111,6 +20379,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1754995075
 GameObject:
   m_ObjectHideFlags: 0
@@ -20284,6 +20560,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1768395141
 GameObject:
   m_ObjectHideFlags: 0
@@ -21230,7 +21514,7 @@ PrefabInstance:
         type: 3}
       propertyPath: mesasText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1902138682}
     - target: {fileID: 3558464388212865881, guid: 736dbf584d2a91545acea3e1841a9003,
         type: 3}
       propertyPath: timeEspera
@@ -21659,6 +21943,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1850704628
 GameObject:
   m_ObjectHideFlags: 0
@@ -21887,6 +22179,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1862477501
 GameObject:
   m_ObjectHideFlags: 0
@@ -22006,7 +22306,7 @@ MonoBehaviour:
         m_MethodName: Colocar
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1204830432}
+          m_ObjectArgument: {fileID: 671552389}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -22366,6 +22666,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1892018055
 GameObject:
   m_ObjectHideFlags: 0
@@ -22782,7 +23090,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -446, y: 399}
+  m_AnchoredPosition: {x: -448, y: 399}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932902419
@@ -22841,7 +23149,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -22870,7 +23178,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 88.0699, w: 0}
+  m_margin: {x: 0, y: 0, z: 103.113, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -23320,6 +23628,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1971378357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4389711681569696825, guid: 2945586ebc40a264d887c171b2cf0a3c,
@@ -23561,6 +23877,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2007776934
 GameObject:
   m_ObjectHideFlags: 0
@@ -23922,6 +24246,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2052093889
 GameObject:
   m_ObjectHideFlags: 0
@@ -24298,6 +24630,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2070194746
 GameObject:
   m_ObjectHideFlags: 0
@@ -24573,6 +24913,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2080968383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24696,6 +25044,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2082488999
 GameObject:
   m_ObjectHideFlags: 0
@@ -24871,7 +25227,7 @@ MonoBehaviour:
         m_MethodName: Colocar
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1554412483}
+          m_ObjectArgument: {fileID: 1657329822}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -25487,6 +25843,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempo: 0
   spawn: {fileID: 0}
+  dentro: 0
+  cor: 0
+  volta: 0
+  drone: 0
+  objectMaterial: {fileID: 0}
+  corPadrao: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2143152315
 GameObject:
   m_ObjectHideFlags: 0
