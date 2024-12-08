@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 	#endregion
     void Awake()
 	{
-		Debug.Log(Application.persistentDataPath);
+		//Debug.Log(Application.persistentDataPath);
 		if(instance != null && instance != this)
 		{
 			Destroy(this);
