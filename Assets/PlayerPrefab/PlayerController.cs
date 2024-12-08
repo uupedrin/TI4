@@ -108,6 +108,7 @@ public class PlayerController : MonoBehaviour
 	private void Start()
 	{
 		CrossSceneReference.instance.playerController = this;
+		GameManager.instance.player = this;
 	}
 	
 	public IEnumerator Invuneravel()

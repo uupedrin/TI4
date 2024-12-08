@@ -52,6 +52,7 @@ public class GameLoader : MonoBehaviour
 	private void Start()
 	{
 		StartCoroutine(TPPlayer());
+		GameManager.instance.loader = this;
 	}
 	
 	IEnumerator TPPlayer()

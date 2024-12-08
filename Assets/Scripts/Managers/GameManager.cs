@@ -9,8 +9,9 @@ public class GameManager : MonoBehaviour
 	public int health;
 	public bool cheat;
 	public bool vitoria1, vitoria2;
-	[SerializeField] PlayerController player;
-	[SerializeField] GameLoader loader;
+	public PlayerController player;
+	public GameLoader loader;
+	public SkillsUI skillsUI;
 
 	#region SaveFile
 	[SerializeField] SaveFileSO saveFile;
@@ -45,6 +46,14 @@ public class GameManager : MonoBehaviour
 		saveFile.LoadFromFile(Application.persistentDataPath + "/SaveFile.json");
 		player.PodePuloDoploAbl = saveFile.PuloDoploAbl;
 		player.PodeDashAbl = saveFile.Dash;
+		if(saveFile.PuloDoploAbl)
+		{
+			skillsUI.ActiveDoubleUI();
+		}
+		if(saveFile.Dash)
+		{
+			skillsUI.ActiveDashUI();
+		}
 		loader.SetScene(saveFile.currentScene);
 
 	}
