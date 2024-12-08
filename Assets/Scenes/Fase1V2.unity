@@ -7781,6 +7781,7 @@ MonoBehaviour:
   resetButton: {fileID: 1609913898}
   newSprite: {fileID: 21300000, guid: 5cebc82cb6450ba4ea6265766e81cab8, type: 3}
   clickCountText: {fileID: 1902138682}
+  drone: {fileID: 0}
 --- !u!1 &663295094
 GameObject:
   m_ObjectHideFlags: 0
@@ -23090,8 +23091,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -448, y: 399}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -500, y: 392.09903}
+  m_SizeDelta: {x: 108.55, y: 63.802}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932902419
 MonoBehaviour:
@@ -23178,7 +23179,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 103.113, w: 0}
+  m_margin: {x: 0.014900418, y: 0, z: 0.3668327, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -26892,7 +26893,7 @@ PrefabInstance:
     - target: {fileID: 3426779677282264581, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3587942473853015790, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
