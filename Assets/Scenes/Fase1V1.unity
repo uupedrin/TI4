@@ -8425,6 +8425,7 @@ MonoBehaviour:
   resetButton: {fileID: 1609913898}
   newSprite: {fileID: 21300000, guid: 5cebc82cb6450ba4ea6265766e81cab8, type: 3}
   clickCountText: {fileID: 418920400}
+  drone: {fileID: 0}
 --- !u!1 &1012313797
 GameObject:
   m_ObjectHideFlags: 0

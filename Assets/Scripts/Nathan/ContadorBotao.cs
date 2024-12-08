@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // Importa o namespace do TextMeshPro
-
+using TMPro;
 
 public class ContadorBotao : MonoBehaviour
 {
@@ -15,39 +14,34 @@ public class ContadorBotao : MonoBehaviour
     public TextMeshProUGUI clickCountText; // Referência para o TextMeshPro na UI
 
     private List<Button> clickedButtons = new List<Button>(); // Lista de botões clicados
+    public Drone drone; // Referência ao script do Drone
 
     void Start()
     {
-        // Configura listeners para os botões
         foreach (Button button in buttons)
         {
             button.onClick.AddListener(() => OnButtonClicked(button));
         }
 
-        // Listener para o botão de resetar
         if (resetButton != null)
         {
             resetButton.onClick.AddListener(OnResetButtonClicked);
         }
 
-        // Atualiza o texto inicial no TextMeshPro
         UpdateClickCountText();
     }
 
     void OnButtonClicked(Button button)
     {
-        clickCount++; // Incrementa o contador
+        clickCount++;
 
-        // Adiciona o botão à lista se ainda não estiver nela
         if (!clickedButtons.Contains(button))
         {
             clickedButtons.Add(button);
         }
 
-        // Atualiza o texto no TextMeshPro
         UpdateClickCountText();
 
-        // Desativa os botões se o número máximo de cliques for atingido
         if (clickCount >= maxClicks)
         {
             foreach (Button btn in buttons)
@@ -61,22 +55,28 @@ public class ContadorBotao : MonoBehaviour
     {
         if (clickCount > 0)
         {
-            clickCount--; // Decrementa o contador
+            clickCount--;
 
-            // Altera o sprite do primeiro botão clicado e remove-o da lista
+            // Remover a última mesa (e não a penúltima)
+            if (drone != null)
+            {
+                drone.DestruirUltimaMesa(); // Remover a última mesa colocada
+            }
+
+            // Alterar o sprite do botão após a remoção da mesa
             if (clickedButtons.Count > 0)
             {
-                Button firstClicked = clickedButtons[0];
-                Image buttonImage = firstClicked.GetComponent<Image>();
+                // Alterar o sprite do último botão clicado
+                Button lastClickedButton = clickedButtons[clickedButtons.Count - 1];
+                Image buttonImage = lastClickedButton.GetComponent<Image>();
                 if (buttonImage != null && newSprite != null)
                 {
                     buttonImage.sprite = newSprite;
                 }
 
-                clickedButtons.RemoveAt(0);
+                clickedButtons.RemoveAt(clickedButtons.Count - 1);
             }
 
-            // Reativa os botões se os cliques forem menores que o máximo
             if (clickCount < maxClicks)
             {
                 foreach (Button btn in buttons)
@@ -85,12 +85,10 @@ public class ContadorBotao : MonoBehaviour
                 }
             }
 
-            // Atualiza o texto no TextMeshPro
             UpdateClickCountText();
         }
     }
 
-    // Método para atualizar o texto do contador no TextMeshPro
     void UpdateClickCountText()
     {
         if (clickCountText != null)

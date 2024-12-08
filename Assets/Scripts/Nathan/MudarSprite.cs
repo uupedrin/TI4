@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class MudarSprite : MonoBehaviour
 {
     public Sprite newSprite;
-    public Image targetImage;
 
     private Button button;
+    private Image buttonImage;
 
     void Start()
     {
         button = GetComponent<Button>();
+        buttonImage = GetComponent<Image>();
 
         if (button != null)
         {
@@ -22,9 +23,9 @@ public class MudarSprite : MonoBehaviour
 
     void ChangeSprite()
     {
-        if (newSprite != null && targetImage != null)
+        if (newSprite != null && buttonImage != null)
         {
-            targetImage.sprite = newSprite;
+            buttonImage.sprite = newSprite;
         }
     }
 }
