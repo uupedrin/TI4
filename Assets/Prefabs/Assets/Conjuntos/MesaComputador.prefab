@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1232483419937973627}
   - component: {fileID: 1578451161773247314}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: MesaComputador
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

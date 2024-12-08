@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8186000116153096876}
   - component: {fileID: -7529009910731821972}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ArmarioFinoCinza
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
