@@ -23,11 +23,13 @@ public class Collectable : MonoBehaviour
                 case 1:
                     GameManager.instance.vitoria1 = true;
                     CrossSceneReference.instance.playerController.PuloDoploAbl = true;
+                    GameManager.instance.skillsUI.ActiveDoubleUI();
                     break;
 
                 case 2:
                     GameManager.instance.vitoria2 = true;
                     CrossSceneReference.instance.playerController.rolamentoAbl = true;
+                    GameManager.instance.skillsUI.ActiveDashUI();
                     break;
             }
 
