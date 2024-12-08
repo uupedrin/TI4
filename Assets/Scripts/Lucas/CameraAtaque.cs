@@ -79,10 +79,11 @@ public class CameraAtaque : MonoBehaviour
      void OnTriggerExit(Collider other)
     {
         timer = 0f;
-       dentro = false;
-       cor = false;
-       aux = objectMaterial.color;
-       volta = true;
+        dentro = false;
+        cor = false;
+        if(aux != null)
+            aux = objectMaterial.color;
+        volta = true;
        
     }
 
