@@ -2292,6 +2292,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: BotaoBasico, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 5968128778061389809, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6322366720267156397, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
       propertyPath: m_AnchorMax.y
