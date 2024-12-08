@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 696050367818658229}
   - component: {fileID: 1133801902816814027}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: CadeiraPreta
-  m_TagString: Untagged
+  m_TagString: Carpet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

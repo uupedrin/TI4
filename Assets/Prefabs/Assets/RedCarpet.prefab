@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1250990451102712940}
   - component: {fileID: 3856326241706501533}
   - component: {fileID: 903533019316865767}
-  m_Layer: 0
+  - component: {fileID: 5963176337281130422}
+  m_Layer: 12
   m_Name: RedCarpet
-  m_TagString: Untagged
+  m_TagString: Carpet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,3 +84,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5963176337281130422
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6354651097869809227}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.02, y: 0.019999998, z: 0.020000072}
+  m_Center: {x: 0.000000007450581, y: 0, z: 0}
