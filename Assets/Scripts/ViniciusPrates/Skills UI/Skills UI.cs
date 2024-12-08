@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class SkillsUI : MonoBehaviour
 {
-    [SerializeField] Image dashImage;
-    [SerializeField] Image doubleJumpImage;
+    [SerializeField] GameObject dashImage;
+    [SerializeField] GameObject doubleJumpImage;
 
     public void Start()
     {
@@ -15,11 +15,11 @@ public class SkillsUI : MonoBehaviour
     
     public void ActiveDoubleUI()
     {
-        doubleJumpImage.color = Color.white;
+        doubleJumpImage.SetActive(true);
     }
 
     public void ActiveDashUI()
     {
-        dashImage.color = Color.white;
+        dashImage.SetActive(true);
     }
 }

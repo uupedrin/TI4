@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1194077958}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18222554, g: 0.22792947, b: 0.30735564, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4325,6 +4325,7 @@ MonoBehaviour:
   sprite2: {fileID: 921664428}
   textToDisable: {fileID: 921664428}
   panel: {fileID: 1887612888}
+  saveFileSO: {fileID: 11400000, guid: ffe222cf9e1dead4298d115bb8810042, type: 2}
 --- !u!114 &1367295398
 MonoBehaviour:
   m_ObjectHideFlags: 0
