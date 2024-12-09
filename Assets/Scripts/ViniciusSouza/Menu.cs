@@ -7,7 +7,7 @@ using TMPro;
 
 public class Menu : MonoBehaviour
 {
-    [SerializeField] private GameObject pauseMenuUI, celularMenuUI;
+    [SerializeField] private GameObject pauseMenuUI;
     [SerializeField] private Slider sensitivitySlider;
     [SerializeField] private CinemachineFreeLook freelookCamera;
     [SerializeField] private TextMeshProUGUI sensibilidadeTexto;
@@ -64,7 +64,7 @@ public class Menu : MonoBehaviour
     }
     public void CellResume()
     {
-        celularMenuUI.SetActive(false);
+        GameManager.instance.celularMenuUI.SetActive(false);
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         isPaused = false;
@@ -72,7 +72,7 @@ public class Menu : MonoBehaviour
 
     void CellPause()
     {
-        celularMenuUI.SetActive(true);
+        GameManager.instance.celularMenuUI.SetActive(true);
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         isPaused = true;

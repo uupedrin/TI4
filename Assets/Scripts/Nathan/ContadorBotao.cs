@@ -67,7 +67,7 @@ void OnResetButtonClicked()
         // Remover a última mesa (e não a penúltima)
         if (drone != null)
         {
-            drone.DestruirUltimaMesa(); // Remover a última mesa colocada
+            //drone.DestruirUltimaMesa(); // Remover a última mesa colocada
         }
 
         // Alterar o sprite do botão após a remoção da mesa
