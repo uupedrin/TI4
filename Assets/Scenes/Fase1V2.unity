@@ -17892,6 +17892,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2116705933496826299}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1472363306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472363302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf50033f22d847449ed108818c10994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1478311458
 GameObject:
   m_ObjectHideFlags: 0
@@ -20338,6 +20350,7 @@ MonoBehaviour:
   _scenesToUnload:
   - m_SceneAsset: {fileID: 102900000, guid: 50af0dc8b1f74fb4c804ff1bcd6df4c6, type: 3}
     m_SceneName: Fase1V2
+  fadeOut: 0
 --- !u!1 &1685357879
 GameObject:
   m_ObjectHideFlags: 0
@@ -27501,7 +27514,7 @@ PrefabInstance:
     - target: {fileID: 3426779677282264581, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3587942473853015790, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
@@ -28647,6 +28660,10 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1902138681}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3426779677282264581, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1472363306}
     - targetCorrespondingSourceObject: {fileID: 3955795049752610585, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
       insertIndex: -1

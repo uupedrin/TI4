@@ -19,7 +19,8 @@ public class PortaAtivar : MonoBehaviour
     }
     void OnTriggerEnter(Collider other){
         if(other.gameObject.CompareTag("Player")){
-            SceneManager.LoadScene(cena);
+            GetComponent<SceneTrigger>().enabled = true;
+
         }
     }
 }
