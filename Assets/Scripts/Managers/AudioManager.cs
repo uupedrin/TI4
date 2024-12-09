@@ -2,31 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
 	AudioMixer _mixer;
-	private int masterVol, musicVol, sfxVol;
+	private float masterVol, musicVol, sfxVol;
+	[SerializeField] Slider masterSlider;
+	[SerializeField] Slider musicSlider;
+	[SerializeField] Slider sfxSlider;
 	
 	private void Awake()
 	{
 		_mixer = Resources.Load("MainMixer") as AudioMixer;
+	}
+	
+	void Start()
+	{
 		LoadAudioPrefs();
 	}
 	
-	public void SetMaster(int value)
+	public void SetMaster(float value)
 	{
 		masterVol = value;
 		SetMixer();
 		SaveAudioPrefs();
 	}
-	public void SetMusic(int value)
+	public void SetMusic(float value)
 	{
 		musicVol = value;
 		SetMixer();
 		SaveAudioPrefs();
 	}
-	public void SetSFX(int value)
+	public void SetSFX(float value)
 	{
 		sfxVol = value;
 		SetMixer();
@@ -42,16 +50,19 @@ public class AudioManager : MonoBehaviour
 	
 	void LoadAudioPrefs()
 	{
-		masterVol = PlayerPrefs.GetInt("MasterVol", 0);
-		musicVol = PlayerPrefs.GetInt("MusicVol", 0);
-		sfxVol = PlayerPrefs.GetInt("SFXVol", 0);
+		masterVol = PlayerPrefs.GetFloat("MasterVol", 0);
+		musicVol = PlayerPrefs.GetFloat("MusicVol", 0);
+		sfxVol = PlayerPrefs.GetFloat("SFXVol", 0);
+		masterSlider.value = masterVol;
+		musicSlider.value = musicVol;
+		sfxSlider.value = sfxVol;
 		SetMixer();
 	}
 	
 	void SaveAudioPrefs()
 	{
-		PlayerPrefs.SetInt("MasterVol", masterVol);
-		PlayerPrefs.SetInt("MusicVol", musicVol);
-		PlayerPrefs.SetInt("SFXVol", sfxVol);
+		PlayerPrefs.SetFloat("MasterVol", masterVol);
+		PlayerPrefs.SetFloat("MusicVol", musicVol);
+		PlayerPrefs.SetFloat("SFXVol", sfxVol);
 	}
 }

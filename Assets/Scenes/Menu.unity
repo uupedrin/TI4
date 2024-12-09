@@ -744,7 +744,7 @@ Transform:
   m_GameObject: {fileID: 115285413}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1800.3884, y: 143.78899, z: -71.14202}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1856,9 +1856,9 @@ RectTransform:
   - {fileID: 271705879}
   - {fileID: 1196813749}
   - {fileID: 2072547320}
-  - {fileID: 1859924909}
-  - {fileID: 1917133181}
   - {fileID: 550867416}
+  - {fileID: 1917133181}
+  - {fileID: 1859924909}
   - {fileID: 1663060784}
   - {fileID: 370566837}
   - {fileID: 589816117}
@@ -2128,9 +2128,9 @@ MonoBehaviour:
   m_FillRect: {fileID: 1059708942}
   m_HandleRect: {fileID: 1049615798}
   m_Direction: 0
-  m_MinValue: -80
+  m_MinValue: -60
   m_MaxValue: 0
-  m_WholeNumbers: 1
+  m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2754,7 +2754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.9764706}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3114,6 +3114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b15c9dde4e37442599336c285cde160a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masterSlider: {fileID: 550867417}
+  musicSlider: {fileID: 1917133182}
+  sfxSlider: {fileID: 1859924910}
 --- !u!4 &833309936
 Transform:
   m_ObjectHideFlags: 0
@@ -6468,7 +6471,7 @@ GameObject:
   - component: {fileID: 1859924909}
   - component: {fileID: 1859924910}
   m_Layer: 5
-  m_Name: Vfx
+  m_Name: sfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6540,9 +6543,9 @@ MonoBehaviour:
   m_FillRect: {fileID: 1178465201}
   m_HandleRect: {fileID: 1008451911}
   m_Direction: 0
-  m_MinValue: -80
+  m_MinValue: -60
   m_MaxValue: 0
-  m_WholeNumbers: 1
+  m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7067,9 +7070,9 @@ MonoBehaviour:
   m_FillRect: {fileID: 6496021}
   m_HandleRect: {fileID: 1351365705}
   m_Direction: 0
-  m_MinValue: -80
+  m_MinValue: -60
   m_MaxValue: 0
-  m_WholeNumbers: 1
+  m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8421,7 +8424,7 @@ Transform:
   m_GameObject: {fileID: 8922181740638499653}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.099428944, y: 1.9377618, z: -6.9410996}
+  m_LocalPosition: {x: 0.117, y: 1.9377618, z: -6.9410996}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
