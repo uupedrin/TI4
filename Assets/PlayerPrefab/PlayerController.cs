@@ -141,7 +141,7 @@ public class PlayerController : MonoBehaviour
 			velocidadeMovimento.y -= gravidade * Time.deltaTime;
 		}
 
-		if (NoChao())
+		if(characterController.isGrounded)
 		{
 			Dash = true;
 			caindo = false;
