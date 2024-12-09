@@ -2203,6 +2203,56 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1295798574207635444, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295798574207635444, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: 8733c426-9bc6-4816-901c-836436337474
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295798574207635444, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: Move/PwpCheat[/Keyboard/f10]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295798574207635444, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295798574207635444, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295798574207635444, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 754949702}
+    - target: {fileID: 1295798574207635444, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295798574207635444, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PwpCheat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295798574207635444, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295798574207635444, guid: 6b55a93cf202ee847816253457841e2a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3316496209852070229, guid: 6b55a93cf202ee847816253457841e2a,
         type: 3}
       propertyPath: health

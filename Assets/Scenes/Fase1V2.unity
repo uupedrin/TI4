@@ -22056,6 +22056,11 @@ PrefabInstance:
       propertyPath: timeEspera
       value: 1.4
       objectReference: {fileID: 0}
+    - target: {fileID: 3558464388212865881, guid: 736dbf584d2a91545acea3e1841a9003,
+        type: 3}
+      propertyPath: removeImageButton
+      value: 
+      objectReference: {fileID: 1609913899}
     - target: {fileID: 4768117084945562645, guid: 736dbf584d2a91545acea3e1841a9003,
         type: 3}
       propertyPath: m_Layer
