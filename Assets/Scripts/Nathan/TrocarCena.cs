@@ -18,8 +18,6 @@ public class TrocarCena : MonoBehaviour
 
     private bool isSceneChanging = false;
 
-    public SaveFileSO saveFileSO;
-
     void OnMouseDown()
     {
         if (!isSceneChanging)
@@ -70,10 +68,5 @@ public class TrocarCena : MonoBehaviour
         yield return new WaitForSeconds(animationDuration);
 
         SceneManager.LoadScene(sceneName);
-    }
-
-    public void CleanSave()
-    {
-        saveFileSO.isSaved = false;
     }
 }
