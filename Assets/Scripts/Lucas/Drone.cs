@@ -24,6 +24,7 @@ public class Drone : MonoBehaviour
 	[SerializeField] List<GameObject> mesasCriadas = new List<GameObject>(); 
 	[SerializeField] private List<Transform> lugares = new List<Transform>();
 	[SerializeField] Image removeImageButton;
+	private bool full;
 
 	AudioSource source;
 
@@ -33,7 +34,6 @@ public class Drone : MonoBehaviour
 	{
 		startT = transform.position;
 		_mesa = Instantiate(prefab, mesaSpawn.position, mesaSpawn.rotation, transform);
-		mesasCriadas.Add(_mesa);
 		mesasInstanciadas++;
 		source = GetComponent<AudioSource>();
 		source.enabled = false;
@@ -41,6 +41,18 @@ public class Drone : MonoBehaviour
 
 	void Start(){
 		AtualizarTextoMesas();
+	}
+
+
+	void Update()
+	{
+		if(mesasInstanciadas < maxMesas && _mesa == null && full)
+		{
+			full = false;
+			_mesa = Instantiate(prefab, mesaSpawn.position, mesaSpawn.rotation, transform);
+			mesasInstanciadas++;
+		}
+
 	}
 
 	public void Colocar(Transform Pos)
@@ -85,8 +97,10 @@ public class Drone : MonoBehaviour
 					voltando = true;
 					indo = false;
 					startPos = transform.position;
+					mesasCriadas.Add(_mesa);
 					_mesa.transform.SetParent(null);
 					_mesa.GetComponent<Rigidbody>().useGravity = true;
+					_mesa = null;
 					yield return new WaitForSeconds(timeEspera);
 				}
 			}
@@ -102,12 +116,12 @@ public class Drone : MonoBehaviour
 					if (mesasInstanciadas < maxMesas)
 					{
 						_mesa = Instantiate(prefab, mesaSpawn.position, mesaSpawn.rotation, transform);
-						mesasCriadas.Add(_mesa);
 						mesasInstanciadas++;
 						AtualizarTextoMesas();
 					}
 					else
 					{
+						full = true;
 						Debug.Log("Número máximo de mesas instanciadas atingido.");
 					}
 				}
@@ -137,9 +151,9 @@ public class Drone : MonoBehaviour
 			return;
 		}
 
-        if (mesasCriadas.Count > 1)
+        if (mesasCriadas.Count > 0)
         {
-			GameObject penultimaMesa = mesasCriadas[mesasCriadas.Count - 2];
+			GameObject penultimaMesa = mesasCriadas[mesasCriadas.Count - 1];
             Debug.Log("Removendo mesa: " + penultimaMesa.name);
             mesasCriadas.Remove(penultimaMesa);
             Destroy(penultimaMesa);
