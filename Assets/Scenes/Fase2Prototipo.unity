@@ -377,6 +377,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  health: 0
+  cheat: 0
+  vitoria1: 0
+  vitoria2: 0
+  player: {fileID: 0}
+  loader: {fileID: 0}
+  skillsUI: {fileID: 0}
 --- !u!1 &229341838
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +733,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &547505247
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 45114735005594527, guid: 0606845aa8376874b9433c713b3cd494,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 45114735005594527, guid: 0606845aa8376874b9433c713b3cd494,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 45114735005594527, guid: 0606845aa8376874b9433c713b3cd494,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 45114735005594527, guid: 0606845aa8376874b9433c713b3cd494,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 45114735005594527, guid: 0606845aa8376874b9433c713b3cd494,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 45114735005594527, guid: 0606845aa8376874b9433c713b3cd494,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 45114735005594527, guid: 0606845aa8376874b9433c713b3cd494,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 45114735005594527, guid: 0606845aa8376874b9433c713b3cd494,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 45114735005594527, guid: 0606845aa8376874b9433c713b3cd494,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 45114735005594527, guid: 0606845aa8376874b9433c713b3cd494,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7752955815008374628, guid: 0606845aa8376874b9433c713b3cd494,
+        type: 3}
+      propertyPath: m_Name
+      value: ObstaculoBalanca
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0606845aa8376874b9433c713b3cd494, type: 3}
 --- !u!1 &792805411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1124,6 @@ MonoBehaviour:
   type: 1
   scoreAdd: 1
   player: {fileID: 1294472164}
-  instance: {fileID: 216636054}
 --- !u!135 &1086542227
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1340,7 +1414,6 @@ MonoBehaviour:
   type: 2
   scoreAdd: 1
   player: {fileID: 1294472164}
-  instance: {fileID: 216636054}
 --- !u!135 &1400182131
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1671,3 +1744,4 @@ SceneRoots:
   - {fileID: 216636053}
   - {fileID: 1400182134}
   - {fileID: 1086542230}
+  - {fileID: 547505247}
