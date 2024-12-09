@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class PortaAtivar : MonoBehaviour
 {
     [SerializeField] Collider otherCollider;
-    [SerializeField] string cena;
      void Update()
     {
         otherCollider.enabled = GameManager.instance.vitoria1 && GameManager.instance.vitoria2;

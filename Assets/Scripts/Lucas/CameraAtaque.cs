@@ -74,6 +74,7 @@ public class CameraAtaque : MonoBehaviour
 			cor = true;
 			StartCoroutine(Ataque());
 			volta = false;
+			Debug.Log(this.gameObject.name);
 		}
 	}
 	 void OnTriggerExit(Collider other)
