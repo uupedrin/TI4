@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2226426185484106476}
   m_Layer: 10
   m_Name: Mesa0.5
-  m_TagString: Metal
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

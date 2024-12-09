@@ -12,8 +12,7 @@ public class GameManager : MonoBehaviour
 	public PlayerController player;
 	public GameLoader loader;
 	public SkillsUI skillsUI;
-	public GameObject celularMenuUI;
-
+	
     void Awake()
 	{
 		//Debug.Log(Application.persistentDataPath);
