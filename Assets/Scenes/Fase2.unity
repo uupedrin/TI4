@@ -2237,6 +2237,8 @@ MonoBehaviour:
   _scenesToUnload:
   - m_SceneAsset: {fileID: 102900000, guid: a2c7be3c712cd67439d823cb8480d4e8, type: 3}
     m_SceneName: Fase2
+  - m_SceneAsset: {fileID: 102900000, guid: 6398fc0842704ef4da754b8ecb25ffd5, type: 3}
+    m_SceneName: MAINGameScene
   fadeOut: 0
 --- !u!1001 &174604691
 PrefabInstance:
