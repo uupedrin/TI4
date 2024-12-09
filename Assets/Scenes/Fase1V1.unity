@@ -8035,7 +8035,7 @@ MonoBehaviour:
   resetButton: {fileID: 1609913898}
   newSprite: {fileID: 1346094922, guid: 65d2700132a1ed14a9023df25c66d470, type: 3}
   clickCountText: {fileID: 418920400}
-  drone: {fileID: 0}
+  drone: {fileID: 645727121}
 --- !u!1001 &1047764596
 PrefabInstance:
   m_ObjectHideFlags: 0
