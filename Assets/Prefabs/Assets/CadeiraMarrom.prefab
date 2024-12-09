@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3383894186431499892}
   - component: {fileID: 5639077628753065391}
+  - component: {fileID: 1643135334035571556}
   m_Layer: 12
   m_Name: CadeiraMarrom
   m_TagString: Carpet
@@ -52,8 +53,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1588087, y: 0.90375245, z: 1.1828707}
-  m_Center: {x: -0.0024062395, y: 0.033686876, z: 0.07218593}
+  m_Size: {x: 0.80316067, y: 0.7847732, z: 0.513925}
+  m_Center: {x: 0.112205625, y: 0.033686876, z: -0.262287}
+--- !u!65 &1643135334035571556
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6574816187204983438}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2652375, y: 0.7957861, z: 1.0642517}
+  m_Center: {x: -0.3059101, y: -1.2446408e-17, z: 0.03212583}
 --- !u!1001 &3885929918998965629
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -3,7 +3,12 @@ guid: 05ee26ed7940a7e43a6d2f89c17f9a77
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PowerUps
+    second: {fileID: 2100000, guid: c705cafdf8d089043b167082bcce5bbb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
