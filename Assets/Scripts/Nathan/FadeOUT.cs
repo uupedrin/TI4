@@ -34,6 +34,7 @@ public class FadeOUT : MonoBehaviour
 
         
         panelColor.a = 0;
+        blackPanel.gameObject.SetActive(false);
         blackPanel.color = panelColor;
 
         
