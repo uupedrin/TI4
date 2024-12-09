@@ -6,7 +6,7 @@ using UnityEngine.Audio;
 public class AudioManager : MonoBehaviour
 {
 	AudioMixer _mixer;
-	private float masterVol, musicVol, sfxVol;
+	private int masterVol, musicVol, sfxVol;
 	
 	private void Awake()
 	{
@@ -14,19 +14,19 @@ public class AudioManager : MonoBehaviour
 		LoadAudioPrefs();
 	}
 	
-	public void SetMaster(float value)
+	public void SetMaster(int value)
 	{
 		masterVol = value;
 		SetMixer();
 		SaveAudioPrefs();
 	}
-	public void SetMusic(float value)
+	public void SetMusic(int value)
 	{
 		musicVol = value;
 		SetMixer();
 		SaveAudioPrefs();
 	}
-	public void SetSFX(float value)
+	public void SetSFX(int value)
 	{
 		sfxVol = value;
 		SetMixer();
@@ -42,15 +42,16 @@ public class AudioManager : MonoBehaviour
 	
 	void LoadAudioPrefs()
 	{
-		masterVol = PlayerPrefs.GetFloat("MasterVol", 0);
-		musicVol = PlayerPrefs.GetFloat("MusicVol", 0);
-		sfxVol = PlayerPrefs.GetFloat("SFXVol", 0);
+		masterVol = PlayerPrefs.GetInt("MasterVol", 0);
+		musicVol = PlayerPrefs.GetInt("MusicVol", 0);
+		sfxVol = PlayerPrefs.GetInt("SFXVol", 0);
+		SetMixer();
 	}
 	
 	void SaveAudioPrefs()
 	{
-		PlayerPrefs.SetFloat("MasterVol", masterVol);
-		PlayerPrefs.SetFloat("MusicVol", musicVol);
-		PlayerPrefs.SetFloat("SFXVol", sfxVol);
+		PlayerPrefs.SetInt("MasterVol", masterVol);
+		PlayerPrefs.SetInt("MusicVol", musicVol);
+		PlayerPrefs.SetInt("SFXVol", sfxVol);
 	}
 }
