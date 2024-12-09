@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerParticleEmitter : MonoBehaviour
 {
+	[SerializeField] AudioSource smokeSource;
+	[SerializeField] AudioClip smokeSound;
+	
 	[SerializeField] ParticleSystem[] psLeft;
 	[SerializeField] ParticleSystem[] psRight;
 	
@@ -64,5 +67,7 @@ public class PlayerParticleEmitter : MonoBehaviour
 		
 		left.gameObject.SetActive(true);
 		right.gameObject.SetActive(true);
+		smokeSource.pitch = Random.Range(.8f, 1f);
+		smokeSource.PlayOneShot(smokeSound);
 	}
 }

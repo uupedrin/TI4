@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3921176528847742316}
   - component: {fileID: 3395025826036518115}
+  - component: {fileID: 7033029067775982081}
   m_Layer: 0
   m_Name: PortaInteiraCinza
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,6 +56,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.29773438, y: 2.1405506, z: 1.370461}
   m_Center: {x: -0.07592058, y: -0.0060851574, z: -0.0015307665}
+--- !u!65 &7033029067775982081
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8653672748358530630}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.31, y: 2.1405506, z: 1.370461}
+  m_Center: {x: 0.022109985, y: -0.0060851574, z: -0.0015308061}
 --- !u!1001 &1335888848567003511
 PrefabInstance:
   m_ObjectHideFlags: 0

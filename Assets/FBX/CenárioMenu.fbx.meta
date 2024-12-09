@@ -3,7 +3,17 @@ guid: 0fbd5257ffe15c34eb194d1ceccf7e2a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BaseMobile
+    second: {fileID: 2100000, guid: e624cf7499007484c8c99b77765f2de8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BaseTexture
+    second: {fileID: 2100000, guid: 37c025777aa4d2142ab7cff318fb4934, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -78,7 +88,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 1
+  importAnimation: 0
   humanDescription:
     serializedVersion: 3
     human: []

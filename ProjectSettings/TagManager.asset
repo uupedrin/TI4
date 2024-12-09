@@ -11,10 +11,11 @@ TagManager:
   - Espinhos
   - Mola
   - Collectable
-  - Floor
+  - Metal
   - Carpet
   - Wood
-  - Metal
+  - Floor
+  - Door
   layers:
   - Default
   - TransparentFX

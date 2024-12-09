@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2327,7 +2327,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 599023808119552843, guid: 4ea10f915f2f50742a5fc443ee83a18d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 577001024}
   m_SourcePrefab: {fileID: 100100000, guid: 4ea10f915f2f50742a5fc443ee83a18d, type: 3}
 --- !u!4 &577001022 stripped
 Transform:
@@ -2335,6 +2339,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 577001021}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &577001023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 599023808119552843, guid: 4ea10f915f2f50742a5fc443ee83a18d,
+    type: 3}
+  m_PrefabInstance: {fileID: 577001021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &577001024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577001023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3f34580d4244799ac8ea47dccb026d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneToLoad:
+    m_SceneAsset: {fileID: 102900000, guid: f280090cda451ca459d8538353ebb549, type: 3}
+    m_SceneName: Fase1P3
+  _scenesToUnload:
+  - m_SceneAsset: {fileID: 102900000, guid: fc8999a70d0cb2746a99340bb5c34f43, type: 3}
+    m_SceneName: Fase1P2
 --- !u!1001 &590183034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8367,78 +8395,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1871055814}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1875748920
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1875748923}
-  - component: {fileID: 1875748922}
-  - component: {fileID: 1875748924}
-  m_Layer: 30
-  m_Name: Teleport
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &1875748922
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875748920}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.73643064, y: 2.6564372, z: 1.4062867}
-  m_Center: {x: 0.13178468, y: 0.8282188, z: 0}
---- !u!4 &1875748923
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875748920}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.996, y: 0, z: 75.96}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1875748924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875748920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb3f34580d4244799ac8ea47dccb026d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sceneToLoad:
-    m_SceneAsset: {fileID: 102900000, guid: f280090cda451ca459d8538353ebb549, type: 3}
-    m_SceneName: Fase1P3
-  _scenesToUnload:
-  - m_SceneAsset: {fileID: 102900000, guid: fc8999a70d0cb2746a99340bb5c34f43, type: 3}
-    m_SceneName: Fase1P2
 --- !u!1001 &1896292264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9621,7 +9577,6 @@ SceneRoots:
   - {fileID: 1056950447}
   - {fileID: 397608815}
   - {fileID: 945602918}
-  - {fileID: 1875748923}
   - {fileID: 1581989355}
   - {fileID: 814699468}
   - {fileID: 1837406944}
