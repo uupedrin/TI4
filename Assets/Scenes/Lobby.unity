@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9437,6 +9437,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3395025826036518115, guid: ce46e6f7dd8e21b49b9427edd20b1001,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3921176528847742316, guid: ce46e6f7dd8e21b49b9427edd20b1001,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -9502,6 +9507,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7033029067775982081, guid: ce46e6f7dd8e21b49b9427edd20b1001,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8653672748358530630, guid: ce46e6f7dd8e21b49b9427edd20b1001,
         type: 3}
       propertyPath: m_Name
@@ -9519,6 +9529,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1582579489}
+    - targetCorrespondingSourceObject: {fileID: 8653672748358530630, guid: ce46e6f7dd8e21b49b9427edd20b1001,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1582579491}
   m_SourcePrefab: {fileID: 100100000, guid: ce46e6f7dd8e21b49b9427edd20b1001, type: 3}
 --- !u!4 &1582579487 stripped
 Transform:
@@ -9539,13 +9553,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582579488}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36927f867f7a3fc48a2771c75fefdb7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   otherCollider: {fileID: 1582579490}
-  cena: Vitoria
+  cena: Fase2
 --- !u!65 &1582579490
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9563,10 +9577,29 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1.84, y: 2.29, z: 1.8}
   m_Center: {x: 0.39, y: 0, z: 0}
+--- !u!114 &1582579491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582579488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3f34580d4244799ac8ea47dccb026d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneToLoad:
+    m_SceneAsset: {fileID: 102900000, guid: a2c7be3c712cd67439d823cb8480d4e8, type: 3}
+    m_SceneName: Fase2
+  _scenesToUnload:
+  - m_SceneAsset: {fileID: 102900000, guid: 8950bfaed19209446bb8bf9996ec0d4d, type: 3}
+    m_SceneName: Lobby
+  fadeOut: 0
 --- !u!1001 &1587892671
 PrefabInstance:
   m_ObjectHideFlags: 0
