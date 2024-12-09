@@ -2433,7 +2433,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Clique para Colocar as Mesas (Max 16)
+  m_text: Clique para Colocar as Mesas (Max 20)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a5b2006f1686b9419774dcbcda7b333, type: 2}
   m_sharedMaterial: {fileID: 2913648031800122740, guid: 5a5b2006f1686b9419774dcbcda7b333,
@@ -7855,7 +7855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f37573ab5d919b499897e61d0e6f9ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxClicks: 16
+  maxClicks: 20
   clickCount: 0
   buttons:
   - {fileID: 840777488}
@@ -22044,7 +22044,7 @@ PrefabInstance:
     - target: {fileID: 3558464388212865881, guid: 736dbf584d2a91545acea3e1841a9003,
         type: 3}
       propertyPath: maxMesas
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3558464388212865881, guid: 736dbf584d2a91545acea3e1841a9003,
         type: 3}
