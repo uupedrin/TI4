@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Celular : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public bool comecarAberto = false;
     void Start()
     {
         GameManager.instance.celularMenuUI = gameObject;
-        gameObject.SetActive(false);
+        gameObject.SetActive(comecarAberto);
     }
 }

@@ -8446,7 +8446,7 @@ PrefabInstance:
     - target: {fileID: 3426779677282264581, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3587942473853015790, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
@@ -9589,6 +9589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf50033f22d847449ed108818c10994, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  comecarAberto: 0
 --- !u!4 &1105212243 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9200732789063657270, guid: ed97681ea6a5c4a4fbd36fb6016c6f58,

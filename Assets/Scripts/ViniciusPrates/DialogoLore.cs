@@ -13,11 +13,14 @@ public class DialogoLore : MonoBehaviour
     [SerializeField] int index;
     char[] letters;
 
-    public void Start()
+    private void Awake()
     {
         string dialog = text.text;
         text.text = "";
         letters = dialog.ToCharArray();
+    }
+    private void OnEnable()
+    {        
         StartCoroutine(DialogRoutine());
     }
 
