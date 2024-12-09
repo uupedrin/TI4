@@ -13,8 +13,8 @@ public class Placar : MonoBehaviour
         
         if (GameManager.instance != null)
         {
-            scoreText.text = "Pontos: " + GameManager.instance.score;
-            healthText.text = "Vida: " + CrossSceneReference.instance.playerController.health;
+            scoreText.text = GameManager.instance.score.ToString();
+            healthText.text = CrossSceneReference.instance.playerController.health.ToString();
         }
     }
 }

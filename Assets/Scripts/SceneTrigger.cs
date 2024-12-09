@@ -6,6 +6,7 @@ public class SceneTrigger : MonoBehaviour
 {
 	[SerializeField] SceneField _sceneToLoad;
 	[SerializeField] SceneField[] _scenesToUnload;
+	[SerializeField] bool fadeOut = false;
 	
 	private void OnTriggerEnter(Collider other)
 	{
@@ -36,6 +37,7 @@ public class SceneTrigger : MonoBehaviour
 	
 	private void LoadScenes()
 	{
+		if(fadeOut) CrossSceneReference.instance.fadeOUT.ResetEffect();
 		GameLoader.instance.SetScene(_sceneToLoad);
 	}
 	

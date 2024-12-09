@@ -11,10 +11,10 @@ TagManager:
   - Espinhos
   - Mola
   - Collectable
-  - Metal
+  - Floor
   - Carpet
   - Wood
-  - Floor
+  - Metal
   - Door
   layers:
   - Default
@@ -48,7 +48,7 @@ TagManager:
   - 
   - 
   - Player>Trigger
-  - 
+  - UIElement
   m_SortingLayers:
   - name: Canvas
     uniqueID: 918771521

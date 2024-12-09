@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -815,6 +815,7 @@ MonoBehaviour:
     m_SceneAsset: {fileID: 102900000, guid: 8950bfaed19209446bb8bf9996ec0d4d, type: 3}
     m_SceneName: Lobby
   _scenesToUnload: []
+  fadeOut: 1
 --- !u!1001 &319288364
 PrefabInstance:
   m_ObjectHideFlags: 0
