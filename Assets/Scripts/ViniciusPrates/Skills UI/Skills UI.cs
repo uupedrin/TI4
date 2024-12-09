@@ -35,4 +35,22 @@ public class SkillsUI : MonoBehaviour
 		dashSprite.SetActive(true);
 		dashMesh.SetActive(true);
 	}
+	public void DesactiveTUDO()
+	{
+		dashImage.SetActive(false);
+		dashSprite.SetActive(false);
+		dashMesh.SetActive(false);
+		doubleJumpImage.SetActive(false);
+		doubleJumpSprite.SetActive(false);
+		doubleJumpMesh.SetActive(false);
+	}
+	public void ActiveTUDO()
+	{
+		dashImage.SetActive(true);
+		dashSprite.SetActive(true);
+		dashMesh.SetActive(true);
+		doubleJumpImage.SetActive(true);
+		doubleJumpSprite.SetActive(true);
+		doubleJumpMesh.SetActive(true);
+	}
 }
