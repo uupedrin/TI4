@@ -304,6 +304,31 @@ public class PlayerController : MonoBehaviour
 	{
 		GameManager.instance.cheat = !GameManager.instance.cheat;
 	}
+	public void PwpCheat()
+	{
+		if(!PuloDoploAbl && !rolamentoAbl)
+		{
+			GameManager.instance.skillsUI.ActiveTUDO();
+			PuloDoploAbl = true;
+			rolamentoAbl = true;
+		}
+		else if(PuloDoploAbl && !rolamentoAbl)
+		{
+			GameManager.instance.skillsUI.ActiveDashUI();
+			rolamentoAbl = true;
+		}
+		else if(!PuloDoploAbl && rolamentoAbl)
+		{
+			GameManager.instance.skillsUI.ActiveDoubleUI();
+			PuloDoploAbl = true;
+		}
+		else
+		{
+			GameManager.instance.skillsUI.DesactiveTUDO();
+			PuloDoploAbl = false;
+			rolamentoAbl = false;
+		}
+	}
 
 }
 

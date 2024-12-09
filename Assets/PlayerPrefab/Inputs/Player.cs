@@ -81,6 +81,15 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PwpCheat"",
+                    ""type"": ""Button"",
+                    ""id"": ""8733c426-9bc6-4816-901c-836436337474"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -248,6 +257,17 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""action"": ""Cheat"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f370c223-896e-43b6-94fa-a9999ab8bf06"",
+                    ""path"": ""<Keyboard>/f10"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PwpCheat"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -262,6 +282,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
         m_Move_Pulo = m_Move.FindAction("Pulo", throwIfNotFound: true);
         m_Move_Rolamento = m_Move.FindAction("Rolamento", throwIfNotFound: true);
         m_Move_Cheat = m_Move.FindAction("Cheat", throwIfNotFound: true);
+        m_Move_PwpCheat = m_Move.FindAction("PwpCheat", throwIfNotFound: true);
     }
 
     ~@Player()
@@ -334,6 +355,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
     private readonly InputAction m_Move_Pulo;
     private readonly InputAction m_Move_Rolamento;
     private readonly InputAction m_Move_Cheat;
+    private readonly InputAction m_Move_PwpCheat;
     public struct MoveActions
     {
         private @Player m_Wrapper;
@@ -344,6 +366,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
         public InputAction @Pulo => m_Wrapper.m_Move_Pulo;
         public InputAction @Rolamento => m_Wrapper.m_Move_Rolamento;
         public InputAction @Cheat => m_Wrapper.m_Move_Cheat;
+        public InputAction @PwpCheat => m_Wrapper.m_Move_PwpCheat;
         public InputActionMap Get() { return m_Wrapper.m_Move; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -371,6 +394,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @Cheat.started += instance.OnCheat;
             @Cheat.performed += instance.OnCheat;
             @Cheat.canceled += instance.OnCheat;
+            @PwpCheat.started += instance.OnPwpCheat;
+            @PwpCheat.performed += instance.OnPwpCheat;
+            @PwpCheat.canceled += instance.OnPwpCheat;
         }
 
         private void UnregisterCallbacks(IMoveActions instance)
@@ -393,6 +419,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @Cheat.started -= instance.OnCheat;
             @Cheat.performed -= instance.OnCheat;
             @Cheat.canceled -= instance.OnCheat;
+            @PwpCheat.started -= instance.OnPwpCheat;
+            @PwpCheat.performed -= instance.OnPwpCheat;
+            @PwpCheat.canceled -= instance.OnPwpCheat;
         }
 
         public void RemoveCallbacks(IMoveActions instance)
@@ -418,5 +447,6 @@ public partial class @Player: IInputActionCollection2, IDisposable
         void OnPulo(InputAction.CallbackContext context);
         void OnRolamento(InputAction.CallbackContext context);
         void OnCheat(InputAction.CallbackContext context);
+        void OnPwpCheat(InputAction.CallbackContext context);
     }
 }
