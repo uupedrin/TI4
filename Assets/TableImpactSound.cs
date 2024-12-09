@@ -15,7 +15,7 @@ public class TableImpactSound : MonoBehaviour
 	
 	void OnCollisionEnter(Collision other)
 	{
-		if(other.gameObject.CompareTag("Floor") || other.gameObject.CompareTag("Table"))
+		if(other.gameObject.CompareTag("Floor") || other.gameObject.CompareTag("Metal"))
 		{
 			Debug.Log("BAM");
 			int soundId = Random.Range(0,metalSounds.Length);
