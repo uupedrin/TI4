@@ -100,6 +100,7 @@ public class CameraAtaque : MonoBehaviour
 				CrossSceneReference.instance.playerController.transform.position = spawn.transform.position;
 				CrossSceneReference.instance.playerController.transform.rotation = spawn.transform.rotation;
 				CrossSceneReference.instance.playerController.GetComponent<CharacterController>().enabled = true;
+				CrossSceneReference.instance.playerController.GetComponent<PlayerGenericSounds>().PlaySound(1);
 				CrossSceneReference.instance.playerController.health--;
 				dentro = false;
 				
@@ -107,7 +108,9 @@ public class CameraAtaque : MonoBehaviour
 				dentro = false;
 				cor = false;
 				if(aux!=null)
+				{
 					aux = objectMaterial.color;
+				}
 				volta = true;
 			}
 			else SceneManager.LoadScene("GameOver");

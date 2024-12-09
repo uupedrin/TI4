@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4246,6 +4246,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d2dd701f54fed8e40ae3bd7351c0e64b, type: 2}
+    - target: {fileID: 5276946702403219080, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 693668040}
     - target: {fileID: 5852412046149859586, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6820,6 +6825,11 @@ PrefabInstance:
       propertyPath: spawn
       value: 
       objectReference: {fileID: 693668040}
+    - target: {fileID: 5276946702403219080, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 693668040}
     - target: {fileID: 5852412046149859586, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7095,6 +7105,11 @@ PrefabInstance:
       value: -18.026
       objectReference: {fileID: 0}
     - target: {fileID: 2801302146310560197, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 693668040}
+    - target: {fileID: 5276946702403219080, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
         type: 3}
       propertyPath: spawn
       value: 
@@ -10014,6 +10029,11 @@ PrefabInstance:
       value: -18.026
       objectReference: {fileID: 0}
     - target: {fileID: 2801302146310560197, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 693668040}
+    - target: {fileID: 5276946702403219080, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
         type: 3}
       propertyPath: spawn
       value: 
