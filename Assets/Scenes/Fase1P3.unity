@@ -573,10 +573,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 599023808119552843, guid: 4ea10f915f2f50742a5fc443ee83a18d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 93971370}
-    - targetCorrespondingSourceObject: {fileID: 599023808119552843, guid: 4ea10f915f2f50742a5fc443ee83a18d,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 93971369}
   m_SourcePrefab: {fileID: 100100000, guid: 4ea10f915f2f50742a5fc443ee83a18d, type: 3}
 --- !u!4 &93971367 stripped
@@ -609,27 +605,6 @@ MonoBehaviour:
   _scenesToUnload:
   - m_SceneAsset: {fileID: 102900000, guid: f280090cda451ca459d8538353ebb549, type: 3}
     m_SceneName: Fase1P3
---- !u!65 &93971370
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 93971368}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.4779199, y: 2.811026, z: 1}
-  m_Center: {x: 0.000007033348, y: 0.90551305, z: -8.470304e-21}
 --- !u!1001 &102055219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3301,7 +3276,18 @@ PrefabInstance:
       propertyPath: pontoB
       value: 
       objectReference: {fileID: 1791207993}
-    m_RemovedComponents: []
+    - target: {fileID: 8170191735738844400, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 693668040}
+    - target: {fileID: 8170191735738844400, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: tempo
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2801302146310560197, guid: a66b4c9160deaa54aa64f5a6ca7d8b50, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5212,7 +5198,18 @@ PrefabInstance:
       propertyPath: pontoB
       value: 
       objectReference: {fileID: 1029243091}
-    m_RemovedComponents: []
+    - target: {fileID: 8170191735738844400, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 693668040}
+    - target: {fileID: 8170191735738844400, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: tempo
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2801302146310560197, guid: a66b4c9160deaa54aa64f5a6ca7d8b50, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5490,7 +5487,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8170191735738844400, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 693668040}
+    - target: {fileID: 8170191735738844400, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: tempo
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2801302146310560197, guid: a66b4c9160deaa54aa64f5a6ca7d8b50, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -7557,7 +7565,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8170191735738844400, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 693668040}
+    - target: {fileID: 8170191735738844400, guid: a66b4c9160deaa54aa64f5a6ca7d8b50,
+        type: 3}
+      propertyPath: tempo
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2801302146310560197, guid: a66b4c9160deaa54aa64f5a6ca7d8b50, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

@@ -190,12 +190,12 @@ public class PlayerController : MonoBehaviour
 					Quaternion freeRotation  = Quaternion.LookRotation(targetDirection.normalized);
 
 					
-					Quaternion a = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), rotVelTemp *10* Time.deltaTime);
-					Quaternion b = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), rotVelTemp * Time.deltaTime);
-					if(Math.Abs(Math.Abs(a.eulerAngles.y) - Math.Abs(b.eulerAngles.y)) > 45f )
-					podeMover = false;
-					else
-					podeMover = true;
+					// Quaternion a = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), rotVelTemp *10* Time.deltaTime);
+					// Quaternion b = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), rotVelTemp * Time.deltaTime);
+					// if(Math.Abs(Math.Abs(a.eulerAngles.y) - Math.Abs(b.eulerAngles.y)) > 45f )
+					// podeMover = false;
+					// else
+					// podeMover = true;
 					transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(transform.eulerAngles.x, freeRotation.eulerAngles.y, transform.eulerAngles.z)), rotVelTemp * Time.deltaTime);
 					
 					

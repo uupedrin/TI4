@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2223,7 +2223,7 @@ GameObject:
   - component: {fileID: 266670316}
   m_Layer: 6
   m_Name: SafeZone
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3424,7 +3424,7 @@ GameObject:
   - component: {fileID: 351045279}
   m_Layer: 6
   m_Name: SafeZone
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14485,7 +14485,7 @@ GameObject:
   - component: {fileID: 1883483389}
   m_Layer: 6
   m_Name: Botao
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20493,6 +20493,26 @@ PrefabInstance:
       propertyPath: mesasText
       value: 
       objectReference: {fileID: 418920400}
+    - target: {fileID: 4153097168421448646, guid: 736dbf584d2a91545acea3e1841a9003,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153097168421448646, guid: 736dbf584d2a91545acea3e1841a9003,
+        type: 3}
+      propertyPath: MinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153097168421448646, guid: 736dbf584d2a91545acea3e1841a9003,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153097168421448646, guid: 736dbf584d2a91545acea3e1841a9003,
+        type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0.033333335
+      objectReference: {fileID: 0}
     - target: {fileID: 4768117084945562645, guid: 736dbf584d2a91545acea3e1841a9003,
         type: 3}
       propertyPath: m_Layer
