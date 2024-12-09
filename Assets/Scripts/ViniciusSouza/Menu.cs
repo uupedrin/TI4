@@ -80,7 +80,6 @@ public class Menu : MonoBehaviour
 
     public void QuitGame()
     {
-        GameManager.instance.Save();
         Application.Quit();
     }
 

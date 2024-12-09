@@ -12,10 +12,7 @@ public class GameManager : MonoBehaviour
 	public PlayerController player;
 	public GameLoader loader;
 	public SkillsUI skillsUI;
-
-	#region SaveFile
-	[SerializeField] SaveFileSO saveFile;
-	#endregion
+	
     void Awake()
 	{
 		//Debug.Log(Application.persistentDataPath);
@@ -29,33 +26,6 @@ public class GameManager : MonoBehaviour
 		}
 		//transform.SetParent(null);
 		DontDestroyOnLoad(gameObject);
-		if(saveFile.isSaved)
-			Load();
-	}
-
-	public void Save()
-	{
-		saveFile.PuloDoploAbl = player.PodePuloDoploAbl;
-		saveFile.Dash = player.PodeDashAbl;
-		saveFile.currentScene = loader.SceneToLoad;
-		saveFile.SaveToFile(Application.persistentDataPath + "/SaveFile.json");
-	}
-
-	public void Load()
-	{
-		saveFile.LoadFromFile(Application.persistentDataPath + "/SaveFile.json");
-		player.PodePuloDoploAbl = saveFile.PuloDoploAbl;
-		player.PodeDashAbl = saveFile.Dash;
-		if(saveFile.PuloDoploAbl)
-		{
-			skillsUI.ActiveDoubleUI();
-		}
-		if(saveFile.Dash)
-		{
-			skillsUI.ActiveDashUI();
-		}
-		loader.SetScene(saveFile.currentScene);
-
 	}
 
     public void SumScore(int add)
