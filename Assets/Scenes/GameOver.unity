@@ -438,8 +438,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Reinciar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 90b4c72c64ef4a14c9070ae22d9b299a, type: 2}
-  m_sharedMaterial: {fileID: -4427325949524675616, guid: 90b4c72c64ef4a14c9070ae22d9b299a,
+  m_fontAsset: {fileID: 11400000, guid: 0ad22f0c8637da8458ee9220922d874a, type: 2}
+  m_sharedMaterial: {fileID: 5661970827501823902, guid: 0ad22f0c8637da8458ee9220922d874a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1787,7 +1787,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -593.5, y: -227}
+  m_AnchoredPosition: {x: -497.92014, y: -227}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1115156481
@@ -2408,8 +2408,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Voltar ao Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 90b4c72c64ef4a14c9070ae22d9b299a, type: 2}
-  m_sharedMaterial: {fileID: -4427325949524675616, guid: 90b4c72c64ef4a14c9070ae22d9b299a,
+  m_fontAsset: {fileID: 11400000, guid: 0ad22f0c8637da8458ee9220922d874a, type: 2}
+  m_sharedMaterial: {fileID: 5661970827501823902, guid: 0ad22f0c8637da8458ee9220922d874a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2450,7 +2450,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -2659,7 +2659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -644, y: -218}
+  m_AnchoredPosition: {x: -548.4201, y: -218}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1856244401
@@ -2846,6 +2846,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985229362088538824, guid: 48c432db6bbe3574ca4f144f27d1fabd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6492174919311088942, guid: 48c432db6bbe3574ca4f144f27d1fabd,
         type: 3}

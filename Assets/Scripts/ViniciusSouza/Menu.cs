@@ -36,6 +36,7 @@ public class Menu : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.M))
         {
+            Debug.Log("Apertou M");
             if (isPaused)
             {
                 CellResume();

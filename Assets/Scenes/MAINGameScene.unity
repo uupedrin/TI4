@@ -4704,6 +4704,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sfx
       objectReference: {fileID: 0}
+    - target: {fileID: 399647304967176105, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 0ad22f0c8637da8458ee9220922d874a,
+        type: 2}
+    - target: {fileID: 399647304967176105, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5661970827501823902, guid: 0ad22f0c8637da8458ee9220922d874a,
+        type: 2}
+    - target: {fileID: 399647304967176105, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 428898967625361903, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
       propertyPath: m_IsActive
@@ -4943,6 +4960,38 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: Voltar ao Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846499483086017565, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846499483086017565, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 0ad22f0c8637da8458ee9220922d874a,
+        type: 2}
+    - target: {fileID: 3846499483086017565, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846499483086017565, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5661970827501823902, guid: 0ad22f0c8637da8458ee9220922d874a,
+        type: 2}
+    - target: {fileID: 3846499483086017565, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846499483086017565, guid: 182b31042dba36d40b5f1d79b8d71edc,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3890087320803399504, guid: 182b31042dba36d40b5f1d79b8d71edc,
         type: 3}
